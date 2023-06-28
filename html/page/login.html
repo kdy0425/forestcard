@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=1290"/>
+<link rel="canonical" href="">
+<link rel="shortcut icon" type="image/x-icon" href="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content=""/>
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content="" />
+<title>우리은행 RDMS</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
+<script src="../../assets/js/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	<h1 id="header_h1">우리은행 RDMS</h1>
+	<div id="skip_to_container">
+		<!-- skip navigation -->
+		<a href="#content">내용 바로가기</a>
+		<a href="#nav">서비스메뉴 바로가기</a>
+	</div>
+	<hr class="hide" />	
+
+	<!-- header -->
+	<div id="header" class="intro">
+		<div id="hd_wrap">
+			<div class="hd_top">
+				<div class="container">
+					<div class="logo_area">
+						<div id="logo"><a href="javascript:;"></a><span class="sound_only">우리은행</span></a></div>
+						<div class="rdms"><a href="javascript:;"><span class="sound_only">RDMS</span></a></div>
+					</div>
+					<div class="r">
+						<div class="hd_cs">
+							<button type="button" class="cs_btn">고객센터</button>
+							<div class="cs_cnt">
+								<div class="tit">이용문의</div>
+								<div class="cnt">
+									<span class="num">02 3151 -5900</span>
+									<span class="time">(평일) 09:00-18:00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->	
+
+	<!-- content -->
+	<div id="content" class="login_content">
+		
+		<!-- 로그인 배너 -->
+		<div class="login_visual">
+			<div class="container">
+				<div class="visual_title">Woori Research and Development Information System 우리 연구비 관리의 새로운 패러다임을 제시합니다</div>
+			</div>
+			<script>
+				 window.onload = function() {
+					document.querySelector('.visual_title').classList.add('visible');
+				};
+			</script>
+		</div>
+		  
+		<div class="container">
+			<div class="login_wrap">
+				<div class="join_point">
+                    <div class="point">
+                        <div class="tit">접속기관</div>
+                        <div class="cnt">사회적기업진흥원_(종교) 네트워크 지원사업 [상위]</div>
+                    </div>
+                    <div class="join">
+                        <div class="tit">WOORI RDMS 사용을 위해 사용자등록을 해주세요.</div>
+                        <a href="javascript:;" class="btn" onclick="layerToggle('joinLayer', 'open')"><span>사용자 등록</span></a>
+                    </div>
+                </div>
+
+                <div class="login_form">
+                    <form action="">
+                        <div class="tit">Login</div>
+                        <div class="lf_form">
+                            <div class="sel_ip">
+                                <select name="" id="">
+                                    <option value="">사회적기업진흥원_(종교) 네트워크지원사업 [상위]</option>
+                                </select>
+                            </div>
+                            <div class="lf_box">
+                                <div class="cnt">
+                                    <input type="text" id="id" placeholder="아이디">
+                                    <input type="password" id="password" placeholder="비밀번호">
+                                </div>
+                                <button type="button" class="btn lf_btn">로그인</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="lf_find">
+                        <a href="javascript:;" onclick="layerToggle('findLayer', 'open')">아이디 찾기 / 비밀번호 초기화</a>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+	<!-- //content -->
+
+	<div id="footer">
+		<div class="ft_wrap">
+			<div class="container">
+				<div class="ft_cs">
+					<span class="num">02-3151-5900</span>
+					<div class="tt">
+						<span class="tit">이용문의</span>
+						<span class="time"><strong>(평일)</strong>09:00 - 18:00</span>
+					</div>
+				</div>
+				<div class="lc">
+					<div class="ft_links clearfix">
+						<div class="item"><a href="javascript:;">개인정보처리방침</a></div>
+						<div class="item"><a href="javascript:;">신용정보활용체제</a></div>                    
+						<div class="item"><a href="javascript:;">이메일주소무단수집거부</a></div>
+					</div>
+					<div class="ft_copy">Copyright 2012 Woori Bank. All Rights Reserved.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- 사용자등록 -->
+<div class="layer_form fixed_layer" id="joinLayer" style="display:none;">
+    <div class="layer_box" style="width:770px;">
+        <div class="layer_title">사용자 등록</div>
+        <div class="layer_cnt">
+            <div class="table_wrap">
+                <div class="tw_title">기본정보</div>
+                <div class="tw_table">
+                    <table>
+                        <colgroup>
+                            <col style="width:150px;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>등록구분<span class="required"></span></th>
+                                <td>
+                                    <div class="checks">
+                                        <label class="checkbox"><input type="radio" name="joinType"><span class="icon"></span>담당자</label>
+                                        <label class="checkbox"><input type="radio" name="joinType"><span class="icon"></span>과제참여자</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>아이디<span class="required"></span></th>
+                                <td>
+                                    <div class="ip_group">
+                                        <input type="text"><button type="button" class="btn type1">중복확인</button>
+                                    </div>
+                                    <div class="ip_texts">
+                                        <div class="i">중복확인을 해주세요.</div>
+                                        <div class="ok">사용할 수 있는 아이디입니다.</div>
+                                        <div class="error">이미 사용중인 아이디입니다.</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>비밀번호<span class="required"></span></th>
+                                <td>
+                                    <div class="ip_group">
+                                        <input type="password">
+                                    </div>
+                                    <div class="ip_texts">
+                                        <div class="i">한글, 띄어쓰기, 연속/순차적인 문자 3개이상, 반복문자나 숫자연속 3개이상은 사용금지
+                                            숫자, 영문자(대/소), 특수문자 중 2가지 혼합시 10자리 이상, 3가지 혼합시 8자리 이상</div>
+                                        <div class="ok">사용할 수 있는 비밀번호입니다.</div>
+                                        <div class="error">숫자, 영문자(대/소), 특수문자중 2가지 이상 혼합하여야 합니다.</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>비밀번호 확인<span class="required"></span></th>
+                                <td>
+                                    <div class="ip_group">
+                                        <input type="password">
+                                    </div>
+                                    <div class="ip_texts">
+                                        <div class="ok">비밀번호가 일치합니다.</div>
+                                        <div class="error">비밀번호가 일치하지 않습니다.</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>성명<span class="required"></span></th>
+                                <td>
+                                    <div class="ip_group">
+                                        <input type="text">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>정보제공 동의<span class="required"></span></th>
+                                <td>
+                                    <div class="down_files d_ib">
+                                        <a href="javascript:;">인터넷뱅킹약관</a>
+                                        <a href="javascript:;">전자금융약관</a>
+                                    </div>
+                                    <div class="ip_texts d_ib">
+                                        <div class="i">약관 파일을 다운로드 후 확인해 주세요.</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="ip_texts">
+                        <div class="i">과제참여자일 경우 관리자로 등록하셔도 사용하실 수 없습니다.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table_wrap">
+                <div class="tw_table">
+                    <table>
+                        <colgroup>
+                            <col style="width:150px;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>전화번호</th>
+                                <td>
+                                    <div class="ip_group">
+                                        <select name="" id="" style="width:90px;">
+                                            <option value="">선택</option>
+                                        </select>
+                                        <span class="dash">-</span>
+                                        <input type="tel" style="width:90px;">
+                                        <span class="dash">-</span>
+                                        <input type="tel" style="width:90px;">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>휴대폰번호</th>
+                                <td>
+                                    <div class="ip_group">
+                                        <select name="" id="" style="width:90px;">
+                                            <option value="">선택</option>
+                                        </select>
+                                        <span class="dash">-</span>
+                                        <input type="tel" style="width:90px;">
+                                        <span class="dash">-</span>
+                                        <input type="tel" style="width:90px;">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td>
+                                    <div class="ip_group">
+                                        
+                                        <input type="text" style="width:142px;">
+                                        <span class="dash">@</span>
+                                        <input type="text" style="width:142px;">
+                                        <select name="" id="" style="width:150px;">
+                                            <option value="">선택하세요.</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>소속기관<span class="required"></span></th>
+                                <td>
+                                    <div class="ip_group">
+                                        <input type="text"><button type="button" class="btn type1">조회</button>
+                                    </div>
+                                    <div class="ip_texts">
+                                        <div class="i">"-"제외 사업자번호 입력 후 조회</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="lg_txt_box">
+                <div class="box">
+                    <div class="tit">참고</div>
+                    <div class="cnt">“우리 R&D 관리시스템” 웹회원은 수행기관에서 과제참여자로 (전산상)등록된 자에 한해 가입할 수 있습니다. 
+                        과제참여자로 등록되지 않은 사용자는 웹회원으로 가입할 수 없습니다.
+                        회원가입이 되지 않을 경우 수행기관의 과제참여자 관리 담당자에게 전산상 과제참여자 등록 요청을 하셔야 합니다.</div>
+                </div>
+                <div class="box">
+                    <div class="tit">정보통신망법 개정에 따른 개인정보 삭제 및 자동탈퇴안내</div>
+                    <div class="cnt">정보통신망법 개정에 따른 "개인정보 유효기간 제도" 시행에 따라 최종로그인 날부터 3년이상 접속하지 않을 
+                        경우 자동탈퇴 처리됩니다.</div>
+                </div>
+                <div class="tw_table no_line">
+                    <table>
+                        <colgroup>
+                            <col style="width:150px;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>접속기관 코드</th>
+                                <td>
+                                    <div class="ip_group">
+                                        <input type="text" value="P20176" style="width:130px;" readonly>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="center_btns">
+                <a href="javascript:;" class="btn submit" onclick="layerToggle('joinLayer', 'close')">등록</a>
+                <a href="javascript:;" class="btn">초기화</a>
+                <a href="javascript:;" class="btn cancel" onclick="layerToggle('joinLayer', 'close')">취소</a>
+            </div>
+        </div>
+    </div>
+    <span class="layer_bg" onclick="layerToggle('joinLayer', 'close')"></span>
+</div>
+
+
+<!-- 아이디 찾기/비밀번호 초기화 -->
+<div class="layer_form fixed_layer" id="findLayer" style="display:none;">
+    <div class="layer_box" style="width:770px;">
+        <div class="layer_title">아이디 찾기/비밀번호 초기화</div>
+        <div class="layer_cnt">
+            <div class="tap_wrap">
+                <div class="tap_btns type2">
+                    <a href="javascript:;" class="tap_btn active" onclick="showTab(this)">아이디 찾기</a>
+					<a href="javascript:;" class="tap_btn" onclick="showTab(this)">비밀번호 초기화</a>
+                </div>
+                <div class="tap_boxs">
+                    <div class="tap_box"><!-- 아이디 찾기 -->
+                        <div class="table_wrap">
+                            <div class="tw_table">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:150px;">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>사용자 구분<span class="required"></span></th>
+                                            <td>
+                                                <div class="checks">
+                                                    <label class="checkbox"><input type="radio" name="idFindType"><span class="icon"></span>기관</label>
+                                                    <label class="checkbox"><input type="radio" name="idFindType"><span class="icon"></span>연구원</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>이름<span class="required"></span></th>
+                                            <td>
+                                                <div class="ip_group">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>사업자번호<span class="required"></span></th>
+                                            <td>
+                                                <div class="ip_group">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="ip_texts">
+                                    <div class="i">사업자번호는 '-' 없이 숫자만 입력하세요.<br/>
+                                        접속기관 사업자번호를 입력하세요.</div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="center_btns">
+                            <a href="javascript:;" class="btn submit" onclick="layerToggle('findLayer', 'close')">아이디 찾기</a>
+                            <a href="javascript:;" class="btn cancel" onclick="layerToggle('findLayer', 'close')">취소</a>
+                        </div>
+                    </div>
+                    <div class="tap_box" style="display:none;"><!-- 비밀번호 초기화 -->
+                        <div class="table_wrap">
+                            <div class="tw_table">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:150px;">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>사용자 구분<span class="required"></span></th>
+                                            <td>
+                                                <div class="checks">
+                                                    <label class="checkbox"><input type="radio" name="pwFindType"><span class="icon"></span>기관</label>
+                                                    <label class="checkbox"><input type="radio" name="pwFindType"><span class="icon"></span>연구원</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>아이디<span class="required"></span></th>
+                                            <td>
+                                                <div class="ip_group">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>이름<span class="required"></span></th>
+                                            <td>
+                                                <div class="ip_group">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>사업자번호<span class="required"></span></th>
+                                            <td>
+                                                <div class="ip_group">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="ip_texts">
+                                    <div class="i">사업자번호는 '-' 없이 숫자만 입력하세요.<br/>
+                                        접속기관 사업자번호를 입력하세요.</div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="center_btns">
+                            <a href="javascript:;" class="btn submit" onclick="layerToggle('findLayer', 'close')">비밀번호 초기화</a>
+                            <a href="javascript:;" class="btn cancel" onclick="layerToggle('findLayer', 'close')">취소</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <span class="layer_bg" onclick="layerToggle('findLayer', 'close')"></span>
+</div>
+
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>	
