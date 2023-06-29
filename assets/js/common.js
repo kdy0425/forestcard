@@ -1,17 +1,17 @@
-//전체메뉴 컨트롤
-const navAllBtn = document.querySelector('.nav_all');
-const nav = document.querySelector('#nav');
-navAllBtn.addEventListener('click', function () {
-	nav.classList.toggle('active');
-	navAllBtn.classList.toggle('active');
-});
-const body = document.querySelector('body');
-body.addEventListener('click', function (event) {
-	if (event.target.closest('.hd_bottom') || event.target.closest('#nav') || event.target.closest('.nav_all')) {
-		return;
-	}
-	nav.classList.remove('active');
-	navAllBtn.classList.remove('active');
+//푸터 family sites
+$(document).ready(function(){
+    $(".family_sites_open").on("click", function(e) {
+        e.stopPropagation();
+        $(this).toggleClass("active");
+        $(".sites").toggle();
+    });
+    $(document).on("click", function(event) {
+        var $trigger = $(".family_sites");
+        if($trigger !== event.target && !$trigger.has(event.target).length) {
+            $(".family_sites_open").removeClass("active");
+            $(".sites").hide();
+        }    
+    });
 });
 
 //tap box 컨트롤
@@ -45,29 +45,6 @@ function createClearButton(inputElement) {
 
 	return button;
 }
-
-function onInputChange(event) {
-	const inputElement = event.target;
-	const clearButton = inputElement.parentElement.querySelector('.ip_clear');
-
-	if (inputElement.value && !clearButton) {
-		inputElement.parentElement.appendChild(createClearButton(inputElement));
-	} else if (!inputElement.value && clearButton) {
-		clearButton.remove();
-	}
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-	const inputs = document.querySelectorAll('.ip .clear');
-
-	inputs.forEach((input) => {
-		input.addEventListener('input', onInputChange);
-
-		if (input.value) {
-			input.parentElement.appendChild(createClearButton(input));
-		}
-	});
-});
 
 //datepicker 호출 yyyy mm dd
 document.addEventListener("DOMContentLoaded", function () {
