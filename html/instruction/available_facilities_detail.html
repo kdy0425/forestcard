@@ -23,12 +23,11 @@
 <link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
 <link href="https://cdn.jsdelivr.net/npm/typeface-poppins@1.1.13/index.min.css" rel="stylesheet"><!-- poppins font -->
 <script src="../../assets/js/jquery-3.6.4.min.js"></script>
-<script src="../../assets/js/slick.js"></script>
 </head>
 <body>
 
 <!-- wrap -->
-<div id="layout" class="main"> <!-- 메인에서만 main 클래스 -->
+<div id="layout">
 	<h1 id="header_h1">산림복지서비스이용권</h1>
 	<div id="skip_to_container">
 		<!-- skip navigation -->
@@ -38,7 +37,7 @@
 	<hr class="hide" />	
 
 	<!-- header -->
-	<div id="header" class="main_header">
+	<div id="header">
 		<div id="hd_wrap">
             <div id="logo"><a href="javascript:;">숲이 주는 즐거움 산림복지서비스이용권</a></div>
             <div class="nav_wrap">
@@ -49,7 +48,7 @@
                             <li><a href="javascript:;">서비스 제공자</a></li>
                         </ul>
                     </li>
-                    <li><a href="javascript:;">사용안내</a>
+                    <li><a href="javascript:;" class="active">사용안내</a>
                         <ul>
                             <li><a href="javascript:;">이용권 사용방법</a></li>
                             <li><a href="javascript:;">사용가능 시설안내</a></li>
@@ -94,85 +93,125 @@
 	<!-- //header -->	
 
 	<!-- content -->
-	<div id="content" class="main_content">
+	<div id="content" class="sub_content">
         <div class="container">
-            <div class="main_title">
-                <h2>산림복지서비스이용권</h2>
-                <div class="txt">산림복지소외자가 산림복지서비스를 이용할 수 있도록<br/>
-                    이용권을 지원하고 있습니다.</div>
-                <a href="javascript:;" class="link">이용권 신청하기</a>
-            </div>
-            <div class="main_links">
-                <div class="links1">
-                    <a href="javascript:;" class="business">이용권<br/>사업안내</a>
-                    <a href="javascript:;" class="use">이용권<br/>사용방법</a>
-                    <a href="javascript:;" class="facilities">사용가능<br/>시설안내</a>
-                    <a href="javascript:;" class="balance">잔액확인</a>
-                    <a href="javascript:;" class="notification">알림서비스<br/>신청</a>
-                    <a href="javascript:;" class="chrage">이용권<br/>자동충전</a>
+            <h2 class="page_title">사용가능 시설안내</h2>
+            <div class="history">
+                <div class="item home"><a href="javascript:;">홈으로</a></div>
+                <div class="item has_child">
+                    <a href="javascript:;">사용안내</a>
+                    <ul>
+                        <li><a href="javascript:;">사업안내</a></li>
+                        <li><a href="javascript:;">사용안내</a></li>
+                        <li><a href="javascript:;">이용권신청</a></li>
+                        <li><a href="javascript:;">이용권사용정보</a></li>
+                        <li><a href="javascript:;">게시판</a></li>
+                    </ul>
                 </div>
-                <div class="links2">
-                    <a href="javascript:;" class="sanlim">
-                        <span class="tit">숲<span class="roboto">e</span>랑</span>
-                        <span class="txt">산림복지서비스 통합예약</span>
-                    </a>
-                    <a href="javascript:;" class="jayeon">
-                        <span class="tit">숲나들<span class="roboto">e</span></span>
-                        <span class="txt">자연휴양림 온라인예약</span>
-                    </a>
+                <div class="item has_child">
+                    <a href="javascript:;">사용가능 시설안내</a>
+                    <ul>
+                        <li><a href="javascript:;">이용권 사용방법</a></li>
+                        <li><a href="javascript:;">사용가능 시설안내</a></li>
+                        <li><a href="javascript:;">제공자 정보공개</a></li>
+                    </ul>
                 </div>
-                <div class="mb_slider gmarketsans">
-                    <div class="slider">
-                        <div class="slide_item" style="color:#052100;background-color:rgba(121,201,171,.78);background-image: url('../../assets/images/mb_slider_img1.png');">
-                            <div class="tit">2023년 과학문화바우처</div>
-                            <div class="txt"><strong>4.25.</strong>(화) - <strong>5.15.</strong>(월)</div>
-                            <a href="javacript:;" class="link" style="background-color:#0F7354;">자세히 보기</a>
-                        </div>
-                        <div class="slide_item" style="color:#052100;background-color:rgba(121, 153, 201, 0.78);background-image: url('../../assets/images/mb_slider_img1.png');">
-                            <div class="tit">2023년 과학문화바우처</div>
-                            <div class="txt"><strong>4.25.</strong>(화) - <strong>5.15.</strong>(월)</div>
-                            <a href="javacript:;" class="link" style="background-color:#0f3273;">자세히 보기</a>
-                        </div>
-                        <div class="slide_item" style="color:#052100;background-color:rgba(201, 186, 121, 0.78);background-image: url('../../assets/images/mb_slider_img1.png');">
-                            <div class="tit">2023년 과학문화바우처</div>
-                            <div class="txt"><strong>4.25.</strong>(화) - <strong>5.15.</strong>(월)</div>
-                            <a href="javacript:;" class="link" style="background-color:#55730f;">자세히 보기</a>
-                        </div>
-                    </div>
-                    <div class="paging_info">
-                        <button type="button" class="puase" title="일시정지">일시정지</button>
-                        <button type="button" class="play" title="재생">재생</button>
-                        <button type="button" class="prev" title="이전">이전</button>
-                        <button type="button" class="next" title="다음">다음</button>
+                <div class="share_box">
+                    <button type="button" class="share_open">공유하기</button>
+                    <div class="share_list">
+                        <div class="share_item"><a href="javascript:;" class="kakao">카카오<br/>공유하기</a></div>
+                        <div class="share_item"><a href="javascript:;" class="facebook">페이스북<br/>공유하기</a></div>
+                        <div class="share_item"><a href="javascript:;" class="twitter">트위터<br/>공유하기</a></div>
+                        <div class="share_item"><a href="javascript:;" class="telegram">텔레그램<br/>공유하기</a></div>
+                        <div class="share_item"><a href="javascript:;" class="url" data-url="https://naver.com/123">url<br/>복사하기</a></div>
                     </div>
                 </div>
             </div>
+
+            <div class="facilities_detail">
+                <div class="facilities_map">
+                    <!-- 임시 지도 -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12788.20463397598!2d129.233304!3d36.7453431!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356125fec4af1e17%3A0xba3458d16fced35e!2z6rKA66eI7IKw7J6Q7Jew7Zy07JaR66a8!5e0!3m2!1sko!2skr!4v1688294355873!5m2!1sko!2skr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- <div id="map"></div>
+                    <script>
+                    function initMap() {
+                        var uluru = {lat: 36.669684, lng: 129.112758};
+                        var map = new google.maps.Map(
+                            document.getElementById('map'), {zoom: 4, center: uluru});
+                        var marker = new google.maps.Marker({position: uluru, map: map});
+                    }
+                    </script>
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=키값&callback=initMap"></script> -->
+                </div>
+                <div class="facilities_cnt">
+                    <div class="name">검마산 자연휴양림</div>
+                    <div class="info">
+                        <div class="row ads">
+                            <div class="tit">주소</div>
+                            <div class="cnt">36524 경상북도 영양군 수비면 검마산길 191 검마산자연휴양림</div>
+                        </div>
+                        <div class="row site">
+                            <div class="tit">홈페이지</div>
+                            <div class="cnt"><a href="www.foresttrip.go.kr/indvz/main.do?hmpgId=0184" target="_blank">www.foresttrip.go.kr/indvz/main.do?hmpgId=0184</a></div>
+                        </div>
+                        <div class="row tel">
+                            <div class="tit">연락처</div>
+                            <div class="cnt">054-682-9009 </div>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="find_way">길찾기</a>
+                </div>
+            </div>
+
+            <div class="info_box_wrap">
+                <div class="info_box">
+                    <div class="info_title">시설소개</div>
+                    <div class="info_cnt dotted">
+                       <ul class="detail_photos">
+                            <li style="background-image:url('../../assets/images/dummy/detail_photos_img1.png');"></li> <!-- background로 사용 시 -->
+                            <li style="background-image:url('../../assets/images/dummy/detail_photos_img2.png');"></li>
+                            <li style="background-image:url('../../assets/images/dummy/detail_photos_img1.png');"></li>
+                            <li style="background-image:url('../../assets/images/dummy/detail_photos_img2.png');"></li>
+                            <!-- <li><img src="../../assets/images/dummy/detail_photos_img2.png" alt=""></li> -->  <!-- img태그로 사용 시 -->
+                        </ul>
+                    </div>
+
+                    <div class="info_table mgt85">
+                        <table>
+                            <colgroup>
+                                <col style="width:200px;">
+                                <col style="">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>사용가능여부</th>
+                                    <td>
+                                        <span class="dt_icon sb">숙박 ( <strong>O</strong> )</span>
+                                        <span class="dt_icon pg">프로그램 ( <strong>O</strong> )</span>
+                                        <span class="dt_icon sd">식당 ( <strong>X</strong> )</span>
+                                        <span class="dt_icon cs">취사 ( <strong>O</strong> )</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>유료여부</th>
+                                    <td>유료</td>
+                                </tr>
+                                <tr>
+                                    <th>시설소개</th>
+                                    <td>태백산의 지맥이 동으로 내려와 백암산으로 뻗어가는 중간에 위치한 검마산 자락에 자리하고 있는 검마산 자연휴양림. 이곳의 임상은 대부분 침·활엽수 중경목 이상으로 구역 내 소나무 숲은 미림 보존 단지로 지정될 만큼 수려함을 자랑하고, 잘 조성된 야생 화원과 숲 탐방길이 특히 인상적이다.  </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form_btns">
+                <a href="javascript:;" class="btn">목록</a>
+            </div>
+
         </div>
-        <div class="main_cs">
-            <div class="container">
-                <div class="cs_boxes">
-                    <div class="box call">
-                        <div class="tit">한국산림복지진흥원 고객센터</div>
-                        <div class="cnt poppins">1544-3228</div>
-                    </div>
-                    <div class="box call">
-                        <div class="tit">신한카드 문의</div>
-                        <div class="cnt poppins">1544-7000</div>
-                    </div>
-                    <div class="box lst">
-                        <a href="javascript:;" class="tit">공지사항</a>
-                        <a href="javascript:;" class="lst_item">2023년 산림복지서비스이용권 이용자 선정 결과 발표 안내</a>
-                        <a href="javascript:;" class="lst_more">더 보기</a>
-                    </div>
-                    <div class="box lst">
-                        <a href="javascript:;" class="tit">정보마당</a>
-                        <a href="javascript:;" class="lst_item">[제39호] 무등산편백자연휴양림 / 단체대상모집</a>
-                        <a href="javascript:;" class="lst_more">더 보기</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-	</div>
+    </div>
 	<!-- //content -->
 
 	<div id="footer">
@@ -211,28 +250,5 @@
 	</div>
 </div>
 <script src="../../assets/js/common.js"></script>
-
-<script>
-//메인 배너 슬라이더
-$('.mb_slider .slider').slick({
-    infinite: true,
-    autoplay: true,
-    arrows: true,
-    prevArrow: $('.mb_slider .prev'),
-    nextArrow: $('.mb_slider .next'),
-});
-$(document).on('click', '.mb_slider .puase', function(){
-    $('.mb_slider .slider').slick('slickPause');
-    $(this).hide();
-    $('.mb_slider .paging_info .play').show();
-});
-
-$(document).on('click', '.mb_slider .play', function(){
-    $('.mb_slider .slider').slick('slickPlay');
-    $(this).hide();
-    $('.mb_slider .paging_info .puase').show();
-});
-//홍보소식배너 끝
-</script>
 </body>
 </html>	

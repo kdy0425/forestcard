@@ -23,12 +23,11 @@
 <link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
 <link href="https://cdn.jsdelivr.net/npm/typeface-poppins@1.1.13/index.min.css" rel="stylesheet"><!-- poppins font -->
 <script src="../../assets/js/jquery-3.6.4.min.js"></script>
-<script src="../../assets/js/slick.js"></script>
 </head>
 <body>
 
 <!-- wrap -->
-<div id="layout" class="main"> <!-- 메인에서만 main 클래스 -->
+<div id="layout">
 	<h1 id="header_h1">산림복지서비스이용권</h1>
 	<div id="skip_to_container">
 		<!-- skip navigation -->
@@ -38,7 +37,7 @@
 	<hr class="hide" />	
 
 	<!-- header -->
-	<div id="header" class="main_header">
+	<div id="header">
 		<div id="hd_wrap">
             <div id="logo"><a href="javascript:;">숲이 주는 즐거움 산림복지서비스이용권</a></div>
             <div class="nav_wrap">
@@ -56,7 +55,7 @@
                             <li><a href="javascript:;">제공자 정보공개</a></li>
                         </ul>
                     </li>
-                    <li><a href="javascript:;">이용권신청</a>
+                    <li><a href="javascript:;"class="active">이용권신청</a>
                         <ul>
                             <li><a href="javascript:;">개인이용권신청</a></li>
                             <li><a href="javascript:;">개인이용권선정</a></li>
@@ -94,85 +93,119 @@
 	<!-- //header -->	
 
 	<!-- content -->
-	<div id="content" class="main_content">
+	<div id="content" class="sub_content">
         <div class="container">
-            <div class="main_title">
-                <h2>산림복지서비스이용권</h2>
-                <div class="txt">산림복지소외자가 산림복지서비스를 이용할 수 있도록<br/>
-                    이용권을 지원하고 있습니다.</div>
-                <a href="javascript:;" class="link">이용권 신청하기</a>
+            <h2 class="page_title">개인이용권신청</h2>
+            <div class="history">
+                <div class="item home"><a href="javascript:;">홈으로</a></div>
+                <div class="item has_child">
+                    <a href="javascript:;">이용권신청</a>
+                    <ul>
+                        <li><a href="javascript:;">사업안내</a></li>
+                        <li><a href="javascript:;">사용안내</a></li>
+                        <li><a href="javascript:;">이용권신청</a></li>
+                        <li><a href="javascript:;">이용권사용정보</a></li>
+                        <li><a href="javascript:;">게시판</a></li>
+                    </ul>
+                </div>
+                <div class="item has_child">
+                    <a href="javascript:;">개인이용권신청</a>
+                    <ul>
+                        <li><a href="javascript:;">개인이용권신청</a></li>
+                        <li><a href="javascript:;">개인이용권선정</a></li>
+                        <li><a href="javascript:;">점자스티커 신청</a></li>
+                    </ul>
+                </div>
+                <div class="share_box">
+                    <button type="button" class="share_open">공유하기</button>
+                    <div class="share_list">
+                        <div class="share_item"><a href="javascript:;" class="kakao">카카오<br/>공유하기</a></div>
+                        <div class="share_item"><a href="javascript:;" class="facebook">페이스북<br/>공유하기</a></div>
+                        <div class="share_item"><a href="javascript:;" class="twitter">트위터<br/>공유하기</a></div>
+                        <div class="share_item"><a href="javascript:;" class="telegram">텔레그램<br/>공유하기</a></div>
+                        <div class="share_item"><a href="javascript:;" class="url" data-url="https://naver.com/123">url<br/>복사하기</a></div>
+                    </div>
+                </div>
             </div>
-            <div class="main_links">
-                <div class="links1">
-                    <a href="javascript:;" class="business">이용권<br/>사업안내</a>
-                    <a href="javascript:;" class="use">이용권<br/>사용방법</a>
-                    <a href="javascript:;" class="facilities">사용가능<br/>시설안내</a>
-                    <a href="javascript:;" class="balance">잔액확인</a>
-                    <a href="javascript:;" class="notification">알림서비스<br/>신청</a>
-                    <a href="javascript:;" class="chrage">이용권<br/>자동충전</a>
+
+            <div class="page_title2">이용약관 동의 <span>현재 국민참여 모의 신청접수 중입니다.</span></div>
+            <div class="sign_step">
+                <div class="item terms">
+                    <span class="tit">이용약관 동의</span>
+                    <span class="step">Step. 01</span>
                 </div>
-                <div class="links2">
-                    <a href="javascript:;" class="sanlim">
-                        <span class="tit">숲<span class="roboto">e</span>랑</span>
-                        <span class="txt">산림복지서비스 통합예약</span>
-                    </a>
-                    <a href="javascript:;" class="jayeon">
-                        <span class="tit">숲나들<span class="roboto">e</span></span>
-                        <span class="txt">자연휴양림 온라인예약</span>
-                    </a>
+                <div class="item certify active">
+                    <span class="tit">본인인증</span>
+                    <span class="step">Step. 02</span>
                 </div>
-                <div class="mb_slider gmarketsans">
-                    <div class="slider">
-                        <div class="slide_item" style="color:#052100;background-color:rgba(121,201,171,.78);background-image: url('../../assets/images/mb_slider_img1.png');">
-                            <div class="tit">2023년 과학문화바우처</div>
-                            <div class="txt"><strong>4.25.</strong>(화) - <strong>5.15.</strong>(월)</div>
-                            <a href="javacript:;" class="link" style="background-color:#0F7354;">자세히 보기</a>
-                        </div>
-                        <div class="slide_item" style="color:#052100;background-color:rgba(121, 153, 201, 0.78);background-image: url('../../assets/images/mb_slider_img1.png');">
-                            <div class="tit">2023년 과학문화바우처</div>
-                            <div class="txt"><strong>4.25.</strong>(화) - <strong>5.15.</strong>(월)</div>
-                            <a href="javacript:;" class="link" style="background-color:#0f3273;">자세히 보기</a>
-                        </div>
-                        <div class="slide_item" style="color:#052100;background-color:rgba(201, 186, 121, 0.78);background-image: url('../../assets/images/mb_slider_img1.png');">
-                            <div class="tit">2023년 과학문화바우처</div>
-                            <div class="txt"><strong>4.25.</strong>(화) - <strong>5.15.</strong>(월)</div>
-                            <a href="javacript:;" class="link" style="background-color:#55730f;">자세히 보기</a>
-                        </div>
-                    </div>
-                    <div class="paging_info">
-                        <button type="button" class="puase" title="일시정지">일시정지</button>
-                        <button type="button" class="play" title="재생">재생</button>
-                        <button type="button" class="prev" title="이전">이전</button>
-                        <button type="button" class="next" title="다음">다음</button>
+                <div class="item form">
+                    <span class="tit">정보입력</span>
+                    <span class="step">Step. 03</span>
+                </div>
+            </div>
+
+            <div class="terms_agree">
+                <div class="terms">
+                    <button type="button" class="terms_toggle active">기타사항</button>
+                    <div class="terms_cnt">
+                        <p>* 산림복지서비스이용권지원시스템 이용권 발급 신청시, 본인인증을 통한 본인확인 절차는 필수입니다.</p>
+                        <p>* 휴대폰인증시 Nice 평가 정보에서 인증받은 휴대전화번호를 사용하고 있습니다.</p>
+                        <p><strong>* 기존에 이미 신청한 신청서가 있을 경우, 로그인 후 마이페이지에서 ‘신청서정보연결’을 하셔야 신청내역을 확인할 수 있습니다.</strong></p>
                     </div>
                 </div>
+            </div>
+
+            <div class="form_wrap mgt50">
+                <div class="form_box">
+                    <div class="title">정보입력</div>
+                    <div class="form_table">
+                        <table>
+                            <colgroup>
+                                <col style="width:200px;">
+                                <col style="">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>신청유형</th>
+                                    <td>
+                                        <div class="ip_group">
+                                            <select name="" id="" class="size_lg">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>인증인 이름</th>
+                                    <td>
+                                        <div class="ip_group">
+                                            <input type="text" placeholder="성명" class="size_lg">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>주민등록번호</th>
+                                    <td>
+                                        <div class="ip_group">
+                                            <input type="tel" placeholder="생년월일" maxlength="6" class="size_md">
+                                            <span class="dash">-</span>
+                                            <input type="password" placeholder="주민번호 뒤 7자리" maxlength="7" class="size_md">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="lblue_arrow_txt mgt25">[공동인증 (한컴인증)]이 되지 않을 경우, [휴대전화인증]을 클릭하신 후 [공동인증(나이스인증)]을 진행해주시기 바랍니다.</div>
+
+            <div class="form_btns">
+                <a href="javascript:;" class="btn submit">휴대전화 인증</a>
+                <a href="javascript:;" class="btn">공동인증서 인증</a>
             </div>
         </div>
-        <div class="main_cs">
-            <div class="container">
-                <div class="cs_boxes">
-                    <div class="box call">
-                        <div class="tit">한국산림복지진흥원 고객센터</div>
-                        <div class="cnt poppins">1544-3228</div>
-                    </div>
-                    <div class="box call">
-                        <div class="tit">신한카드 문의</div>
-                        <div class="cnt poppins">1544-7000</div>
-                    </div>
-                    <div class="box lst">
-                        <a href="javascript:;" class="tit">공지사항</a>
-                        <a href="javascript:;" class="lst_item">2023년 산림복지서비스이용권 이용자 선정 결과 발표 안내</a>
-                        <a href="javascript:;" class="lst_more">더 보기</a>
-                    </div>
-                    <div class="box lst">
-                        <a href="javascript:;" class="tit">정보마당</a>
-                        <a href="javascript:;" class="lst_item">[제39호] 무등산편백자연휴양림 / 단체대상모집</a>
-                        <a href="javascript:;" class="lst_more">더 보기</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-	</div>
+    </div>
 	<!-- //content -->
 
 	<div id="footer">
@@ -211,28 +244,11 @@
 	</div>
 </div>
 <script src="../../assets/js/common.js"></script>
-
 <script>
-//메인 배너 슬라이더
-$('.mb_slider .slider').slick({
-    infinite: true,
-    autoplay: true,
-    arrows: true,
-    prevArrow: $('.mb_slider .prev'),
-    nextArrow: $('.mb_slider .next'),
+$('.terms_toggle').click(function(){
+    $(this).toggleClass('active');
+    $(this).closest('.terms').find('.terms_cnt').slideToggle();
 });
-$(document).on('click', '.mb_slider .puase', function(){
-    $('.mb_slider .slider').slick('slickPause');
-    $(this).hide();
-    $('.mb_slider .paging_info .play').show();
-});
-
-$(document).on('click', '.mb_slider .play', function(){
-    $('.mb_slider .slider').slick('slickPlay');
-    $(this).hide();
-    $('.mb_slider .paging_info .puase').show();
-});
-//홍보소식배너 끝
 </script>
 </body>
 </html>	

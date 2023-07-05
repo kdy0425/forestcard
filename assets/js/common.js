@@ -1,18 +1,94 @@
-//푸터 family sites
-$(document).ready(function(){
-    $(".family_sites_open").on("click", function(e) {
-        e.stopPropagation();
-        $(this).toggleClass("active");
-        $(".sites").toggle();
-    });
-    $(document).on("click", function(event) {
-        var $trigger = $(".family_sites");
-        if($trigger !== event.target && !$trigger.has(event.target).length) {
-            $(".family_sites_open").removeClass("active");
-            $(".sites").hide();
-        }    
-    });
+//헤더 메뉴 효과
+var slideDownTimeout, slideUpTimeout;
+$(".nav_wrap").on("mouseenter focusin", function(){
+	clearTimeout(slideUpTimeout);
+	var maxHeight = 0;
+	$("#nav > li > ul").each(function(){
+		var thisHeight = $(this).outerHeight();
+		if (thisHeight > maxHeight) { 
+			maxHeight = thisHeight; 
+		}
+	});
+	$('#header').addClass("active");
+	var that = $('#header');
+	slideDownTimeout = setTimeout(function() {
+		$(".nav_bg").stop().outerHeight(maxHeight).slideDown();
+		$("#nav > li > ul").outerHeight(maxHeight).stop().slideDown();
+	}, 100);
 });
+
+$(".nav_wrap").on("mouseleave focusout", function(){
+	clearTimeout(slideDownTimeout);
+	$(".nav_bg").stop().slideUp(function(){
+		$(this).outerHeight(0);
+	});
+	$("#nav > li > ul").stop().slideUp(function(){
+		$(this).outerHeight('auto'); // Reset height to auto
+	});
+	var that = $('#header');
+	slideUpTimeout = setTimeout(function() {
+		that.removeClass("active");
+	}, 350);
+});
+  
+//푸터 family sites
+$(".family_sites_open").on("click", function(e) {
+	e.stopPropagation();
+	$(this).toggleClass("active");
+	$(".sites").toggle();
+});
+$(document).on("click", function(event) {
+	var $trigger = $(".family_sites");
+	if($trigger !== event.target && !$trigger.has(event.target).length) {
+		$(".family_sites_open").removeClass("active");
+		$(".sites").hide();
+	}    
+});
+
+//공유하기 버튼
+$(".share_open").on("click", function(e) {
+	e.stopPropagation();
+	$(this).toggleClass("active");
+	$(".share_list").toggle();
+});
+$(document).on("click", function(event) {
+	var $trigger = $(".share_list");
+	if($trigger !== event.target && !$trigger.has(event.target).length) {
+		$(".share_open").removeClass("active");
+		$(".share_list").hide();
+	}    
+});
+
+//url복사
+$('.share_item .url').click(function(event){
+	event.preventDefault();
+	
+	let url = $(this).attr('data-url');
+	if(navigator.clipboard) {
+		navigator.clipboard.writeText(url).then(function() {
+			alert('url을 복사했습니다');
+		})
+		.catch(function(error) {
+			copyToClipboardFallback(url);
+		});
+	} else {
+		copyToClipboardFallback(url);
+	}
+});
+
+function copyToClipboardFallback(url) {
+	var textarea = document.createElement('textarea');
+	textarea.value = url;
+	document.body.appendChild(textarea);
+	textarea.select();
+	try {
+		document.execCommand('copy');
+		alert('url을 복사했습니다');
+	} catch (err) {
+		alert('url 복사에 실패했습니다. 직접 복사해주세요. <br/>'+ url);
+	}
+	document.body.removeChild(textarea);
+}
 
 //tap box 컨트롤
 function showTab(btn) {
@@ -31,6 +107,20 @@ function showTab(btn) {
 	}
 	btn.classList.add("active");
 }
+
+//비밀번호 보기
+$('.password_show').on('click', function(){
+	var $passwordInput = $(this).siblings('input[type="password"], input[type="text"]');
+	var inputType = $passwordInput.attr('type');
+	
+	if (inputType == 'password') {
+		$passwordInput.attr('type', 'text');
+	} else {
+		$passwordInput.attr('type', 'password');
+	}
+	
+	$(this).toggleClass('active');
+});
 
 //input에 clear클래스있으면 지우는 기능활성화
 function createClearButton(inputElement) {
