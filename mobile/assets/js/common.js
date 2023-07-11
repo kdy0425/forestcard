@@ -31,11 +31,32 @@ $(document).on("click", function(event) {
 	}
 });
 
+//sub nav
+$(".history .has_child > a").click(function(event){
+	event.stopPropagation(); 
+	$(this).toggleClass("active");
+	$(this).next('ul').slideToggle();
+	$(this).parent().siblings().children('ul').slideUp(); 
+	$(this).parent().siblings().children('a').removeClass("active"); 
+	$(".share_open").removeClass("active");
+	$(".share_list").hide();
+});
+
+$(document).on("click", function(event) {
+	var $trigger = $(".history .has_child > a");
+	if($trigger !== event.target && !$trigger.has(event.target).length) {
+		$(".history .has_child > a").removeClass("active");
+		$(".history .has_child ul").slideUp();
+	}
+});
+
 //공유하기 버튼
 $(".share_open").on("click", function(e) {
-	e.stopPropagation();
 	$(this).toggleClass("active");
 	$(".share_list").toggle();
+	$(".history .has_child > a").removeClass("active");
+	$(".history .has_child ul").slideUp();
+	e.stopPropagation();
 });
 $(document).on("click", function(event) {
 	var $trigger = $(".share_list");
