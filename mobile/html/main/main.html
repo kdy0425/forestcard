@@ -97,7 +97,8 @@
 	<!-- //header -->
 
 	<!-- content -->
-	<div id="content" class="main_content">
+	<div id="content">
+        <span class="main_bg"></span>
         <div class="container">
             <div class="main_title">
                 <h2>산림복지서비스이용권</h2>
@@ -150,17 +151,16 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="main_cs">
-            <div class="container">
+
+            <div class="main_cs">
                 <div class="cs_boxes">
                     <div class="box call">
                         <div class="tit">한국산림복지진흥원 고객센터</div>
-                        <div class="cnt poppins">1544-3228</div>
+                        <div class="cnt poppins"><a href="tel:1544-3228">1544-3228</a></div>
                     </div>
                     <div class="box call">
                         <div class="tit">신한카드 문의</div>
-                        <div class="cnt poppins">1544-7000</div>
+                        <div class="cnt poppins"><a href="tel:1544-7000">1544-7000</a></div>
                     </div>
                     <div class="box lst">
                         <a href="javascript:;" class="tit">공지사항</a>
@@ -214,6 +214,14 @@
 <script src="../../assets/js/common.js"></script>
 
 <script>
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 80) { 
+        $('#header').removeClass('main_header'); 
+    } else { 
+        $('#header').addClass('main_header');
+    }
+});
+    
 //메인 배너 슬라이더
 $('.mb_slider .slider').slick({
     infinite: true,
