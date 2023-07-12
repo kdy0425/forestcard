@@ -97,6 +97,12 @@ function copyToClipboardFallback(url) {
 	document.body.removeChild(textarea);
 }
 
+//알려드립니다 토글
+$(".ct_lblue_toggle .btn").click(function(){
+	$(this).toggleClass("active");
+	$(this).next('ul').slideToggle();
+});
+
 //tap box 컨트롤
 function showTab(btn) {
 	let index = Array.prototype.indexOf.call(btn.parentNode.children, btn);

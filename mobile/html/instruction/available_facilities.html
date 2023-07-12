@@ -141,30 +141,30 @@
                         </div>
                     </div>
                     <div class="sel_area">
-                        <div class="item item_area" style="width:114px;">
-                            <span class="tit">권역별</span>
-                            <select name="" id="">
-                                <option value="">전체</option>
-                            </select>
+                        <div class="item_area">
+                            <div class="item">
+                                <span class="tit">권역별</span>
+                                <select name="" id="">
+                                    <option value="">전체</option>
+                                </select>
+                            </div>
+                            <div class="item">
+                                <span class="tit">지역별</span>
+                                <select name="" id="">
+                                    <option value="">전체</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="item item_area" style="width:94px;">
-                            <span class="tit">지역별</span>
-                            <select name="" id="">
-                                <option value="">전체</option>
-                            </select>
-                        </div>
-                        <div class="item_nor" style="width:550px;" >
-                            <div class="item" style="width:216px;">
+                        <div class="item_nor" >
+                            <div class="item">
                                 <select name="" id="">
                                     <option value="">시설종류</option>
                                 </select>
                             </div>
-                            <div class="item" style="width:154px;">
+                            <div class="item">
                                 <select name="" id="">
                                     <option value="">숙박여부</option>
                                 </select>
-                            </div>
-                            <div class="item" style="width:156px;">
                                 <select name="" id="">
                                     <option value="">유료여부</option>
                                 </select>
@@ -177,137 +177,65 @@
                 </form>
             </div>
 
-            <div class="ct_lblue_txt mgt25">사회적 거리두기 시 시설별로 운영현황이 변경될 수 있으니 사용전 반드시 전화로 확인하시기 바랍니다.</div>
+            <div class="ct_lblue_toggle">
+                <button type="button" class="btn">알려드립니다</button>
+                <ul class="ct_lblue_list">
+                    <li>사회적 거리두기 시 시설별로 운영현황이 변경될 수 있으니 사용전 반드시 전화로 확인하시기 바랍니다.</li>
+                </ul>
+            </div>
 
-            <div class="bl_wrap mgt80">
+            <div class="bl_wrap mgt60">
                 <div class="bl_total">
-                    <strong>전체지역</strong>의 이용시설 목록입니다 총 <span class="count">2,345</span> 개의 시설이 있습니다.
+                    <strong>전체지역</strong>의 이용시설 목록입니다 
+                    <div class="total">총 <span class="count">2,345</span> 개의 시설이 있습니다.</div>
                 </div>
                 <div class="bl_table sm">
                     <table>
                         <colgroup>
-                            <col style="width:100px;">
-                            <col style="width:100px;">
-                            <col style="width:140px;">
-                            <col style="width:200px;">
-                            <col style="width:240px;">
-                            <col style="width:240px;">
-                            <col style="width:200px;">
-                            <col style="width:60px;">
+                            <col style="width:55px;">
+                            <col style="">
+                            <col style="width:95px;">
+                            <col style="width:80px;">
                         </colgroup>
                         <thead>
                             <tr>
-                                <th>권역</th>
-                                <th>지역</th>
-                                <th>시설구분</th>
-                                <th>시설명</th>
-                                <th>주소</th>
-                                <th>숙박여부/시설유료여부</th>
-                                <th>시설종류</th>
-                                <th>정보</th>
+                                <th>권역<br/>/지역</th>
+                                <th>시설</th>
+                                <th>시설구분<br/>/이용정보</th>
+                                <th>시설종류<br/>/홈페이지</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="left">
                             <tr>
-                                <td>강원권</td>
-                                <td>강원</td>
-                                <td>국립휴양원</td>
-                                <td>가리왕산자연휴양림</td>
-                                <td>26119 강원도 정선군 정선읍 가리왕산로 707 가리왕산자연휴양림</td>
-                                <td>숙박여부 : 가능<br/>시설이용 : 유료</td>
-                                <td>시설종류</td>
-                                <td><a href="./available_facilities_detail.html" class="bl_btn1 sm">보기</a></td>
-                             </tr>
-                             <tr>
-                                <td>강원권</td>
-                                <td>강원</td>
-                                <td>국립휴양원</td>
-                                <td>가리왕산자연휴양림</td>
-                                <td>26119 강원도 정선군 정선읍 가리왕산로 707 가리왕산자연휴양림</td>
-                                <td>숙박여부 : 가능<br/>시설이용 : 유료</td>
-                                <td>시설종류</td>
-                                <td><a href="./available_facilities_detail.html" class="bl_btn1 sm">보기</a></td>
-                             </tr>
-                             <tr>
-                                <td>강원권</td>
-                                <td>강원</td>
-                                <td>국립휴양원</td>
-                                <td>가리왕산자연휴양림</td>
-                                <td>26119 강원도 정선군 정선읍 가리왕산로 707 가리왕산자연휴양림</td>
-                                <td>숙박여부 : 가능<br/>시설이용 : 유료</td>
-                                <td>시설종류</td>
-                                <td><a href="./available_facilities_detail.html" class="bl_btn1 sm">보기</a></td>
-                             </tr>
-                             <tr>
-                                <td>강원권</td>
-                                <td>강원</td>
-                                <td>국립휴양원</td>
-                                <td>가리왕산자연휴양림</td>
-                                <td>26119 강원도 정선군 정선읍 가리왕산로 707 가리왕산자연휴양림</td>
-                                <td>숙박여부 : 가능<br/>시설이용 : 유료</td>
-                                <td>시설종류</td>
-                                <td><a href="./available_facilities_detail.html" class="bl_btn1 sm">보기</a></td>
-                             </tr>
-                             <tr>
-                                <td>강원권</td>
-                                <td>강원</td>
-                                <td>국립휴양원</td>
-                                <td>가리왕산자연휴양림</td>
-                                <td>26119 강원도 정선군 정선읍 가리왕산로 707 가리왕산자연휴양림</td>
-                                <td>숙박여부 : 가능<br/>시설이용 : 유료</td>
-                                <td>시설종류</td>
-                                <td><a href="./available_facilities_detail.html" class="bl_btn1 sm">보기</a></td>
-                             </tr>
-                             <tr>
-                                <td>강원권</td>
-                                <td>강원</td>
-                                <td>국립휴양원</td>
-                                <td>가리왕산자연휴양림</td>
-                                <td>26119 강원도 정선군 정선읍 가리왕산로 707 가리왕산자연휴양림</td>
-                                <td>숙박여부 : 가능<br/>시설이용 : 유료</td>
-                                <td>시설종류</td>
-                                <td><a href="./available_facilities_detail.html" class="bl_btn1 sm">보기</a></td>
-                             </tr>
-                             <tr>
-                                <td>강원권</td>
-                                <td>강원</td>
-                                <td>국립휴양원</td>
-                                <td>가리왕산자연휴양림</td>
-                                <td>26119 강원도 정선군 정선읍 가리왕산로 707 가리왕산자연휴양림</td>
-                                <td>숙박여부 : 가능<br/>시설이용 : 유료</td>
-                                <td>시설종류</td>
-                                <td><a href="./available_facilities_detail.html" class="bl_btn1 sm">보기</a></td>
-                             </tr>
-                             <tr>
-                                <td>강원권</td>
-                                <td>강원</td>
-                                <td>국립휴양원</td>
-                                <td>가리왕산자연휴양림</td>
-                                <td>26119 강원도 정선군 정선읍 가리왕산로 707 가리왕산자연휴양림</td>
-                                <td>숙박여부 : 가능<br/>시설이용 : 유료</td>
-                                <td>시설종류</td>
-                                <td><a href="./available_facilities_detail.html" class="bl_btn1 sm">보기</a></td>
-                             </tr>
-                             <tr>
-                                <td>강원권</td>
-                                <td>강원</td>
-                                <td>국립휴양원</td>
-                                <td>가리왕산자연휴양림</td>
-                                <td>26119 강원도 정선군 정선읍 가리왕산로 707 가리왕산자연휴양림</td>
-                                <td>숙박여부 : 가능<br/>시설이용 : 유료</td>
-                                <td>시설종류</td>
-                                <td><a href="./available_facilities_detail.html" class="bl_btn1 sm">보기</a></td>
-                             </tr>
-                             <tr>
-                                <td>강원권</td>
-                                <td>강원</td>
-                                <td>국립휴양원</td>
-                                <td>가리왕산자연휴양림</td>
-                                <td>26119 강원도 정선군 정선읍 가리왕산로 707 가리왕산자연휴양림</td>
-                                <td>숙박여부 : 가능<br/>시설이용 : 유료</td>
-                                <td>시설종류</td>
-                                <td><a href="./available_facilities_detail.html" class="bl_btn1 sm">보기</a></td>
-                             </tr>
+                                <td>강원권<br/>강원</td>
+                                <td>
+                                    가리왕산자연휴양림
+                                    <div class="fs_10 light">26119 강원도 정선군 정선읍 가리왕산로 707 가리왕산자연휴양림</div>
+                                </td>
+                                <td>
+                                    국립휴양원
+                                    <div class="light">숙박여부 : 가능<br/>시설이용 : 유료</div>
+                                </td>
+                                <td class="center">
+                                    자연휴양림
+                                    <a href="./available_facilities_detail.html" class="bl_btn1 sm">보기</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>강원권<br/>강원</td>
+                                <td>
+                                    가리왕산자연휴양림
+                                    <div class="fs_10 light">26119 강원도 정선군 정선읍 가리왕산로 707 가리왕산자연휴양림</div>
+                                </td>
+                                <td>
+                                    국립휴양원
+                                    <div class="light">숙박여부 : 가능<br/>시설이용 : 유료</div>
+                                </td>
+                                <td class="center">
+                                    경기자연휴양림
+                                    <a href="./available_facilities_detail.html" class="bl_btn1 sm">보기</a>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -322,11 +250,6 @@
                     <a href="javascript:;">3</a>
                     <a href="javascript:;">4</a>
                     <a href="javascript:;">5</a>
-                    <a href="javascript:;">6</a>
-                    <a href="javascript:;">7</a>
-                    <a href="javascript:;">8</a>
-                    <a href="javascript:;">9</a>
-                    <a href="javascript:;">10</a>
                     <a href="javascript:;" class="pg next"></a>
                     <a href="javascript:;" class="pg end"></a>
                     <a href="javascript:;" class="pg next disabled"></a>
