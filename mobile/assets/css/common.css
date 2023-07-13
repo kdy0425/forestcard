@@ -217,7 +217,7 @@ select::-ms-expand {display:none;}
 
 label{cursor:pointer;}
 .checkbox{display:inline-block;min-width:20px;min-height:20px;padding-left:28px;position:relative;color:#444;font-size:15px;font-weight:500;}
-.checkbox.lg{color:#444;font-size:18px;}
+.checkbox.lg{color:#444;font-size:16px;}
 .checkbox.lg .ck_icon{top:4px;}
 .checkbox.single{padding-left:20px;}
 .checkbox input{position:absolute;left:4px;top:5px;z-index:1;}
