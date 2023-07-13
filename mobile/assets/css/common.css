@@ -168,7 +168,7 @@ input[type="text"],
 input[type="password"],
 input[type="tel"],
 input[type="email"],
-.file_ip{height:53px;width:100%;padding-left:16px;border-radius: 5px;border:1px solid #E9E9E9;}
+.file_ip{height:43px;width:100%;padding-left:16px;border-radius: 5px;border:1px solid #E9E9E9;}
 input[type="text"]:read-only,
 input[type="password"]:read-only,
 input[type="tel"]:read-only,
@@ -177,7 +177,7 @@ input[type="text"]::placeholder,
 input[type="password"]::placeholder,
 input[type="tel"]::placeholder,
 input[type="email"]::placeholder{color:#888;opacity: 1;}
-.file_ip{display:inline-block;line-height:53px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;background-color: #F9F9F9;color:#888;font-weight:400;}
+.file_ip{font-size:15px;display:inline-block;line-height:43px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;background-color: #F9F9F9;color:#888;font-weight:400;}
 
 textarea{height:150px;width:100%;min-width:100%;max-width:100%;padding:16px;border-radius: 5px;border:1px solid #E9E9E9;}
 textarea::placeholder{color:#888;opacity: 1;}

@@ -155,9 +155,9 @@
                                         <th>주민등록번호<span class="req">필수입력</span></th>
                                         <td>
                                             <div class="ip_group">
-                                                <input type="text" value="230624" class="size_md" readonly>
+                                                <input type="text" value="230624" readonly>
                                                 <span class="dash">-</span>
-                                                <input type="password" value="*******" class="size_md" readonly>
+                                                <input type="password" value="*******" readonly>
                                             </div>
                                         </td>
                                     </tr>
@@ -194,8 +194,8 @@
                                         <th>주소<span class="req">필수입력</span></th>
                                         <td>
                                             <div class="ip_group">
-                                                <input type="tel" placeholder="우편번호" class="size_md" readonly>
-                                                <a href="javascript:;" class="form_btn1">우편번호 검색</a>
+                                                <input type="tel" placeholder="우편번호" readonly>
+                                                <a href="javascript:;" class="form_btn2">우편번호 검색</a>
                                             </div>
                                             <div class="ip_group">
                                                 <input type="text" placeholder="우편번호를 검색해 주세요" class="size_xl" readonly>
@@ -208,35 +208,39 @@
                                     <tr>
                                         <th>일반전화</th>
                                         <td>
-                                            <div class="ip_group">
-                                                <select name="" id="" class="size_md">
+                                            <div class="ip_group tel">
+                                                <select name="" id="">
                                                     <option value="">선택</option>
                                                 </select>
                                                 <span class="dash">-</span>
-                                                <input type="tel"  class="size_md" maxlength="4">
+                                                <input type="tel"  maxlength="4">
                                                 <span class="dash">-</span>
-                                                <input type="tel"  class="size_md" maxlength="4">
+                                                <input type="tel"  maxlength="4">
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th>휴대전화<span class="req">필수입력</span></th>
                                         <td>
-                                            <div class="ip_group row">
-                                                <select name="" id="" class="size_md">
+                                            <div class="ip_group row tel">
+                                                <select name="" id="">
                                                     <option value="">010</option>
                                                 </select>
                                                 <span class="dash">-</span>
-                                                <input type="tel"  class="size_md" maxlength="4">
+                                                <input type="tel"  maxlength="4">
                                                 <span class="dash">-</span>
-                                                <input type="tel"  class="size_md" maxlength="4">
+                                                <input type="tel"  maxlength="4">
                                             </div>
                                             <div class="row">
-                                                <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>문자 서비스 수신 동의</label>
+                                                <label class="checkbox lg"><input type="checkbox"><span class="ck_icon"></span>문자 서비스 수신 동의</label>
                                             </div>
                                             <div class="row">
-                                                <div class="lblue_arrow_txt">선정결과 및 이용권 안내를 위해 휴대번호를 정확히 기재해주십시오.</div>
-                                                <div class="lblue_arrow_txt">수신 미동의시 이용권 신청 및 선정 동의 안내문자를 받을 수 없습니다.</div>
+                                                <div class="gray_box">
+                                                    <ul class="dot xs">
+                                                        <li>· 선정결과 및 이용권 안내를 위해 휴대번호를 정확히 기재해주십시오.</li>
+                                                        <li>· 수신 미동의시 이용권 신청 및 선정 동의 안내문자를 받을 수 없습니다.</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </td>
                                     </tr>
@@ -244,10 +248,12 @@
                                         <th>이메일</th>
                                         <td>
                                             <div class="ip_group row">
-                                                <input type="email"  class="size_md" placeholder="아이디">
-                                                <span class="dash">@</span>
-                                                <input type="email"  class="email_ip size_md" placeholder="이메일 주소">
-                                                <select name="" id="" class="email_select size_md" onchange="updateEmail(this)">
+                                                <input type="email"  placeholder="아이디">
+                                                <span class="dash2">@</span>
+                                                <input type="email"  class="email_ip" placeholder="이메일 주소">
+                                            </div>
+                                            <div class="ip_group row">
+                                                <select name="" id="" class="email_select" onchange="updateEmail(this)">
                                                     <option value="">직접입력</option>
                                                     <option value="naver.com">naver.com</option>
                                                     <option value="gmail.com">gmail.com</option>
@@ -255,7 +261,7 @@
                                                 </select>
                                             </div>
                                             <div class="row">
-                                                <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>이메일 수신 동의</label>
+                                                <label class="checkbox lg"><input type="checkbox"><span class="ck_icon"></span>이메일 수신 동의</label>
                                             </div>
                                         </td>
                                     </tr>
@@ -270,209 +276,13 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="gray_box">
-                            <ul>
+                        <div class="ct_lblue_toggle">
+                            <button type="button" class="btn">알려드립니다</button>
+                            <ul class="ct_lblue_list dot xs">
                                 <li>* 휴대폰번호는 필수 입력 사항입니다.</li>
                                 <li>* 휴대전화가 없을 경우, 연락이 가능한 문의 휴대전화를 입력해주시기 바랍니다.</li>
                                 <li><strong>* 연락이 되지 않을 경우, 안내문자 수신을 받지 못하는 등 발생할 수 있는 불이익에 대해 그 책임은 신청인에게 있음을 유의하시기 바랍니다.</strong></li>
                             </ul>
-                        </div>
-                    </div>
-
-                    <div class="form_box">
-                        <div class="title">
-                            가족 정보 
-                            <div class="rt_btns">
-                                <a href="javascript:;" class="btn type4">가족 정보 상세보기</a>
-                            </div>
-                        </div>
-                        <div class="bl_wrap">
-                            <div class="bl_table type2">
-                                <table>
-                                    <colgroup>
-                                        <col style="width:160px;">
-                                        <col style="width:160px;">
-                                        <col style="width:200px;">
-                                        <col style="width:220px;">
-                                        <col style="width:220px;">
-                                        <col style="width:200px;">
-                                        <col style="">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th>세대주 관계</th>
-                                            <th>성명</th>
-                                            <th>주민등록번호</th>
-                                            <th>대상유형</th>
-                                            <th>일반전화/휴대전화</th>
-                                            <th>문자서비스 수신동의</th>
-                                            <th>삭제</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td colspan="7" class="list_empty">신청자 본인 이외에 자격요건이 되는 가족이 더 있는 경우에만 [ 가족추가 ]를 해주시기 바랍니다.</td>
-                                        </tr>
-                                        <!-- <tr>
-                                            <td>세대주 관계</td>
-                                            <td>성명</td>
-                                            <td>주민등록번호</td>
-                                            <td>대상유형</td>
-                                            <td>일반전화/휴대전화</td>
-                                            <td>문자서비스 수신동의</td>
-                                            <td>삭제</td>
-                                        </tr> -->
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form_box">
-                        <div class="title">가족 등록</div>
-                        <div class="form_table">
-                            <table>
-                                <colgroup>
-                                    <col style="width:200px;">
-                                    <col style="">
-                                </colgroup>
-                                <tbody>
-                                    <tr>
-                                        <td colspan="2">신청대상자 : 장애인연금수급자, 장애(아동)수당수급자, 기초생활수급자, 차상위계층</td>
-                                    </tr>
-                                    <tr>
-                                        <th>성명<span class="req">필수입력</span></th>
-                                        <td>
-                                            <div class="ip_group">
-                                                <input type="text" value="홍길동" placeholder="성명" class="size_lg" readonly>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>주민등록번호<span class="req">필수입력</span></th>
-                                        <td>
-                                            <div class="ip_group">
-                                                <input type="text" value="******" class="size_md" readonly>
-                                                <span class="dash">-</span>
-                                                <input type="password" value="*******" class="size_md" readonly>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>내/외국인 구분<span class="req">필수입력</span></th>
-                                        <td>
-                                            <div class="labels">
-                                                <label class="checkbox"><input type="radio" name="nationality" value="domestic" checked><span class="ck_icon"></span>내국인</label>
-                                                <label class="checkbox"><input type="radio" name="nationality" value="foreign"><span class="ck_icon"></span>외국인</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>세대주 검증<span class="req">필수입력</span></th>
-                                        <td>
-                                            <a href="javascript:;" class="form_btn1">세대주 검증</a>
-                                            <span class="txt_nor">해당 검증버튼을 꼭 클릭해주세요.</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>자격 검증<span class="req">필수입력</span></th>
-                                        <td>
-                                            <div class="row">
-                                                <a href="javascript:;" class="form_btn1">세대주 검증</a>
-                                                <span class="txt_nor">해당 검증버튼을 꼭 클릭해주세요.</span>
-                                            </div>
-                                            <div class="row">
-                                                <div class="lblue_arrow_txt">자격검증시 사회보장원에 영문 및 다른 한글철자로 등록된 외국인이 있을 경우,<br/>
-                                                    고객센터(1544-3228)로 문의해주시기 바랍니다. (외국인 수급자 증명서 확인후 수기등록 가능)</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>가족관계<span class="req">필수입력</span></th>
-                                        <td>
-                                            <div class="ip_group">
-                                                <select name="" id="" class="size_md">
-                                                    <option value="">선택</option>
-                                                </select>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>일반전화</th>
-                                        <td>
-                                            <div class="ip_group">
-                                                <select name="" id="" class="size_md">
-                                                    <option value="">선택</option>
-                                                </select>
-                                                <span class="dash">-</span>
-                                                <input type="tel"  class="size_md" maxlength="4">
-                                                <span class="dash">-</span>
-                                                <input type="tel"  class="size_md" maxlength="4">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>휴대전화<span class="req">필수입력</span></th>
-                                        <td>
-                                            <div class="ip_group row">
-                                                <select name="" id="" class="size_md">
-                                                    <option value="">010</option>
-                                                </select>
-                                                <span class="dash">-</span>
-                                                <input type="tel"  class="size_md" maxlength="4">
-                                                <span class="dash">-</span>
-                                                <input type="tel"  class="size_md" maxlength="4">
-                                            </div>
-                                            <div class="row">
-                                                <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>문자 서비스 수신 동의</label>
-                                            </div>
-                                            <div class="row">
-                                                <div class="lblue_arrow_txt">선정결과 및 이용권 안내를 위해 휴대번호를 정확히 기재해주십시오.</div>
-                                                <div class="lblue_arrow_txt">수신 미동의시 이용권 신청 및 선정 동의 안내문자를 받을 수 없습니다.</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>이메일</th>
-                                        <td>
-                                            <div class="ip_group row">
-                                                <input type="email"  class="size_md" placeholder="아이디">
-                                                <span class="dash">@</span>
-                                                <input type="email"  class="email_ip size_md" placeholder="이메일 주소">
-                                                <select name="" id="" class="email_select size_md" onchange="updateEmail(this)">
-                                                    <option value="">직접입력</option>
-                                                    <option value="naver.com">naver.com</option>
-                                                    <option value="gmail.com">gmail.com</option>
-                                                    <option value="daum.net">daum.net</option>
-                                                </select>
-                                            </div>
-                                            <div class="row">
-                                                <label class="checkbox"><input type="checkbox"><span class="ck_icon"></span>이메일 수신 동의</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>숲나들e 아이디 <span class="stit">선택사항</span></th>
-                                        <td>
-                                            <div class="ip_group row">
-                                                <input type="text"  class="size_lg" placeholder="추천아이디">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="gray_box">
-                            <ul>
-                                <li>* 휴대폰번호는 필수 입력 사항입니다.</li>
-                                <li>* 휴대전화가 없을 경우, 연락이 가능한 문의 휴대전화를 입력해주시기 바랍니다.</li>
-                                <li><strong>* 연락이 되지 않을 경우, 안내문자 수신을 받지 못하는 등 발생할 수 있는 불이익에 대해 그 책임은 신청인에게 있음을 유의하시기 바랍니다.</strong></li>
-                            </ul>
-                        </div>
-
-                        <div class="form_btn_sm">
-                            <a href="javascript:;" class="btn type1">가족등록 취소</a>
-                            <a href="javascript:;" class="btn type3">가족등록</a>
                         </div>
                     </div>
 
@@ -483,10 +293,10 @@
                                 <div class="terms_cnt">
                                     <p>* 신청인이 만18세 미만이거나 정상적으로 카드사를 통한 바우처 발급이 힘들 경우, 합산기능을 이용</p>
                                     <p>* 이용권을 합산하고 합산대표 (만19세 이상)를 지정하여 대신 바우처를 일괄적으로 발급받을 수 있습니다.</p>
-                                    <p class="indent">- 예시 ) 신청자격을 가진 미성년자의 자녀를 두었으나, 신청자격이 없는 부모가 있을 경우, 자녀를 합산자로 지정하고 부모를 합산대로 지정하여 이용권을 대신 발급받을 수 있습니다.</p>
+                                    <p><strong>* 기존에 이미 신청한 신청서가 있을 경우, 로그인 후 마이페이지에서 ‘신청서정보연결’을 하셔야 신청내역을 확인할 수 있습니다.</strong></p>
                                 </div>
                             </div>
-                            <div class="terms_check">
+                            <div class="terms_check mgt15">
                                 <label class="checkbox lg"><input type="checkbox"><span class="ck_icon"></span>이용권 합산 이용 서비스에 동의함</label>
                             </div>
                         </div>
@@ -593,9 +403,6 @@
                     <div class="form_box">
                         <div class="title">
                             신청서 필수 서류 업로드
-                            <div class="rt_btns">
-                                <a href="javascript:;" class="btn type4">자료실 바로가기</a>
-                            </div>
                         </div>
                         <div class="form_table">
                             <table>
@@ -605,13 +412,13 @@
                                 </colgroup>
                                 <tbody>
                                     <tr>
-                                        <th>신분증사본</th>
+                                        <th>신분증사본 <span class="stit block mgt5">해당 파일업로드 버튼을 클릭해 주세요.</span></th>
                                         <td class="file-ip-box">
                                             <div class="ip_group row">
-                                                <div class="ip_cnt">
-                                                    <span class="file_ip size_ml">파일을 업로드 해주세요.</span>
-                                                </div>
-                                                <label class="form_btn1">
+                                                <span class="file_ip">파일을 업로드 해주세요.</span>
+                                            </div>
+                                            <div class="ip_group row">
+                                                    <label class="form_btn1_block">
                                                     <input type="file" class="form-control file-add" file-type="pdf zip jpg jpeg png" file-max-length="5" file-max-size="10" multiple>
                                                     파일업로드
                                                 </label>
@@ -619,26 +426,26 @@
                                             <div class="file_thumnail">
                                             </div>
                                             <div class="row">
-                                                <span class="txt_nor">해당 파일업로드 버튼을 클릭해 주세요.</span>
-                                            </div>
-                                            <div class="row">
-                                                <div class="lblue_arrow_txt">신청인 전원 필수 제출입니다 ( 이용권자 ‘전원’의 신분증 사본)
-                                                    <p>
-                                                    - 부, 모, 자녀1(성인), 자녀2(미성년자)일 경우 > ‘부, 모, 자녀1’ 3인의 신분증 사본 업로드<br>
-                                                    - 자녀2(미성년자)의 경우 > 가족관계증명서 또는 주민번호가 확인가능한 학생증(청소년증)의 사본 업로드
-                                                    </p>
+                                                <div class="ct_lblue_toggle">
+                                                    <button type="button" class="btn">알려드립니다</button>
+                                                    <ul class="ct_lblue_list dot xs">
+                                                        <li><strong>신청인 전원 필수 제출입니다 (이용권자 ‘전원’의 신분증 사본)</strong></li>
+                                                        <li>- 부, 모, 자녀1(성인), 자녀2(미성년자)일 경우 > ‘부, 모, 자녀1’ 3인의 신분증 사본 업로드</li>
+                                                        <li>- 자녀2(미성년자)의 경우 > 가족관계증명서 또는 주민번호가 확인가능한 학생증(청소년증)의 사본 업로드</li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </td>
                                     </tr>
+                                    <tr class="devide_line"></tr>
                                     <tr>
-                                        <th>합산자 대표 증빙자료</th>
+                                        <th>합산자 대표 증빙자료<span class="stit block mgt5">해당 파일업로드 버튼을 클릭해 주세요.</span></th>
                                         <td class="file-ip-box">
                                             <div class="ip_group row">
-                                                <div class="ip_cnt">
-                                                    <span class="file_ip size_ml">파일을 업로드 해주세요.</span>
-                                                </div>
-                                                <label class="form_btn1">
+                                                <span class="file_ip">파일을 업로드 해주세요.</span>
+                                            </div>
+                                            <div class="ip_group row">
+                                                    <label class="form_btn1_block">
                                                     <input type="file" class="form-control file-add" file-type="pdf zip jpg jpeg png" file-max-length="5" file-max-size="10" multiple>
                                                     파일업로드
                                                 </label>
@@ -646,14 +453,13 @@
                                             <div class="file_thumnail">
                                             </div>
                                             <div class="row">
-                                                <span class="txt_nor">해당 파일업로드 버튼을 클릭해 주세요.</span>
-                                            </div>
-                                            <div class="row">
-                                                <div class="lblue_arrow_txt">이용권 합산 기능을 사용할 경우에만 필수 제출입니다.
-                                                    <p>
-                                                    - 가족관계증명서 또는 주민등록등본 중 하나 (최근 3개월 이내 발급분)<br>
-                                                    - 합산 대표자 신분등
-                                                    </p>
+                                                <div class="ct_lblue_toggle">
+                                                    <button type="button" class="btn">알려드립니다</button>
+                                                    <ul class="ct_lblue_list dot xs">
+                                                        <li><strong>이용권 합산 기능을 사용할 경우에만 필수 제출입니다.</strong></li>
+                                                        <li>- 가족관계증명서 또는 주민등록등본 중 하나 (최근 3개월 이내 발급분)</li>
+                                                        <li>- 합산 대표자 신분등</li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </td>
@@ -661,7 +467,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="gray_box">
+                        <div class="gray_box mgt20">
                             <ul>
                                 <li>* 이미지파일을 업로드 하시면 썸네일 미리보기가 가능합니다.</li>
                                 <li>* 필요한 서류양식은 자료실에서 다운로드 가능합니다.</li>
