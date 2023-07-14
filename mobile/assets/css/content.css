@@ -614,6 +614,7 @@ background-position: center center;background-repeat: no-repeat;}
 .form_table table tbody th{margin-bottom:10px;color:#444;font-size:15px;font-weight: 700;text-align:left;}
 .form_table table tbody th .req{text-indent:-999em;overflow: hidden;width:4px;height:4px;border-radius:50%;background-color: #6EC2CB;display:inline-block;}
 .form_table table tbody th .stit{color:#767676;font-size:13px;font-weight:400;vertical-align: baseline;}
+.form_table table tbody th .stit.block{margin-top:4px;}
 .form_table table tbody td{color:#444;font-size:15px;font-weight: 500;}
 .form_table.sm table tbody th{padding-left:20px;}
 .form_table table tbody td + th,
@@ -656,12 +657,18 @@ background-position: center center;background-repeat: no-repeat;}
 .form_table table tbody td .lblue_arrow_txt{color:#767676;}
 .form_table table tbody td .lblue_arrow_txt + .lblue_arrow_txt{margin-top:8px;}
 .form_table table tbody .labels .checkbox{font-weight:400;}
-.form_table .form_btn1{border:0;background-color: #444444;color:#fff;white-space:nowrap;border-radius:18px;padding:8px 16px;font-size:13px;vertical-align: middle;display:inline-block;overflow: hidden;position: relative;}
+.form_table .fx_btns{display:flex;align-items:center;}
+.form_table .fx_btns * + *{margin-left:12px;}
+.form_table .fx_btns a,
+.form_table .fx_btns button{flex:1 1;}
+
+.form_table .form_btn1{text-align:center;border:0;background-color: #444444;color:#fff;white-space:nowrap;border-radius:18px;padding:8px 16px;font-size:13px;vertical-align: middle;display:inline-block;overflow: hidden;position: relative;}
 .form_table .form_btn1 input[type="file"]{position: absolute;left:-999em;}
 
 .form_table .form_btn1_block{text-align:center;border:0;background-color: #444444;color:#fff;border-radius:5px;padding:11px 16px;width:100%;display:block;font-size:15px;overflow: hidden;position: relative;}
 .form_table .form_btn1_block input[type="file"]{position: absolute;left:-999em;}
-.form_table .form_btn2{border:0;background-color: #444444;color:#fff;white-space:nowrap;border-radius:5px;padding:13px 23px;font-size:13px;vertical-align: middle;display:inline-block;overflow: hidden;position: relative;}
+.form_table .form_btn2{text-align:center;border:0;background-color: #444444;color:#fff;white-space:nowrap;border-radius:5px;padding:13px 23px;font-size:15px;vertical-align: middle;display:inline-block;overflow: hidden;position: relative;}
+.form_table .form_btn3{text-align:center;border:0;background-color: #CCCCCC;color:#fff;white-space:nowrap;border-radius:5px;padding:13px 23px;font-size:15px;vertical-align: middle;display:inline-block;overflow: hidden;position: relative;}
 
 .form_table .txt_nor{color:#767676;font-weight:400;vertical-align: middle;display:inline-block;}
 .form_table .form_btn1  + .txt_nor{margin-left:10px;}
@@ -933,8 +940,11 @@ p + .terms_table2{margin-top:7px;}
 .tap_btns .item + .item a{border-left:1px solid #e9e9e9;}
 .tap_btns .item a.active{color:#fff;background-color: #6EC2CB;font-weight:700;border:1px solid #6EC2CB;}
 
-
-<div class="tap_btns mgt80">
-                <div class="item"><a href="javascript:;" class="active">개인</a></div>
-                <div class="item"><a href="javascript:;">사회복지시설</a></div>
-            </div>
+.sign_type_links{display:flex;padding:30px 4px;border-radius:12px;background-color: #fff;box-shadow:0 2px 30px rgba(0,0,0,.12)}
+.sign_type_links .item{flex:1 1;padding:0 16px;}
+.sign_type_links .item + .item{border-left:1px solid #EEEEEE;}
+.sign_type_links .tit{color:#444444;font-size:21px;font-weight:700;margin-bottom:7px;}
+.sign_type_links p{color:#444;font-size:14px;}
+.sign_type_links .link{display:block;margin-top:27px;text-align:center;color:#fff;border-radius:45px;font-size:16px;padding:11px 0;}
+.sign_type_links .item.one .link{background-color: #177BB2;}
+.sign_type_links .item.family .link{background-color: #FF311F;}
