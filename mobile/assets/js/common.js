@@ -1,9 +1,16 @@
 //헤더 메뉴 효과
 $(".nav_toggle,.nav_bg").click(function(){
 	$('.nav_toggle').toggleClass("active");
+    if($('.nav_toggle').hasClass("active")) {
+        $(".nav_inner").css('display', 'flex'); 
+    }
 	$(".nav_inner").animate({
 		right: $(this).hasClass("active") ? 0 : '-90%'
-	});
+	}, 600, function() {
+        if (!$('.nav_toggle').hasClass("active")) {
+            $(".nav_inner").css('display', 'none');
+        }
+    });
 	if($('.nav_toggle').hasClass("active")) {
 		$(".nav_bg").fadeIn();
 		$('html').css('overflow', 'hidden');
@@ -11,10 +18,6 @@ $(".nav_toggle,.nav_bg").click(function(){
 		$(".nav_bg").fadeOut();
 		$('html').css('overflow', 'auto');
 	}
-});
-$("#nav > li > a").click(function(){
-	$(this).toggleClass("open");
-	$(this).next('ul').slideToggle();
 });
 
 //푸터 family sites
