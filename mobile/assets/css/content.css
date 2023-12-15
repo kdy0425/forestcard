@@ -11,7 +11,10 @@
 #header{position:fixed;top:0;left:50%;width:100%;max-width:1050px;transform: translate(-50%,0);z-index:50;border-bottom:1px solid #ddd;background-color:#fff;transition:all 0.3s;}
 #hd_wrap{display:flex;margin:0 auto;width:100%;padding:18px 9px 18px 18px;align-items: center;}
 #logo{}
-#logo a{display:block;width:163px;height:35px;background-position: center center;background-repeat: no-repeat;background-size:162px;background-image: url('../images/logo.png');text-indent:-999em;overflow:hidden;transition:all 0.3s;}
+#logo a{display:block;transition:all 0.3s;height:35px;}
+#logo span{display:block;color:#12ba78;font-size:11px;font-weight:700;line-height:1.2;}
+#logo strong{display:block;color:#222222;font-size:17px;font-weight:900;line-height:1.2;margin-top:2px;}
+
 #hd_wrap .nav_toggle{margin-left:auto;width:36px;height:35px;border:0;background-color: transparent;text-indent:-999em;padding:0 9px;position:relative;z-index:110;}
 #hd_wrap .nav_toggle span{display:block;height:2px;background-color: #222;width:18px;transition:all 0.3s;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);}
 #hd_wrap .nav_toggle span:nth-of-type(1){top:calc(50% - 6px);}
@@ -50,7 +53,9 @@ transition: all 0.3s;transform: rotate(180deg);}
 
 /*메인헤더*/
 #header.main_header{color:#fff;background-color:transparent;border-bottom:1px solid rgba(255,255,255,.3);}
-#header.main_header #logo a{background-image: url('../images/logo_main.png');}
+#header.main_header #logo a{}
+#header.main_header #logo span{color:#2bffb0;}
+#header.main_header #logo strong{color:#fff;}
 #header.main_header #hd_wrap .nav_toggle span{background-color: #fff;}
 #header.main_header #hd_wrap .nav_toggle.active span{background-color: #222;}
 
@@ -98,7 +103,7 @@ transition: all 0.3s;transform: rotate(180deg);}
 .main{position: relative;}
 .main .main_bg{position:absolute;left:0;top:0;width:100%;height:930px;background-position: center center;background-size:cover;background-repeat: no-repeat;background-image: url('../images/main_bg.jpg');}
 .main .container{position:relative;z-index: 5;}
-.main_title{color:#fff;padding-top:60px;}
+.main_title{color:#fff;padding-top:32px;}
 .main_title h2{font-size:28px;font-weight:700;letter-spacing:-1px;}
 .main_title .txt{font-size:14px;margin-top:11px;}
 .main_title .link{displaY:inline-block;margin-top:16px;padding:12px 40px 12px 18px;border-radius: 22px;font-size:14px;font-weight:500;background-color: #09cd87;position: relative;transition:all 0.3s;}
