@@ -5,7 +5,7 @@
 * {
   margin: 0;
   padding: 0;
-  vertical-align: top;
+  /* vertical-align: top; */
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -178,7 +178,7 @@ input[type="text"],
 input[type="password"],
 input[type="tel"],
 input[type="email"],
-.file_ip{height:53px;width:400px;padding-left:16px;border-radius: 5px;border:1px solid #E9E9E9;}
+.file_ip{height:53px;width:200px;padding-left:16px;border-radius: 5px;border:1px solid #E9E9E9;}
 input[type="text"]:read-only,
 input[type="password"]:read-only,
 input[type="tel"]:read-only,
