@@ -1201,3 +1201,38 @@ background-image:url('../images/icon_close.png');background-size:11px;}
 background-repeat:no-repeat;background-position:center center;background-size:8px;background-image:url('../images/icon_close3.png');}
 .photo_upload .pu_result2 .item3 .item_remove3{width:20px;height:20px;text-indent:-999em;overflow:hidden;border:1px solid #999999;background-color:#fff;
 background-repeat:no-repeat;background-position:center center;background-size:8px;background-image:url('../images/icon_close3.png');}
+
+.main_lastest{display:flex;}
+.main_lastest .box{width:625px;position: relative;}
+.main_lastest .box + .box{margin-left:30px;}
+.main_lastest .box .title{margin-bottom:30px;}
+.main_lastest .box .title h3{font-size:28px;color:#2B2F2D;font-weight:700;font-family: 'GmarketSans';}
+.main_lastest .box .title p{color:#444;font-size:16px;margin-top:10px;}
+.main_lastest .box .lst{}
+.main_lastest .box .lst .item{}
+.main_lastest .box .lst .item + .item{margin-top:15px;}
+.main_lastest .box .lst .item a{display:block;padding:30px;border:1px solid #E9E9E9;border-radius:20px;}
+.main_lastest .box .lst .item a:hover{border-color:#00AF71;}
+.main_lastest .box .lst .item .subject{display:block;color:#121212;font-size:17px;width:100%;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;}
+.main_lastest .box .lst .item .date{display: block;margin-top:5px;font-size:14px;color:#00AF71;}
+.main_lastest .box .lst_more{position: absolute;right:0;top:0;width:44px;height:44px;border-radius:50%;text-indent:-999em;overflow:hidden;background-color: #2B2F2D;opacity:0.3;background-position: center center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg width='16' height='17' viewBox='0 0 16 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0.000976562' y1='8.00006' x2='16.001' y2='8.00006' stroke='white' stroke-width='2'/%3E%3Cline x1='8.86323' y1='0.155833' x2='7.12675' y2='16.0613' stroke='white' stroke-width='2'/%3E%3C/svg%3E%0A");}
+.main_banners{display:flex;margin-top:37px;}
+.tell_banner{}
+.tell_banner{width:625px;display:flex;align-items: center;border-radius:20px;padding:46px 46px 46px 150px;background-color: #ddd;background-position: left 40px center;background-repeat: no-repeat;background-size:70px;}
+.tell_banner + .tell_banner{margin-left:30px;}
+.tell_banner span{font-size:17px;font-weight:500;color:#505B57;}
+.tell_banner strong{color:#2B2F2D;font-size:20px;font-weight:700;font-family: 'GmarketSans';}
+.tell_banner.cs{background-color: #F0FBF7;background-image: url('../images/tell_banner_cs.png');}
+.tell_banner.card{background-color: #F3FDFE;background-image: url('../images/tell_banner_card.png');}
+
+<a href="javascript:;" class="lst_more">더 보기</a>
+    <div class="tell_banner cs">
+        <a href="tel:1544-3228">
+            <span>한국산림복지진흥원 고객센터</span>
+            <strong>1544-3228</strong>
+        </a>
+        <div>
+            <span>한국산림복지진흥원 고객센터</span>
+            <strong>1544-3228</strong>
+        </div>
+    </div>
