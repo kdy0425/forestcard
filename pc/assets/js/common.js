@@ -31,6 +31,38 @@ $(".nav_wrap").on("mouseleave focusout", function(){
 	}, 350);
 });
   
+
+$(".nav2_wrap").on("mouseenter focusin", function(){
+	clearTimeout(slideUpTimeout);
+	var maxHeight = 0;
+	$("#nav2 > li > ul").each(function(){
+		var thisHeight = $(this).outerHeight();
+		if (thisHeight > maxHeight) { 
+			maxHeight = thisHeight; 
+		}
+	});
+	$('#header').addClass("active");
+	var that = $('#header');
+	slideDownTimeout = setTimeout(function() {
+		$(".nav2_bg").stop().outerHeight(maxHeight).slideDown();
+		$("#nav2 > li > ul").outerHeight(maxHeight).stop().slideDown();
+	}, 100);
+});
+
+$(".nav2_wrap").on("mouseleave focusout", function(){
+	clearTimeout(slideDownTimeout);
+	$(".nav2_bg").stop().slideUp(function(){
+		$(this).outerHeight(0);
+	});
+	$("#nav2 > li > ul").stop().slideUp(function(){
+		$(this).outerHeight('auto'); // Reset height to auto
+	});
+	var that = $('#header');
+	slideUpTimeout = setTimeout(function() {
+		that.removeClass("active");
+	}, 350);
+});
+
 //푸터 family sites
 $(".family_sites_open").on("click", function(e) {
 	e.stopPropagation();
@@ -63,12 +95,12 @@ $(document).on("click", function(event) {
 $('.share_item .url').click(function(event){
 	event.preventDefault();
 	
-	let url = $(this).attr('data-url');
+//	let url = $(this).attr('data-url');
+	let url = document.location.href;
 	if(navigator.clipboard) {
 		navigator.clipboard.writeText(url).then(function() {
 			alert('url을 복사했습니다');
-		})
-		.catch(function(error) {
+		}).catch(function(error) {
 			copyToClipboardFallback(url);
 		});
 	} else {
@@ -350,3 +382,77 @@ function layerToggle(elm , display){
 	}
 }
 
+
+//데이트픽커
+if ($('input').hasClass('dsb')) {
+
+	$.datepicker.setDefaults({
+		dateFormat: 'yy-mm-dd',
+		prevText: '이전 달',
+		nextText: '다음 달',
+		monthNames: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],
+		monthNamesShort: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],
+		dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+		dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+		dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+		changeMonth: true, //셀렉트박스로 월선택
+		changeYear: true, //셀렉트박스로 년선택
+		showMonthAfterYear: true,
+		//showOn: 'button',
+		yearSuffix: ' -'
+	});
+
+	$(".dsb").datepicker({});
+}
+
+
+
+
+//searchSelectOpen searchSelectSearch searchSelectSelect
+//검색가능한 selectbox
+function selectOpen(button) {
+	const options = button.nextElementSibling;
+	const allOptions = document.querySelectorAll('.select_options');
+	allOptions.forEach(opt => {
+		if (opt !== options) {
+			opt.style.display = 'none';
+		}
+	});
+	options.style.display = options.style.display === 'block' ? 'none' : 'block';
+  }
+   
+  function selectSelect(anchor) {
+	const items = anchor.closest('.items').querySelectorAll('.item a');
+	items.forEach(function(item) {
+		item.classList.remove('active');
+	});
+	anchor.classList.add('active');
+	const hiddenInput = anchor.closest('.design_select').querySelector('input[type="hidden"]');
+	const btnSelect = anchor.closest('.design_select').querySelector('.btn_select');
+	hiddenInput.value = anchor.getAttribute('data-id');
+	btnSelect.textContent = anchor.textContent;
+	anchor.closest('.select_options').style.display = 'none';
+  }
+  
+  document.addEventListener('click', function(event) {
+	if (!event.target.closest('.design_select')) {
+		document.querySelectorAll('.select_options').forEach(function(options) {
+			options.style.display = 'none';
+		});
+	}
+  });
+  
+  //검색 셀렉트박스  페이지 로드시 active된 항목  input hidden에 data-id값 넣고. 버튼에 text값 출력
+  document.addEventListener('DOMContentLoaded', function() {
+	const searchSelects = document.querySelectorAll('.design_select');
+	if(searchSelects){
+	  searchSelects.forEach(function(item){
+		const seletedOption = item.querySelector('.item a.active');
+		const seletedData = seletedOption.getAttribute('data-id');
+		const seletedText = seletedOption.textContent;
+		item.querySelector('input[type="hidden"]').value = seletedData;
+		item.querySelector('.btn_select').textContent = seletedText;
+	  });
+	  
+	}
+  });

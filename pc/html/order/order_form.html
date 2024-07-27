@@ -156,7 +156,7 @@
                                         <tr>
                                             <th>배송요청사항</th>
                                             <td>
-                                                <select name="" id="">
+                                                <select name="" id="" class="type2">
                                                     <option value="">배송 요청사항(선택)</option>
                                                 </select>
                                             </td>
@@ -207,7 +207,7 @@
                                     <div class="detail"><span class="prc"><strong>2,490</strong> 원</span><span>1개</span><span>무료배송</span></div>
                                 </div>
                             </div>
-                            <div class="total_price"><span class="tit">총 상품 금액</span><strong>18,280</strong><span class="won">원</span></div>
+                            <div class="total_price"><span class="tit">총 결제 금액</span><strong>18,280</strong><span class="won">원</span></div>
                             <div class="order_check">
                                 <label class="checkbox">
                                     <input type="checkbox" id="order_checkbox">
@@ -345,7 +345,7 @@
 
 <!-- 주소 검색 -->
 <div id="ads_search" class="layer_new" style="display: none;">
-    <div class="ln_box" style="width:533px;height:609px;">
+    <div class="ln_box" style="width:533px;height:603px;">
         <div class="ln_title">주소 검색</div>
         <button class="ln_close" onclick="$('#ads_search').hide();$('#ads_change').show();">닫기</button>
         <div class="ln_content">
@@ -353,6 +353,7 @@
                 <div class="search_input">
                     <form action="" onsubmit="adsSearch();">
                         <input type="text" placeholder="예)논현로 706">
+                        <button type="submit">검색</button>
                     </form>
                     <script>
                         function adsSearch(f) {

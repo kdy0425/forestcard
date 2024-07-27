@@ -27,7 +27,19 @@
 <body>
 
 <!-- wrap -->
-<div id="layout">
+
+<!-- 
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+                #layout에  goods_detail_layout 클래스 추가
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+-->
+<div id="layout" class="goods_detail_layout">
 	<h1 id="header_h1">산림복지서비스이용권</h1>
 	<div id="skip_to_container">
 		<!-- skip navigation -->
@@ -190,15 +202,71 @@
                         </div>
                         <div class="total_price"><span class="tit">총 상품 금액</span><strong>18,280</strong><span class="won">원</span></div>
 
+
+                        <div class="layer_buy_info" style="display:none;">
+                            <div class="box">
+                                <button class="btn_close" type="button" onclick="gdClose();">닫기</button>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>수량선택</th>
+                                            <td>
+                                                <div class="lot_box">
+                                                    <!-- <div class="prc"><strong>18,280</strong><span>원</span></div> -->
+                                                    <div class="lot_control">
+                                                        <button type="button" class="btn minus">증감</button>
+                                                        <input type="text" value="1">
+                                                        <button type="button" class="btn plus">증가</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>배송비</th>
+                                            <td>
+                                                무료배송
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="total_price"><span class="tit">총 상품 금액</span><strong>18,280</strong><span class="won">원</span></div>
+                            </div>
+                            <span class="bg" onclick="gdClose();"></span>
+                        </div>
                         <div class="detail_buy">
                             <div class="gd_btns">
-                                <button type="button" class="btn cart" onclick="$('#cart_layer').show();">장바구니</button>
-                                <button type="button" class="btn submit">주문하기</button>
+                                <button type="button" class="btn cart" onclick="gdBuy('cart')">장바구니</button>
+                                <button type="button" class="btn submit" onclick="gdBuy('buy')">주문하기</button>
                             </div>
-                            <div class="gd_btns"> 
+                            <!-- <div class="gd_btns"> 
                                 <button type="button" class="btn gray" disabled>일시품절</button>
-                            </div>
+                            </div> -->
                         </div>
+                        <script>
+                            let buyLayerSataus = false;
+                            function gdBuy(type){
+                                if(!buyLayerSataus){
+                                    //구매 레이어 열기
+                                    buyLayerSataus = true;
+                                    $('.layer_buy_info').show();
+                                }else{
+                                    //이미 열려있으면
+                                    if(type === 'cart'){
+                                        //장바구니 담기
+                                        $('#cart_layer').show()
+                                    }else{
+                                        //주문로직
+                                        alert('주문');
+                                    }
+                                }
+                            }
+
+                            //구매 레이어 닫으면서 상태 초기화
+                            function gdClose(){
+                                buyLayerSataus = false;
+                                $('.layer_buy_info').hide();
+                            }
+                        </script>
                     </div>
                 </div>
 

@@ -113,6 +113,7 @@ button{cursor:pointer;}
 .mgr30 {margin-right:30px !important;}
 .mgr50 {margin-right:50px !important;}
 
+.mgb0 {margin-bottom:0px !important;}
 .mgb5 {margin-bottom:5px !important;}
 .mgb10 {margin-bottom:10px !important;}
 .mgb20 {margin-bottom:20px !important;}
@@ -198,6 +199,7 @@ textarea.sm{height:100px;}
 select{color:#444;padding-left:16px;border:1px solid #E9E9E9;height:53px;padding-right:33px;border-radius:5px;background-repeat:no-repeat;background-position:right 12px center;appearance:none; -webkit-appearance:none; box-sizing:border-box;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg id='_' data-name='%5E' transform='translate(-1557 -806)'%3E%3Crect id='사각형_1793' data-name='사각형 1793' width='24' height='24' transform='translate(1557 806)' fill='%23fff' opacity='0'/%3E%3Cpath id='패스_6217' data-name='패스 6217' d='M-1010.182-6221l6,6,6-6' transform='translate(2573.182 7036.001)' fill='none' stroke='%23aaa' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");}
 select::-ms-expand {display:none;}
+select.type2{font-size:14px;padding-left:20px;background-position:right 20px center; background-image: url("data:image/svg+xml,%3Csvg width='16' height='8' viewBox='0 0 16 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='path-1-inside-1_100_2309' fill='white'%3E%3Cpath d='M0 0L8 8L16 0'/%3E%3C/mask%3E%3Cpath d='M1.41421 -1.41421C0.633165 -2.19526 -0.633165 -2.19526 -1.41421 -1.41421C-2.19526 -0.633165 -2.19526 0.633165 -1.41421 1.41421L1.41421 -1.41421ZM8 8L6.58579 9.41421C7.36684 10.1953 8.63317 10.1953 9.41421 9.41421L8 8ZM17.4142 1.41421C18.1953 0.633165 18.1953 -0.633165 17.4142 -1.41421C16.6332 -2.19526 15.3668 -2.19526 14.5858 -1.41421L17.4142 1.41421ZM-1.41421 1.41421L6.58579 9.41421L9.41421 6.58579L1.41421 -1.41421L-1.41421 1.41421ZM9.41421 9.41421L17.4142 1.41421L14.5858 -1.41421L6.58579 6.58579L9.41421 9.41421Z' fill='%23AAAAAA' mask='url(%23path-1-inside-1_100_2309)'/%3E%3C/svg%3E%0A");}
 /*슬라이더*/
 .slick-slider{position:relative;display:block;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}
 .slick-list{position:relative;display:block;overflow:hidden;margin:0;padding:0}

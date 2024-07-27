@@ -281,12 +281,12 @@
 
 <script>
 function mainToggleBox(button){
-    $(button).toggleClass('active');
+    $(button).closest('.main_toggle').toggleClass('active');
     $(button).closest('.main_toggle').find('.toggle_content').slideToggle();
 }
 $(document).ready(function() {
     setTimeout(function() {
-        $('.toggle_button').removeClass('active');
+        $('.main_toggle').removeClass('active');
         $('.toggle_content').slideUp();
     }, 2000);
 });
