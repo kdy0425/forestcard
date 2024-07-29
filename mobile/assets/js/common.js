@@ -1,24 +1,34 @@
 //헤더 메뉴 효과
-$(".nav_toggle,.nav_bg").click(function(){
-	$('.nav_toggle').toggleClass("active");
-    if($('.nav_toggle').hasClass("active")) {
-        $(".nav_inner").css('display', 'flex'); 
-    }
-	$(".nav_inner").animate({
-		right: $(this).hasClass("active") ? 0 : '-90%'
-	}, 600, function() {
-        if (!$('.nav_toggle').hasClass("active")) {
-            $(".nav_inner").css('display', 'none');
-        }
-    });
-	if($('.nav_toggle').hasClass("active")) {
-		$(".nav_bg").fadeIn();
-		$('html').css('overflow', 'hidden');
-	} else {
-		$(".nav_bg").fadeOut();
+let navWrapStatus = false;
+$(".nav_toggle,.nav_bg, .nav_wrap .close").click(function(){
+	if(navWrapStatus){
+		$(".nav_inner").animate({
+			right: '-100%'
+			}, 600, function() {
+			$(".nav_inner").css('display', 'none');
+		});
+		$('.nav_toggle').removeClass("active");
 		$('html').css('overflow', 'auto');
+		navWrapStatus = false;
+	}else{
+		$('.nav_toggle').addClass("active");
+		$(".nav_inner").css('display', 'flex'); 
+		$(".nav_inner").animate({right: 0});
+		$('html').css('overflow', 'hidden');
+		navWrapStatus = true;
 	}
 });
+
+$("#nav > li > a").click(function(){
+	if($(this).hasClass('active')){
+		$(this).removeClass('active');
+		$(this).closest('li').find('ul').slideUp();
+	}else{
+		$(this).addClass('active');
+		$(this).closest('li').find('ul').slideDown();
+	}
+});
+
 
 //푸터 family sites
 $(".family_sites_open").on("click", function(e) {
