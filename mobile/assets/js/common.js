@@ -376,3 +376,52 @@ function layerToggle(elm , display){
 	}
 }
 
+
+
+//selectbox
+function selectOpen(button) {
+	const options = button.nextElementSibling;
+	const allOptions = document.querySelectorAll('.select_options');
+	allOptions.forEach(opt => {
+		if (opt !== options) {
+			opt.style.display = 'none';
+		}
+	});
+	options.style.display = options.style.display === 'block' ? 'none' : 'block';
+	}
+	
+	function selectSelect(anchor) {
+	const items = anchor.closest('.items').querySelectorAll('.item a');
+	items.forEach(function(item) {
+		item.classList.remove('active');
+	});
+	anchor.classList.add('active');
+	const hiddenInput = anchor.closest('.design_select').querySelector('input[type="hidden"]');
+	const btnSelect = anchor.closest('.design_select').querySelector('.btn_select');
+	hiddenInput.value = anchor.getAttribute('data-id');
+	btnSelect.textContent = anchor.textContent;
+	anchor.closest('.select_options').style.display = 'none';
+	}
+	
+	document.addEventListener('click', function(event) {
+	if (!event.target.closest('.design_select')) {
+		document.querySelectorAll('.select_options').forEach(function(options) {
+			options.style.display = 'none';
+		});
+	}
+	});
+	
+	//셀렉트박스  페이지 로드시 active된 항목  input hidden에 data-id값 넣고. 버튼에 text값 출력
+	document.addEventListener('DOMContentLoaded', function() {
+	const searchSelects = document.querySelectorAll('.design_select');
+	if(searchSelects){
+		searchSelects.forEach(function(item){
+		const seletedOption = item.querySelector('.item a.active');
+		const seletedData = seletedOption.getAttribute('data-id');
+		const seletedText = seletedOption.textContent;
+		item.querySelector('input[type="hidden"]').value = seletedData;
+		item.querySelector('.btn_select').textContent = seletedText;
+		});
+		
+	}
+	});

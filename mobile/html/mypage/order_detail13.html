@@ -23,6 +23,8 @@
 <link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
 <link href="https://cdn.jsdelivr.net/npm/typeface-poppins@1.1.13/index.min.css" rel="stylesheet"><!-- poppins font -->
 <script src="../../assets/js/jquery-3.6.4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../assets/css/simplebar.css" />
+<script src="../../assets/js/simplebar.min.js"></script>
 </head>
 <body>
 
@@ -107,21 +109,131 @@
 	<div id="content" class="sub_content">
         <div class="container">
 
-            <div class="order_after fail">
-                <h2 class="title">상품 주문에 <strong>실패하였습니다.</strong></h2> 
-                <p>확인 후 재시도 해보시기 바랍니다</p>
-                <div class="order_comp_info">
-                    <div class="fail_result">
-                        <div class="card">카드한도가 부족합니다</div>
-                    </div>
-                </div>
-                <div class="form_btns2">
-                    <button type="button" class="btn dark">상품목록 보기</button>
+            <div class="page_title_wrap">
+                <h2 class="page_title">마이페이지</h2>
+                <div class="page_taps">
+                    <a href="javascript:;" class="active">주문/배송 내역</a>
+                    <a href="javascript:;">취소/반려/교환 내역</a>
+                    <a href="javascript:;">회원정보 수정</a>
                 </div>
             </div>
 
+            <div class="page_title_sub">반품반려</div>
+            <div class="order_list">
+                <div class="item active">
+                    <div class="item_top">
+                        <div class="date">2024.07.18</div> 
+                    </div>
+                    <div class="item_cnt">
+                        <div class="product_cnt">
+                            <div class="thum" style="background-image: url('../../assets/images/dummy/goods_thum1.jpg');"></div>
+                            <div class="prd_info">
+                                <div class="order_status red">반품반려</div>
+                                <div class="cnt">
+                                    <span class="subject">I`mperfect 향이 가득한 국내산 무농약 자연산표고버섯 500g</span>
+                                    <span class="prc"><strong>5,490</strong> 원</span>
+                                    <span class="lot">1개</span>
+                                    <span class="del">무료배송</span>
+                                </div>
+                                <div class="num">주문번호 4173002252</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order_box">
+                <div class="ob_title">반품요청정보</div>
+                <div class="ob_content">
+                    <div class="ob_prd_form">
+                        <div class="product_cnt">
+                            <div class="thum" style="background-image: url('../../assets/images/dummy/goods_thum1.jpg');"></div>
+                            <div class="prd_info">
+                                <div class="cnt">
+                                    <span class="subject">I`mperfect 향이 가득한 국내산 무농약 자연산표고버섯 500g</span>
+                                </div>
+                                <div class="detail"><span class="prc"><strong>5,490</strong>원</span><span>1개</span></div>
+                            </div>
+                        </div>
+                        <div class="obf_item">
+                            <div class="obf_tit">반품수량</div>
+                            1개
+                        </div>
+                        <div class="obf_item">
+                            <div class="obf_tit">환불금액</div>
+                            <div class="prc green"><strong>5,490</strong>원</div>
+                        </div>
+                    </div>
+                    <div class="ob_table sm">
+                        <table>
+                            <colgroup>
+                            <col style="width:150px;">
+                            <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>반품요청일자</th>
+                                    <td>2024-07-22</td>
+                                </tr>
+                                <tr>
+                                    <th>반품요청사유</th>
+                                    <td>기타</td>
+                                </tr>
+                                <tr>
+                                    <th>반품요청사유 상세</th>
+                                    <td>상품의 상태가 너무 좋지 않음</td>
+                                </tr>
+                                <tr>
+                                    <th>반품요청결과</th>
+                                    <td><span class="txt_red2">반품완료</span>(2024-07-25)</td>
+                                </tr>
+                                <tr>
+                                    <th>반품반려사유 상세</th>
+                                    <td>기타 (구매자의 보관상태로 인해 상품이 훼손되어 반품대상 불가)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order_box">
+                <div class="ob_title">상품회수지</div>
+                <div class="ob_content">
+                    <div class="ob_table">
+                        <table>
+                            <colgroup>
+                            <col style="width:150px;">
+                            <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th class="top">받는분</th>
+                                    <td>
+                                        <div class="ads_cnt_wrap">
+                                            <div class="ads_cnt">
+                                                <div>이은미</div><div>010-1234-1234</div>
+                                                <div class="ads">[06052] 서울특별시 강남구 논현로 706 (아이캐슬빌딩) 5층 트라이언소프트</div>
+                                            </div>
+                                         </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>배송요청사항</th>
+                                    <td>없음</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form_btns2">
+                <button type="button" class="btn dark">주문/배송 목록 보기</button>
+            </div>
+
         </div>
-	</div>
+    </div>
 	<!-- //content -->
 
 	<div id="footer">

@@ -23,6 +23,8 @@
 <link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
 <link href="https://cdn.jsdelivr.net/npm/typeface-poppins@1.1.13/index.min.css" rel="stylesheet"><!-- poppins font -->
 <script src="../../assets/js/jquery-3.6.4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../assets/css/simplebar.css" />
+<script src="../../assets/js/simplebar.min.js"></script>
 </head>
 <body>
 
@@ -107,21 +109,153 @@
 	<div id="content" class="sub_content">
         <div class="container">
 
-            <div class="order_after fail">
-                <h2 class="title">상품 주문에 <strong>실패하였습니다.</strong></h2> 
-                <p>확인 후 재시도 해보시기 바랍니다</p>
-                <div class="order_comp_info">
-                    <div class="fail_result">
-                        <div class="card">카드한도가 부족합니다</div>
-                    </div>
-                </div>
-                <div class="form_btns2">
-                    <button type="button" class="btn dark">상품목록 보기</button>
+            <div class="page_title_wrap">
+                <h2 class="page_title">마이페이지</h2>
+                <div class="page_taps">
+                    <a href="javascript:;" class="active">주문/배송 내역</a>
+                    <a href="javascript:;">취소/반려/교환 내역</a>
+                    <a href="javascript:;">회원정보 수정</a>
                 </div>
             </div>
 
+            <div class="page_title_sub">취소요청중</div>
+            <div class="order_list">
+                <div class="item active">
+                    <div class="item_top">
+                        <div class="date">2024.07.18</div> 
+                    </div>
+                    <div class="item_cnt">
+                        <div class="product_cnt">
+                            <div class="thum" style="background-image: url('../../assets/images/dummy/goods_thum1.jpg');"></div>
+                            <div class="prd_info">
+                                <div class="order_status">취소요청중</div>
+                                <div class="cnt">
+                                    <span class="subject">I`mperfect 향이 가득한 국내산 무농약 자연산표고버섯 500g</span>
+                                    <span class="prc"><strong>5,490</strong> 원</span>
+                                    <span class="lot">1개</span>
+                                    <span class="del">무료배송</span>
+                                </div>
+                                <div class="num">주문번호 4173002252</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order_box">
+                <div class="ob_title">배송 정보</div>
+                <div class="ob_content">
+                    <div class="ob_table">
+                        <table>
+                            <colgroup>
+                            <col style="width:150px;">
+                            <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th class="top">받는분</th>
+                                    <td>
+                                        <div class="ads_cnt_wrap">
+                                            <div class="ads_cnt">
+                                                <div>이은미</div><div>010-1234-1234</div>
+                                                <div class="ads">[06052] 서울특별시 강남구 논현로 706 (아이캐슬빌딩) 5층 트라이언소프트</div>
+                                            </div>
+                                         </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>배송요청사항</th>
+                                    <td>
+                                        없음
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order_box">
+                <div class="ob_title">결제정보</div>
+                <div class="ob_content">
+                    <div class="ob_table">
+                        <table>
+                            <colgroup>
+                            <col style="width:150px;">
+                            <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th class="top">결제방식</th>
+                                    <td>
+                                        <div class="paid_info">
+                                            <div class="paid_info_cnt">
+                                                <div class="paid_type">KB 카드 (일시불)</div>
+                                                <div class="slash_cnt">
+                                                    <div>2024-07-18 18:03:22</div>
+                                                    <span class="slash">/</span>
+                                                    <div>2024-07-18 18:05:22</div>
+                                                </div>
+                                                <div class="card_num">230249******09213</div>
+                                            </div>
+                                            <div class="paid_detail">
+                                                <div class="item">
+                                                    <div class="tit">상품금액</div>
+                                                    <div class="cnt"><strong>50,400</strong>원</div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="tit">배송비</div>
+                                                    <div class="cnt"><strong>0</strong>원</div>
+                                                </div> 
+                                                <div class="item total">
+                                                    <div class="tit">총 결제금액</div>
+                                                    <div class="cnt green"><strong>50,400</strong>원</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order_box">
+                <div class="ob_title">취소요청정보</div>
+                <div class="ob_content">
+                    <div class="ob_table sm">
+                        <table>
+                            <colgroup>
+                            <col style="width:150px;">
+                            <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>취소요청일자</th>
+                                    <td>2024-07-22</td>
+                                </tr>
+                                <tr>
+                                    <th>취소요청사유</th>
+                                    <td>기타</td>
+                                </tr>
+                                <tr>
+                                    <th>취소요청사유 상세</th>
+                                    <td>다른 상품을 사야하는데 잘못 주문함.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form_btns2">
+                <button type="button" class="btn submit">취소요청</button>
+                <button type="button" class="btn dark">주문/배송 목록 보기</button>
+            </div>
+
         </div>
-	</div>
+    </div>
 	<!-- //content -->
 
 	<div id="footer">

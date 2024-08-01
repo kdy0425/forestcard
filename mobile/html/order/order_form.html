@@ -23,6 +23,8 @@
 <link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
 <link href="https://cdn.jsdelivr.net/npm/typeface-poppins@1.1.13/index.min.css" rel="stylesheet"><!-- poppins font -->
 <script src="../../assets/js/jquery-3.6.4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../assets/css/simplebar.css" />
+<script src="../../assets/js/simplebar.min.js"></script>
 </head>
 <body>
 
@@ -48,7 +50,7 @@
                             <a href="javascript:;" class="btn home">홈</a>
                         </div>
                         <div>
-                            <a href="javascript:;" class="btn cart">장바구니</a>
+                            <a href="javascript:;" class="btn cart">장바구니<span class="num">0</span></a>
                             <button type="button" class="btn close">닫기</button>
                         </div>
                     </div>
@@ -163,9 +165,20 @@
                                         <tr>
                                             <th>배송요청사항</th>
                                             <td>
-                                                <select name="" id="">
-                                                    <option value="">배송 요청사항(선택)</option>
-                                                </select>
+                                                <div class="design_select">
+                                                    <input type="hidden" value="">
+                                                    <button type="button" class="btn_select" onclick="selectOpen(this);">배송 요청사항(선택)</button>
+                                                    <div class="select_options design_scroll" style="display: none;" data-simplebar>
+                                                        <div class="items">
+                                                            <div class="item"><a href="javascript:;" data-id="" class="active" onclick="selectSelect(this);">배송 요청사항(선택)</a></div>
+                                                            <div class="item"><a href="javascript:;" data-id="" onclick="selectSelect(this);">배송 요청사항1</a></div>
+                                                            <div class="item"><a href="javascript:;" data-id="" onclick="selectSelect(this);">배송 요청사항2</a></div>
+                                                            <div class="item"><a href="javascript:;" data-id="" onclick="selectSelect(this);">배송 요청사항3</a></div>
+                                                            <div class="item"><a href="javascript:;" data-id="" onclick="selectSelect(this);">배송 요청사항4</a></div>
+                                                            <div class="item"><a href="javascript:;" data-id="" onclick="selectSelect(this);">배송 요청사항5</a></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -216,7 +229,7 @@
                             </div>
                             <div class="total_price"><span class="tit">총 상품 금액</span><strong>18,280</strong><span class="won">원</span></div>
                             <div class="order_check">
-                                <label class="checkbox">
+                                <label class="checkbox2">
                                     <input type="checkbox" id="order_checkbox">
                                     <span class="ck_icon"></span>
                                     <strong>(필수)</strong>  주문내역 확인 및 결제서비스 이용 약관에 동의합니다.
