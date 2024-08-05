@@ -1521,7 +1521,7 @@ background-repeat:no-repeat;background-position:center center;background-size:8p
 .order_box .ob_content .labels .item .checkbox .ck_icon{width:20px;height:20px;top:3px;background-size: contain;border:1px solid #ddd;background-color:#fff;box-shadow:none;}
 .order_box .ob_content .labels .item .checkbox input{top:8px;width:1px;height:1px;left:5px;}
 .order_box .ob_content .labels .item .checkbox input:focus{outline: none;}
-.order_box .ob_content .labels .item .checkbox input:checked + .ck_icon{border:0;background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='1' width='19' height='19' rx='9.5' fill='white'/%3E%3Crect x='0.5' y='1' width='19' height='19' rx='9.5' stroke='%2300AF71'/%3E%3Ccircle cx='10' cy='10.5' r='4' fill='%2300AF71'/%3E%3C/svg%3E%0A");}
+.order_box .ob_content .labels .item .checkbox input:checked + .ck_icon{border:0;background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='1' width='19' height='19' rx='9.5' fill='white'/%3E%3Crect x='0.5' y='1' width='19' height='19' rx='9.5' stroke='%2300AF71'/%3E%3Ccircle cx='10' cy='10.5' r='5' fill='%2300AF71'/%3E%3C/svg%3E%0A");}
 .order_box .ob_content .payment_type{padding:0 24px;margin-top:20px;}
 .order_box .ob_content .payment_type .tit{color:#888;font-size:14px;font-weight:500;margin-bottom: 10px;}
 .order_box .ob_content .payment_type .list{display:flex;}
