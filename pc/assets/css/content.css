@@ -1541,13 +1541,13 @@ background-repeat:no-repeat;background-position:center center;background-size:8p
 .ob_table table tr:first-child th,
 .ob_table table tr:first-child td{padding-top:0;}
 .ob_table table select{width:100%;}
-.ob_table table textarea{height:100px;}
+.ob_table table textarea{height:100px; resize: none;}
 .ob_table table .design_select{width:100%;}
 .ob_table.sm table th{padding-top:10px;}
 .ob_table.sm table td{padding-top:10px;color:#444;}
 .ob_table.sm table tr:first-child th,
 .ob_table.sm table tr:first-child td{padding-top:0;}
-.ads_cnt_wrap{display:flex;align-items: end;}
+.ads_cnt_wrap{}
 .ads_cnt{}
 .ads_cnt div{display: inline-flex;align-items: center;}
 .ads_cnt div:first-child:before{display: none;}
@@ -1556,7 +1556,6 @@ background-repeat:no-repeat;background-position:center center;background-size:8p
 .ads_cnt div.ads:before{display:none;}
 .ads_btn{margin-top:12px;padding:0 27px 0 12px;height:36px;color:#fff;border-radius:4px;background-color: #444;transition: all 0.3s;font-size:14px;font-weight:700;border:0;background-position: right 12px center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg width='7' height='12' viewBox='0 0 7 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 2.5L5 6.5L1 10.5' stroke='white' stroke-width='1.5'/%3E%3C/svg%3E%0A");}
 .ads_btn:hover{background-color: #333;}
-.ads_cnt_wrap .ads_btn{margin-left:25px;}
 .terms_dot{}
 .terms_dot li{color:#888;font-size:13px;padding-left:10px;position: relative;word-break: keep-all;}
 .terms_dot li + li{margin-top:15px;}
