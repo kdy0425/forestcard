@@ -1812,7 +1812,9 @@ html .simplebar-vertical .simplebar-scrollbar:before{background-color: #AAAAAA;l
 .new_form .new_form_box .title{position: relative;color:#222;font-size:20px;font-weight: 700;margin-bottom:15px;}
 
 .new_form_table{}
+.new_form_table + .new_form_table{margin-top:30px;}
 .new_form_table table{width:100%;border-collapse: collapse;border-top:1px solid #202020;}
+.new_form_table table caption{color:#222;font-size:14px;font-weight:700;margin-bottom:10px;text-align: left;}
 .new_form_table table tbody th{vertical-align: middle;padding: 17px 17px 17px 20px;color:#444;font-size:14px;font-weight: 500;border-bottom:1px solid #E9E9E9;text-align: left;background-color: #F9F9FB;}
 .new_form_table table tbody th .req{color:#FF385D;display:inline-block;}
 .new_form_table table tbody th .stit{color:#767676;font-size:13px;font-weight:400;vertical-align: baseline;}

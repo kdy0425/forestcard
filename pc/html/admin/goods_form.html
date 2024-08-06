@@ -197,6 +197,7 @@
                                     </td>
                                     <th>구매안내<span class="req">*</span></th>
                                     <td>
+                                        <button type="button" class="form_btn1" onclick="$('#buy_info').show();">구매안내 관리</button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -360,7 +361,7 @@
 
 <!-- 배송 템플릿 등록 -->
 <div id="delivery_template" class="layer_new" style="display:none ;">
-    <div class="ln_box" style="width:760px;">
+    <div class="ln_box" style="width:640px;">
         <div class="ln_title"><strong>배송 템플릿 등록</strong></div>
         <button class="ln_close" onclick="$('#delivery_template').hide();">닫기</button>
         <div class="ln_content">
@@ -376,7 +377,7 @@
                             <th>배송템플릿명<span class="req">*</span></th>
                             <td>
                                 <div class="ip_group">
-                                    <input type="text" style="width: 300px;" placeholder="판매자 이름/사업자등록번호 등 입력">
+                                    <input type="text" class="auto" placeholder="판매자 이름/사업자등록번호 등 입력">
                                 </div>
                             </td>
                         </tr>
@@ -460,7 +461,7 @@
                             <th>판매자<span class="req">*</span></th>
                             <td>
                                 <div class="ip_group">
-                                    <input type="text" style="width:300px;" value="달콤한배">
+                                    <input type="text" class="auto" value="달콤한배">
                                 </div>
                             </td>
                         </tr>
@@ -581,6 +582,147 @@
     <div class="ln_bg" onclick="$('#goods_gosi').hide();"></div>
 </div>
 
+
+
+<!-- 구매안내 -->
+<div id="buy_info" class="layer_new" style="display:none ;">
+    <div class="ln_box" style="width:640px;">
+        <div class="ln_title"><strong>구매안내</strong></div>
+        <button class="ln_close" onclick="$('#buy_info').hide();">닫기</button>
+        <div class="ln_content">
+
+            <div class="new_form_table">
+                <table>
+                    <caption>배송안내</caption>
+                    <colgroup>
+                        <col style="width:180px;">
+                        <col style="">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>구매안내 템플릿명<span class="req">*</span></th>
+                            <td>
+                                <div class="ip_group">
+                                    <input type="text" class="auto" placeholder="판매자 이름/사업자등록번호 등 입력">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>판매자명<span class="req">*</span></th>
+                            <td>
+                                <div class="ip_group">
+                                    <input type="text" class="auto" value="달콤한배">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>배송방법<span class="req">*</span></th>
+                            <td>
+                                <div class="ip_group">
+                                    <select name="" id="" style="width: 150px;">
+                                        <option value="">택배</option>
+                                    </select>
+                                    <select name="" id="" style="width: 150px;">
+                                        <option value="">합동택배</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>배송비유형<span class="req">*</span></th>
+                            <td>
+                                <div class="ip_group">
+                                    <span>무료</span>
+                                    <select name="" id="" style="width: 150px;">
+                                        <option value="">무료</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>배송기간<span class="req">*</span></th>
+                            <td>
+                                <div class="ip_group">
+                                    <select name="" id="" style="width: 150px;">
+                                        <option value="">선택해주세요</option>
+                                    </select>
+                                    <span>일</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>교환/반품 배송비<span class="req">*</span></th>
+                            <td>
+                                <div class="ip_group">
+                                    <input type="text" style="width: 150px;">
+                                    <span>원</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <ul class="dot_hint mgt10">
+                    <li class="red">
+                        <strong>상품정보 미 입력 시 상세정보 참고로 자동 등록됩니다.</strong>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="new_form_table">
+                <table>
+                    <caption>교환/반품 안내</caption>
+                    <colgroup>
+                        <col style="width:180px;">
+                        <col style="">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>Option1<span class="req">*</span></th>
+                            <td>
+                                <div class="ip_group">
+                                    <input type="text" class="auto" placeholder="옵션1">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Option2<span class="req">*</span></th>
+                            <td>
+                                <div class="ip_group">
+                                    <input type="text" class="auto" value="달콤한배">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>반품/교환지<span class="req">*</span></th>
+                            <td>
+                                <div class="ip_group">
+                                    <input type="text" class="auto">
+                                    <button type="button" class="form_btn1">우편번호 검색</button>
+                                </div>
+                                <div class="ip_group">
+                                    <input type="text" class="auto">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <ul class="dot_hint mgt10">
+                    <li class="red">
+                        <strong>상품정보 미 입력 시 상세정보 참고로 자동 등록됩니다.</strong>
+                    </li>
+                </ul>
+            </div>
+            <div class="ln_btns max340">
+                <button class="btn submit2" type="button">저장</button>
+                <button class="btn line2" type="button" onclick="$('#buy_info').hide();">닫기</button>
+            </div>
+        </div>
+    </div>
+    <div class="blank"></div>
+    <div class="ln_bg" onclick="$('#buy_info').hide();"></div>
+</div>
 
 <script src="../../assets/js/common.js"></script>
 </body>
