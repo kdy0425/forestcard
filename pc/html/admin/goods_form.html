@@ -23,6 +23,7 @@
 <link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
 <link href="https://cdn.jsdelivr.net/npm/typeface-poppins@1.1.13/index.min.css" rel="stylesheet"><!-- poppins font -->
 <script src="../../assets/js/jquery-3.6.4.min.js"></script>
+<script src="../../assets/js/jquery-ui.min.js"></script>
 </head>
 <body>
 
@@ -142,9 +143,9 @@
                     <div class="new_form_table">
                         <table>
                             <colgroup>
-                                <col style="width:200px;">
+                                <col style="width:180px;">
                                 <col style="width:460px;">
-                                <col style="width:200px;">
+                                <col style="width:180px;">
                                 <col style="">
                             </colgroup>
                             <tbody>
@@ -153,6 +154,138 @@
                                     <td colspan="3">
                                         <div class="ip_group">
                                             <input type="text" class="auto">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>판매기간<span class="req">*</span></th>
+                                    <td colspan="3">
+                                        <div class="ip_group">
+                                            <label class="checkbox"><input type="radio" name="selling_time"><span class="ck_icon"></span>상시판매</label>
+                                            <label class="checkbox"><input type="radio" name="selling_time"><span class="ck_icon"></span>기간판매</label>
+                                            <input type="text" class="datepicker2 mgl20">
+                                            <span class="dash2">~</span>
+                                            <input type="text" class="datepicker2">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>상품이미지<span class="req">*</span><br/>(썸네일 이미지)</th>
+                                    <td colspan="3">
+                                        <div class="ip_group">
+                                            <label class="form_btn1"><input type="file" max-size="10" max-count="6" multiple id="thumbnailUpload">사진첨부</label>
+                                            <span><span class="count" id="thumbnailCount">0</span>/6(<span class="size" id="thumbnailSize">0MB</span>)</span>
+                                        </div>
+                                        <p class="mgt10">대표 이미지를 등록해 주세요.<br/>
+                                        <strong>최대 총 10MB, 6장까지 가능, 권장사이즈 1000x1000, jpg/png/gif 파일 가능</strong></p>
+                                        <div class="file_photo_view" id="thumbnailPreview">
+                                            <!-- <div class="item">
+                                                <div class="thum" style="background-image: url('../../assets/images/card_kb.jpg');"></div>
+                                                <button type="button" class="remove_btn">파일삭제</button>
+                                            </div> -->
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>상품내용<span class="req">*</span><br/>(썸네일 이미지)</th>
+                                    <td colspan="3">
+                                        <div class="ip_group">
+                                            <label class="form_btn1"><input type="file" max-size="30" max-count="20" multiple id="contentUpload">사진첨부</label>
+                                            <span><span class="count" id="contentCount">0</span>/20(<span class="size" id="contentSize">0MB</span>)</span>
+                                        </div>
+                                        <p class="mgt10">본문에 등록될 이미지를 등록해 주세요.<br/>
+                                        <strong>최대 총 30MB, 20장까지 가능, 권장사이즈 1000x1000, jpg/png/gif 파일 가능</strong></p>
+                                        <div class="file_photo_view" id="contentPreview">
+                                            <!-- <div class="item">
+                                                <div class="thum" style="background-image: url('../../assets/images/card_kb.jpg');"></div>
+                                                <button type="button" class="remove_btn">파일삭제</button>
+                                            </div> -->
+                                        </div>
+                                        <script>
+                                            document.getElementById('thumbnailUpload').addEventListener('change', function(event) {
+                                                handleFileUpload(event, 10, 6, 'thumbnailPreview', 'thumbnailCount', 'thumbnailSize');
+                                            });
+
+                                            document.getElementById('contentUpload').addEventListener('change', function(event) {
+                                                handleFileUpload(event, 30, 20, 'contentPreview', 'contentCount', 'contentSize');
+                                            });
+
+                                            let thumbnailFiles = [];
+                                            let contentFiles = [];
+
+                                            function handleFileUpload(event, maxSizeMB, maxCount, previewId, countId, sizeId) {
+                                                const files = Array.from(event.target.files);
+                                                const preview = document.getElementById(previewId);
+                                                const countElement = document.querySelector(`#${countId}`);
+                                                const sizeElement = document.querySelector(`#${sizeId}`);
+
+                                                let currentFiles = previewId === 'thumbnailPreview' ? thumbnailFiles : contentFiles;
+
+                                                files.forEach(file => {
+                                                    const fileSizeMB = file.size / 1024 / 1024;
+
+                                                    if ((currentFiles.length < maxCount) && (currentFiles.reduce((sum, f) => sum + f.size / 1024 / 1024, 0) + fileSizeMB <= maxSizeMB)) {
+                                                        currentFiles.push(file);
+
+                                                        const reader = new FileReader();
+                                                        reader.onload = function(e) {
+                                                            const div = document.createElement('div');
+                                                            div.className = 'item';
+
+                                                            const thumDiv = document.createElement('div');
+                                                            thumDiv.className = 'thum';
+                                                            thumDiv.style.backgroundImage = `url(${e.target.result})`;
+
+                                                            const removeBtn = document.createElement('button');
+                                                            removeBtn.className = 'remove_btn';
+                                                            removeBtn.innerText = '파일삭제';
+                                                            removeBtn.onclick = () => {
+                                                                const index = currentFiles.indexOf(file);
+                                                                if (index > -1) {
+                                                                    currentFiles.splice(index, 1);
+                                                                    div.remove();
+                                                                    updateCountAndSize(currentFiles, countElement, sizeElement, maxSizeMB, maxCount, preview);
+                                                                }
+                                                            };
+
+                                                            div.appendChild(thumDiv);
+                                                            div.appendChild(removeBtn);
+                                                            preview.appendChild(div);
+                                                        };
+                                                        reader.readAsDataURL(file);
+                                                    } else {
+                                                        alert(`최대 ${maxCount}장, ${maxSizeMB}MB까지 업로드할 수 있습니다.`);
+                                                    }
+                                                });
+
+                                                updateCountAndSize(currentFiles, countElement, sizeElement, maxSizeMB, maxCount, preview);
+
+                                                if (previewId === 'thumbnailPreview') {
+                                                    thumbnailFiles = currentFiles;
+                                                } else {
+                                                    contentFiles = currentFiles;
+                                                }
+                                            }
+
+                                            function updateCountAndSize(files, countElement, sizeElement, maxSizeMB, maxCount, preview) {
+                                                const totalSizeMB = files.reduce((sum, f) => sum + f.size / 1024 / 1024, 0);
+                                                countElement.innerText = files.length;
+                                                sizeElement.innerText = `${totalSizeMB.toFixed(1)}MB`;
+
+                                                if (files.length > 0) {
+                                                    preview.classList.add('active');
+                                                } else {
+                                                    preview.classList.remove('active');
+                                                }
+                                            }
+                                        </script>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>상품내용<span class="req">*</span><br/>(본문내용)</th>
+                                    <td colspan="3">
+                                        <div class="ip_group">
+                                            <textarea name="" id=""></textarea>
                                         </div>
                                     </td>
                                 </tr>
@@ -168,19 +301,31 @@
                                 <tr>
                                     <th>판매가<span class="req">*</span></th>
                                     <td>
+                                        <div class="ip_group">
+                                            <input type="text" style="width:200px;">
+                                            <span>원</span>
+                                        </div>
                                     </td>
                                     <th>판매수량<span class="req">*</span></th>
                                     <td>
+                                        <div class="ip_group">
+                                            <label class="checkbox"><input type="radio" name="selling_lot"><span class="ck_icon"></span>무제한</label>
+                                            <label class="checkbox"><input type="radio" name="selling_lot"><span class="ck_icon"></span>수량입력</label>
+                                            <input type="text" class="mgl10" style="width:100px;">
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>최소구매단위<span class="req">*</span></th>
-                                    <td>
-                                    </td>
-                                    <th>상품정보공시<span class="req">*</span></th>
+                                    <th>최소구매단위</th>
                                     <td>
                                         <div class="ip_group">
-                                            <input type="text" style="width:300px;" readonly value="(20)농수축산물">
+                                            <input type="text" style="width:100px;" value="1">
+                                        </div>
+                                    </td>
+                                    <th>상품정보 고시<span class="req">*</span></th>
+                                    <td>
+                                        <div class="ip_group">
+                                            <input type="text" style="width:200px;" value="(20)농수축산물">
                                             <button type="button" class="form_btn1" onclick="$('#goods_gosi').show();">상품정보 고시 등록</button>
                                         </div>
                                     </td>
@@ -197,7 +342,31 @@
                                     </td>
                                     <th>구매안내<span class="req">*</span></th>
                                     <td>
-                                        <button type="button" class="form_btn1" onclick="$('#buy_info').show();">구매안내 관리</button>
+                                        <div class="ip_group">
+                                            <label class="checkbox"><input type="radio" name="buy_info"><span class="ck_icon"></span>사용안함</label>
+                                            <label class="checkbox"><input type="radio" name="buy_info"><span class="ck_icon"></span>사용</label>
+                                            <select name="" id="" style="width: 140px;">
+                                                <option value="">구매안내등록</option>
+                                            </select>
+                                            <button type="button" class="form_btn1" onclick="$('#buy_info').show();">구매안내 관리</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>과세구분</th>
+                                    <td>
+                                        <div class="ip_group">
+                                            <label class="checkbox"><input type="radio" name="tax_type"><span class="ck_icon"></span>면세</label>
+                                            <label class="checkbox"><input type="radio" name="tax_type"><span class="ck_icon"></span>과세</label>
+                                        </div>
+                                    </td>
+                                    <th>판매구분<span class="req">*</span></th>
+                                    <td>
+                                        <div class="ip_group">
+                                            <label class="checkbox"><input type="radio" name="selling_type"><span class="ck_icon"></span>판매</label>
+                                            <label class="checkbox"><input type="radio" name="selling_type"><span class="ck_icon"></span>판매중지</label>
+                                            <label class="checkbox"><input type="radio" name="selling_type"><span class="ck_icon"></span>판매완료</label>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
