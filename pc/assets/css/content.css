@@ -1786,7 +1786,7 @@ html .simplebar-vertical .simplebar-scrollbar:before{background-color: #AAAAAA;l
 .new_terms .item.check_all_item .checkbox{color:#121212;}
 
 .new_terms .item .tc_cnt{display:none;padding:28px 32px;max-height:400px;overflow-y: auto;border-bottom:1px solid #E9E9E9;}
-.new_terms .item .tc_cnt strong{display:block;color:#444;font-size:14px;font-weight: 700;}
+.new_terms .item .tc_cnt strong{display:block;color:#444;font-size:14px;font-weight: 600;}
 .new_terms .item .tc_cnt p{color:#444;font-size:14px;}
 .new_terms .item .tc_cnt p.normal{font-weight:400;}
 .new_terms .item .tc_cnt p strong{color:#444;font-size:15px;font-weight:500;}
@@ -1798,7 +1798,7 @@ html .simplebar-vertical .simplebar-scrollbar:before{background-color: #AAAAAA;l
 
 
 .form_btns3{margin-top:50px;display:flex;justify-content: center;}
-.form_btns3 .btn{width:270px;border-radius:4px;text-align: center;color:#fff;font-size:15px;font-weight:700;height:53px;display:flex;align-items: center;justify-content: center;border:0;}
+.form_btns3 .btn{width:270px;border-radius:4px;text-align: center;color:#fff;font-size:15px;font-weight:600;height:53px;display:flex;align-items: center;justify-content: center;border:0;}
 .form_btns3 .btn + .btn{margin-left:10px;}
 .form_btns3 .btn.line{background-color:#fff;border:1px solid #444;color:#444;}
 .form_btns3 .btn.submit{background-color: #6EC2CB;}
@@ -1809,12 +1809,12 @@ html .simplebar-vertical .simplebar-scrollbar:before{background-color: #AAAAAA;l
 .new_form{}
 .new_form .new_form_box{}
 .new_form .new_form_box + .new_form_box{margin-top:50px;}
-.new_form .new_form_box .title{position: relative;color:#222;font-size:20px;font-weight: 700;margin-bottom:15px;}
+.new_form .new_form_box .title{position: relative;color:#222;font-size:20px;font-weight: 600;margin-bottom:15px;}
 
 .new_form_table{}
 .new_form_table + .new_form_table{margin-top:30px;}
 .new_form_table table{width:100%;border-collapse: collapse;border-top:1px solid #202020;}
-.new_form_table table caption{color:#222;font-size:14px;font-weight:700;margin-bottom:10px;text-align: left;}
+.new_form_table table caption{color:#222;font-size:14px;font-weight:600;margin-bottom:10px;text-align: left;}
 .new_form_table table tbody th{vertical-align: middle;padding: 17px 17px 17px 20px;color:#444;font-size:14px;font-weight: 500;border-bottom:1px solid #E9E9E9;text-align: left;background-color: #F9F9FB;}
 .new_form_table table tbody th .req{color:#FF385D;display:inline-block;}
 .new_form_table table tbody th .stit{color:#767676;font-size:13px;font-weight:400;vertical-align: baseline;}
@@ -1869,7 +1869,7 @@ html .simplebar-vertical .simplebar-scrollbar:before{background-color: #AAAAAA;l
 .new_form_table table tbody td .lblue_arrow_txt + .lblue_arrow_txt{margin-top:8px;}
 .new_form_table table tbody .labels .checkbox{font-weight:400;}
 
-.new_form_table .form_btn1{border:0;background-color: #444;color:#fff;border-radius:30px;padding:3px 16px;font-size:12px;font-weight:700;height:25px;vertical-align: middle;display:inline-block;overflow: hidden;position: relative;}
+.new_form_table .form_btn1{border:0;background-color: #444;color:#fff;border-radius:30px;padding:3px 16px;font-size:12px;font-weight:600;height:25px;vertical-align: middle;display:inline-block;overflow: hidden;position: relative;}
 .new_form_table .form_btn1:hover{background-color: #333;}
 .new_form_table .form_btn1 input[type="file"]{position: absolute;left:-999em;}
 .new_form_table .txt_nor{color:#767676;font-weight:400;vertical-align: middle;display:inline-block;}
@@ -1892,7 +1892,7 @@ html .simplebar-vertical .simplebar-scrollbar:before{background-color: #AAAAAA;l
 .new_l_search_form{margin-bottom:30px;}
 .new_l_search_form table{width:100%;border-collapse: collapse;}
 .new_l_search_form table tbody{}
-.new_l_search_form table tbody th{vertical-align: middle;padding:5px 10px 5px 9px;color:#444;font-size:14px;font-weight: 700;text-align: left;position: relative;}
+.new_l_search_form table tbody th{vertical-align: middle;padding:5px 10px 5px 9px;color:#444;font-size:14px;font-weight: 600;text-align: left;position: relative;}
 .new_l_search_form table tbody th:before{content:"";display:inline-block;width:3px;height:3px;border-radius:50%;background-color: #444;position: absolute;left:0;top:50%;margin-top:-1px;}
 .new_l_search_form table tbody th .stit{color:#767676;font-size:13px;font-weight:400;vertical-align: baseline;}
 .new_l_search_form table tbody td{vertical-align: middle;padding: 0;color:#444;font-size:15px;font-weight: 500;}
@@ -1913,7 +1913,7 @@ html .simplebar-vertical .simplebar-scrollbar:before{background-color: #AAAAAA;l
 .new_l_search_form table tbody td .ip_group .dash{width:5px;position: relative;height:35px;text-indent: -999em;overflow:hidden;}
 .new_l_search_form table tbody td .ip_group .dash:before{content:"";position:absolute;left:0;top:50%;width:5px;height:1px;background-color: #444;}
 
-.new_l_search_form .form_btn1{border:0;background-color: #444;color:#fff;border-radius:4px;padding:3px 16px;font-size:13px;font-weight:700;height:35px;vertical-align: middle;display:inline-block;overflow: hidden;position: relative;display: flex;align-items: center;justify-content: center;}
+.new_l_search_form .form_btn1{border:0;background-color: #444;color:#fff;border-radius:4px;padding:3px 16px;font-size:13px;font-weight:600;height:35px;vertical-align: middle;display:inline-block;overflow: hidden;position: relative;display: flex;align-items: center;justify-content: center;}
 .new_l_search_form .form_btn1:hover{background-color: #333;}
 .new_l_search_form .form_btn1 .icon_search{width:18px;height:18px;margin-right:4px;background-position: center center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_356_11264' style='mask-type:luminance' maskUnits='userSpaceOnUse' x='0' y='0' width='18' height='19'%3E%3Cpath d='M18 0.5H0V18.5H18V0.5Z' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_356_11264)'%3E%3Cpath d='M8.33333 13.8679C9.38817 13.8679 10.4193 13.5492 11.2964 12.9521C12.1734 12.355 12.857 11.5064 13.2607 10.5135C13.6644 9.52052 13.77 8.42794 13.5642 7.37385C13.3584 6.31977 12.8504 5.35153 12.1046 4.59157C11.3587 3.83162 10.4084 3.31409 9.37381 3.10441C8.33925 2.89474 7.26689 3.00235 6.29235 3.41364C5.31782 3.82492 4.48486 4.52141 3.89883 5.41502C3.31279 6.30863 3 7.35923 3 8.43396C3 9.87514 3.5619 11.2573 4.5621 12.2764C5.56229 13.2954 6.91885 13.8679 8.33333 13.8679Z' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.9998 15.2264L12.1025 12.2744' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E%0A");}
 
