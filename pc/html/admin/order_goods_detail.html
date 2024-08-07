@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=1280"/>
+<link rel="canonical" href="">
+<link rel="shortcut icon" type="image/x-icon" href="">
+<link rel="icon" type="image/svg+xml" href="../../assets/images/favicon.svg">
+<meta name="title"  content="산림복지서비스이용권" />
+<meta name="author" content="" />
+<meta name="keywords"    content="산림복지, 산림복지서비스이용권, 산림복지서비스, 산림바우처, 산림복지바우처">
+<meta name="description" content="산림복지서비스이용권 소개, 기초생활수급자 및 장애(아동)수당수급자 발급, 사용시설 안내, 사용방법 안내">
+<meta property="og:url"         content="https://www.forestcard.or.kr/main/main.do" />
+<meta property="og:type"        content="website" />
+<meta property="og:site_name"   content="산림복지서비스이용권" />
+<meta property="og:title"       content="산림복지서비스이용권" />
+<meta property="og:description" content="산림복지서비스이용권 소개, 기초생활수급자 및 장애(아동)수당수급자 발급, 사용시설 안내, 사용방법 안내" />
+<title>산림복지서비스이용권</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
+<link href="https://cdn.jsdelivr.net/npm/typeface-poppins@1.1.13/index.min.css" rel="stylesheet"><!-- poppins font -->
+<script src="../../assets/js/jquery-3.6.4.min.js"></script>
+<script src="../../assets/js/jquery-ui.min.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	<h1 id="header_h1">산림복지서비스이용권</h1>
+	<div id="skip_to_container">
+		<!-- skip navigation -->
+		<a href="#content">내용 바로가기</a>
+		<a href="#nav">서비스메뉴 바로가기</a>
+	</div>
+	<hr class="hide" />	
+
+	<!-- header -->
+	<div id="header" class="hd_full">
+		<div id="hd_wrap">
+            <div id="logo"><a href="javascript:;"><img src="../../assets/images/logo.png" alt="숲이 주는 즐거움 산림복지서비스이용권"></a></div>
+            <div class="nav_wrap">
+                <ul id="nav">
+                    <li><a href="javascript:;" class="active">기본정보</a>
+                        <ul>
+                            <li><a href="javascript:;">회원정보</a></li>
+                            <li><a href="javascript:;">관리자정보</a></li>
+                            <li><a href="javascript:;">사업관리</a></li>
+                            <li><a href="javascript:;">복지시설정보</a></li>
+                            <li><a href="javascript:;">사용가능시설관리</a></li>
+                            <li><a href="javascript:;">선정자추첨</a></li>
+                            <li><a href="javascript:;">변경신청 배치현황</a></li>
+                            <li><a href="javascript:;">발급요청 배치현황</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">이용권 신청</a>
+                        <ul>
+                            <li><a href="javascript:;">개인이용권신청</a></li>
+                            <li><a href="javascript:;">복지시설 이용권 신청</a></li>
+                            <li><a href="javascript:;">개인이용권 신청</a></li>
+                            <li><a href="javascript:;">복지시설 이용권 신청</a></li>
+                            <li><a href="javascript:;">이용자 변경 신청</a></li>
+                            <li><a href="javascript:;">합산대표변경</a></li>
+                            <li><a href="javascript:;">선정 후 추가 합산</a></li>
+                            <li><a href="javascript:;">개인이용권 선정(1차)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">이용권 사용정보</a>
+                        <ul>
+                            <li><a href="javascript:;">이용권 잔액현황</a></li>
+                            <li><a href="javascript:;">이용권 사용내역</a></li>
+                            <li><a href="javascript:;">복지시설 사용현황</a></li>
+                            <li><a href="javascript:;">이용권 사용현황</a></li>
+                            <li><a href="javascript:;">점자스티커 신청현황</a></li>
+                            <li><a href="javascript:;">사전알림서비스</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">제공자 등록</a>
+                        <ul>
+                            <li><a href="javascript:;">등록신청 조회</a></li>
+                            <li><a href="javascript:;">제공자 관리</a></li>
+                            <li><a href="javascript:;">등록신청</a></li>
+                            <li><a href="javascript:;">판매자관리</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">상품관리</a>
+                        <ul>
+                            <li><a href="javascript:;">상품목록</a></li>
+                            <li><a href="javascript:;">상품등록</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">주문관리</a>
+                        <ul>
+                            <li><a href="javascript:;">주문관리1</a></li>
+                            <li><a href="javascript:;">주문관리2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">통계관리</a>
+                        <ul>
+                            <li><a href="javascript:;">총괄-사용현황</a></li>
+                            <li><a href="javascript:;">제공자별현황</a></li>
+                            <li><a href="javascript:;">개인이용자현황</a></li>
+                            <li><a href="javascript:;">복지시설현황</a></li>
+                            <li><a href="javascript:;">이용자전체현항</a></li>
+                            <li><a href="javascript:;">접속자현황</a></li>
+                            <li><a href="javascript:;">방문자통계</a></li>
+                            <li><a href="javascript:;">신청접수현황</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">게시판관리</a>
+                        <ul>
+                            <li><a href="javascript:;">공지사항</a></li>
+                            <li><a href="javascript:;">자료실</a></li>
+                            <li><a href="javascript:;">자주하는질문</a></li>
+                            <li><a href="javascript:;">팝업관리</a></li>
+                            <li><a href="javascript:;">정보마당</a></li>
+                            <li><a href="javascript:;">부정사용 신고</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <span class="nav_bg"></span>
+            </div>
+            <div class="hd_mb">
+                <div class="item">
+                    <a href="javascript:;" class="logout">로그아웃</a>
+                </div>
+                <div class="item">
+                    <a href="javascript:;" class="system">관리</a>
+                </div>
+            </div>
+        </div>
+	</div>
+	<!-- //header -->	
+
+	<!-- content -->
+	<div id="content" class="sub_content">
+        <div class="container">
+            <h2 class="page_title">상품주문</h2>
+            <div class="history">
+                <div class="item home"><a href="javascript:;">홈으로</a></div>
+                <div class="item has_child">
+                    <a href="javascript:;">1depth</a>
+                    <ul>
+                        <li><a href="javascript:;">1depth</a></li>
+                        <li><a href="javascript:;">1depth1</a></li>
+                        <li><a href="javascript:;">1depth2</a></li>
+                    </ul>
+                </div>
+                <div class="item has_child">
+                    <a href="javascript:;">2depth</a>
+                    <ul>
+                        <li><a href="javascript:;">2depth</a></li>
+                        <li><a href="javascript:;">2depth1</a></li>
+                        <li><a href="javascript:;">2depth2</a></li>
+                    </ul>
+                </div>
+                <div class="share_box">
+                    <button type="button" class="share_open">공유하기</button>
+                    <div class="share_list">
+                        <div class="share_item"><a href="javascript:;" class="kakao">카카오<br/>공유하기</a></div>
+                        <div class="share_item"><a href="javascript:;" class="facebook">페이스북<br/>공유하기</a></div>
+                        <div class="share_item"><a href="javascript:;" class="twitter">트위터<br/>공유하기</a></div>
+                        <div class="share_item"><a href="javascript:;" class="telegram">텔레그램<br/>공유하기</a></div>
+                        <div class="share_item"><a href="javascript:;" class="url" data-url="https://naver.com/123">url<br/>복사하기</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="new_form_box mgt50">
+                <div class="title">대상자 정보</div>
+                <div class="new_form_table">
+                    <table>
+                        <colgroup>
+                            <col style="width:200px;">
+                            <col style="width:440px;">
+                            <col style="width:200px;">
+                            <col style="">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>대상자 이름</th>
+                                <td colspan="3">홍길동(honghong)</td>
+                            </tr>
+                            <tr>
+                                <th>생년월일</th>
+                                <td>90.02.02</td>
+                                <th>휴대전화</th>
+                                <td>010-1234-4567</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="gd_wrap">
+                <div class="goods_detail_top">
+                    <div class="goods_thums">
+                        <div class="img"><img src="../../assets/images/dummy/goods_thum1.jpg" alt=""></div>
+                        <div class="thums">
+                            <div class="active"><img src="../../assets/images/dummy/goods_thum1.jpg" alt=""></div>
+                            <div><img src="../../assets/images/dummy/goods_thum2.jpg" alt=""></div>
+                            <div><img src="../../assets/images/dummy/goods_thum3.jpg" alt=""></div>
+                        </div>
+                        <script>
+                            $(document).ready(function() {
+                            $('.thums > div').on('click', function() {
+                                var newSrc = $(this).find('img').attr('src');
+                                $('.goods_thums .img img').attr('src', newSrc);
+                                $('.thums > div').removeClass('active');
+                                $(this).addClass('active');
+                            });
+                        });
+                        </script>
+                    </div>
+                    <div class="goods_info">
+                        <h3>I`mperfect 향이 가득한 국내산 무농약 자연산 표고버섯 500g</h3>
+                        <div class="price"><strong>18,280</strong><span>원</span></div>
+                        <div class="info">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th class="top">배송정보</th>
+                                        <td>
+                                            <div class="arrive_date"><strong>7/20(토)</strong> 도착예정</div>
+                                            <ul>
+                                                <li>택배사의 사정에 따라 실제배송완료일과 다를 수 있습니다.</li>
+                                                <li>일부 상품은 지역에 따라 차이가 있을 수 있습니다.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>배송비</th>
+                                        <td>
+                                            <div class="del_type">무료배송</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>수량선택</th>
+                                        <td>
+                                            <div class="lot_box">
+                                                <div class="lot_control">
+                                                    <button type="button" class="btn minus">증감</button>
+                                                    <input type="text" value="1">
+                                                    <button type="button" class="btn plus">증가</button>
+                                                </div>
+                                                <div class="prc"><strong>18,280</strong><span>원</span></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="total_price"><span class="tit">총 상품 금액</span><strong>18,280</strong><span class="won">원</span></div>
+
+                        <div class="gd_btns">
+                            <button type="button" class="btn cart" onclick="$('#cart_layer').show();">장바구니</button>
+                            <button type="button" class="btn submit">주문하기</button>
+                        </div>
+                        <div class="gd_btns"> 
+                            <button type="button" class="btn gray" disabled>일시품절</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="goods_detail_bottom">
+                    <div id="detail_content" class="detail_content">
+                        <div class="dc_tap_btn">
+                            <div class="item"><a href="#detail_content" class="active" data-rel="detail_product"><span>상품상세정보</span></a></div>
+                            <div class="item"><a href="#detail_content" data-rel="detail_infomation"><span>배송/반품/교환 안내</span></a></div>
+                        </div>
+
+                        <div id="detail_product" class="dc_tap_cnt">
+                            <div class="detail_img">
+                                <img src="../../assets/images/dummy/goods_thum1.jpg" alt="">
+                            </div>
+                            <div class="detail_dtable">
+                                <div class="caption">상품상세정보</div>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>상품번호</th>
+                                            <td>240300024452365</td>
+                                        </tr>
+                                        <tr>
+                                            <th>품명 및 모델명</th>
+                                            <td>상품 상세정보 참고</td>
+                                        </tr>
+                                        <tr>
+                                            <th>KC 인증 필 유무</th>
+                                            <td>상품 상세정보 참고</td>
+                                        </tr>
+                                        <tr>
+                                            <th>크기,중량</th>
+                                            <td>상품 상세정보 참고</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div id="detail_infomation" class="dc_tap_cnt" style="display:none;">
+                            <div class="detail_dtable">
+                                <div class="caption">배송정보</div>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>배송방법</th>
+                                            <td>1택배 / CJ대한통운23</td>
+                                        </tr>
+                                        <tr>
+                                            <th>배송비</th>
+                                            <td>무료</td>
+                                        </tr>
+                                        <tr>
+                                            <th>묶음배송 여부</th>
+                                            <td>상세정보 고시</td>
+                                        </tr>
+                                        <tr>
+                                            <th>배송기간</th>
+                                            <td>3일(주말/공휴일 제외)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="detail_dtable">
+                                <div class="caption">반품/교환 안내</div>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>교환/반품 비용</th>
+                                            <td>왕복배송비 6,000원 (제주도 및 도서산간지역은 12,000원)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>교환/반품 신청 기준일</th>
+                                            <td>반품/교환 요청 시 연락 드립니다. 수령일로 부터 1주일 이내만 가능합니다.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="detail_dtable">
+                                <div class="caption">판매자정보</div>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>판매자</th>
+                                            <td>주식회사 다올커머스</td>
+                                        </tr>
+                                        <tr>
+                                            <th>대표자명</th>
+                                            <td>이정철</td>
+                                        </tr>
+                                        <tr>
+                                            <th>통신판매업자번호</th>
+                                            <td>제 2018-고양일산서-0403호</td>
+                                        </tr>
+                                        <tr>
+                                            <th>사업자등록번호</th>
+                                            <td>701-88-00023</td>
+                                        </tr>
+                                        <tr>
+                                            <th>판매자 EMAIL</th>
+                                            <td>daol825@naver.com</td>
+                                        </tr>
+                                        <tr>
+                                            <th>사업장 소재지</th>
+                                            <td>경기도 고양시 일산서구 덕산로 243번길 28</td>
+                                        </tr>
+                                    </tbody>
+                                 </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail_aside">
+                        <div class="aside">
+                            <div class="prd_options">
+                                <div class="subject">I`mperfect 향이 가득한 국내산 무농약 자연산표고버섯 500g</div>
+                                <div class="lot_box">
+                                    <div class="lot_control">
+                                        <button type="button" class="btn minus">증감</button>
+                                        <input type="text" value="1">
+                                        <button type="button" class="btn plus">증가</button>
+                                    </div>
+                                    <div class="prc"><strong>18,280</strong><span>원</span></div>
+                                </div>
+                            </div>
+
+                            <div class="total_price"><span class="tit">총 상품 금액</span><strong>18,280</strong><span class="won">원</span></div>
+
+                            <div class="gd_btns">
+                                <button type="button" class="btn cart" onclick="$('#cart_layer').show();">장바구니</button>
+                                <button type="button" class="btn submit">주문하기</button>
+                                <button type="button" class="btn gray" disabled>일시품절</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+	<!-- //content -->
+
+	<div id="footer">
+        <div class="container">
+            <div class="ft_top">
+                <ul class="ft_links">
+                    <li><a href="javascript:;"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="javascript:;"><strong>영상정보처리기기 운영·관리 방침</strong></a></li>
+                    <li><a href="javascript:;">이용약관</a></li>
+                    <li><a href="javascript:;">이메일무단수집거부</a></li>
+                </ul>
+                <div class="family_sites">
+                    <button type="button" class="family_sites_open">관련사이트 바로가기</button>
+                    <ul class="sites">
+                        <li><a href="javascript:;">관련사이트명1</a></li>
+                        <li><a href="javascript:;">관련사이트명2</a></li>
+                        <li><a href="javascript:;">관련사이트명3</a></li>
+                        <li><a href="javascript:;">관련사이트명4</a></li>
+                        <li><a href="javascript:;">관련사이트명5</a></li>
+                        <li><a href="javascript:;">관련사이트명6</a></li>
+                        <li><a href="javascript:;">관련사이트명7</a></li>
+                        <li><a href="javascript:;">관련사이트명8</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ft_bottom">
+                <div class="ft_logo">한국산림복지진흥원</div>
+                <div class="ft_cnt">
+                    <div class="ft_info clearfix">
+                        <div>대전광역시 서구 둔산북로 121, 2층 209호(둔산동)</div>
+                        <div class="poppins">TEL : 1544-3228</div>
+                        <div class="poppins">FAX : 042-719-4049</div>
+                    </div>
+                    <div class="ft_copy">Copyright © 2016한국산림복지진흥원. All Rights Reserved.</div>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+
+
+<!-- 장바구니 -->
+<div id="cart_layer" class="layer_new" style="display: none;">
+    <div class="ln_box" style="width:400px;">
+        <div class="ln_title">장바구니 담기</div>
+        <button class="ln_close" onclick="$('#cart_layer').hide();">닫기</button>
+        <div class="ln_content">
+            <div class="alert_center">선택하신 상품을 장바구니에 담았습니다.<br/>
+                장바구니로 이동하시겠습니까?</div>
+            <div class="ln_btns">
+                <button class="btn" type="button" onclick="$('#cart_layer').hide();">쇼핑 계속하기</button>
+                <button class="btn submit" type="button">장바구니 가기</button>
+            </div>
+        </div>
+    </div>
+    <div class="blank"></div>
+    <div class="ln_bg" onclick="$('#cart_layer').hide();"></div>
+</div>
+
+
+<script src="../../assets/js/common.js"></script>
+<script>
+    $('.dc_tap_btn a').click(function(){
+        $('.dc_tap_btn a').removeClass('active');
+        $('.dc_tap_cnt').hide();
+        $('#' + $(this).attr('data-rel')).show();
+        $(this).addClass('active');
+    });
+
+    function addCart(){
+        $('#cart_layer').show();
+    }
+</script>
+</body>
+</html>	

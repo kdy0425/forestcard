@@ -137,7 +137,7 @@
 	<!-- content -->
 	<div id="content" class="sub_content">
         <div class="container">
-            <h2 class="page_title">상품주문</h2>
+            <h2 class="page_title">상품관리</h2>
             <div class="history">
                 <div class="item home"><a href="javascript:;">홈으로</a></div>
                 <div class="item has_child">
@@ -169,39 +169,42 @@
             </div>
 
             <div class="list_search_form mgt50">
-                <div class="title">대상자 조회</div>
+                <div class="title">상품관리</div>
                 <div class="sform">
-                    <div class="inner">
-                        <div class="item">
-                            <div class="tit">대상자 이름</div>
-                            <div class="cnt">
-                                <div class="ip_group">
-                                    <input type="text" class="auto">
-                                </div>
+                    <div class="item size_xl">
+                        <div class="tit">주문일자</div>
+                        <div class="cnt">
+                            <div class="ip_group">
+                                <input type="text" class="datepicker2" style="width:200px;">
+                                <span class="dash2">~</span>
+                                <input type="text" class="datepicker2" style="width:200px;">
+                                <button type="button" class="form_btn">1개월</button>
+                                <button type="button" class="form_btn">6개월</button>
+                                <button type="button" class="form_btn">12개월</button>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="tit">생년월일</div>
-                            <div class="cnt">
-                                <div class="ip_group">
-                                    <input type="text" class="auto" placeholder="생년월일 8자리 입력" maxlength="8">
-                                </div>
+                    </div>
+                    <div class="item">
+                        <div class="tit">주문상품번호</div>
+                        <div class="cnt">
+                            <div class="ip_group">
+                                <input type="text" class="auto">
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="tit">휴대전화</div>
-                            <div class="cnt">
-                                <div class="ip_group">
-                                    <input type="text" class="auto" placeholder="-없이 입력">
-                                </div>
+                    </div>
+                    <div class="item">
+                        <div class="tit">상품명</div>
+                        <div class="cnt">
+                            <div class="ip_group">
+                                <input type="text" class="auto">
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="tit">아이디</div>
-                            <div class="cnt">
-                                <div class="ip_group">
-                                    <input type="text" class="auto">
-                                </div>
+                    </div>
+                    <div class="item">
+                        <div class="tit">주문자명/ID</div>
+                        <div class="cnt">
+                            <div class="ip_group">
+                                <input type="text" class="auto">
                             </div>
                         </div>
                     </div>
@@ -211,46 +214,87 @@
                 </div>
             </div>
 
-            <div class="list_table label_control mgt50">
+            <div class="btn_list mgt50">
+                <div></div>
+                <div>
+                    <button type="button" class="btn green">엑셀다운로드</button>
+                    <button type="button" class="btn blue">상품등록</button>
+                </div>
+            </div>
+
+            <div class="list_table mgt15">
                 <table>
                     <colgroup>
-                        <col style="width:60px;">
+                        <col style="width:120px;">
                         <col style="width:160px;">
                         <col style="width:;">
+                        <col style="width:170px;">
                         <col style="width:160px;">
-                        <col style="width:160px;">
-                        <col style="width:500px;">
+                        <col style="width:100px;">
+                        <col style="width:150px;">
+                        <col style="width:150px;">
+                        <col>
                     </colgroup>
                     <thead>
                         <tr>
-                            <th></th>
-                            <th>바우처 지급년도</th>
-                            <th>대상자 이름</th>
-                            <th>생년월일</th>
-                            <th>휴대전화</th>
-                            <th>주소</th>
+                            <th>상품이미지</th>
+                            <th>상품번호</th>
+                            <th>상품명</th>
+                            <th>판매자명</th>
+                            <th>판매가(배송비)</th>
+                            <th>판매상태</th>
+                            <th>판매기간</th>
+                            <th>승인상태</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
-                                <label class="checkbox single"><input type="radio" name="list_radio"><span class="ck_icon"></span></label>
+                                <div class="thum_single" style="background-image: url('../../assets/images/dummy/goods_thum1.jpg');"></div>
                             </td>
-                            <td>2024년</td>
-                            <td>홍길동(honghong)</td>
-                            <td>90.02.02</td>
-                            <td>010-1234-4567</td>
-                            <td class="align_left pdl20 pdr20">서울특별시 강남구 논현로 706 5층 아이캐슬빌딩 트라이언소프트</td>
+                            <td>202407290012</td>
+                            <td class="align_left pdl20 pdr20">산지직송 국산 참송이 버섯 가정용 500g</td>
+                            <td>달콤한배</td>
+                            <td>
+                                <div class="il_block align_left">
+                                    54,000원<br/>(무료배송)
+                                </div>
+                            </td>
+                            <td>판매중</td>
+                            <td>
+                                <div class="il_block align_left">
+                                    2024.07.29~<br/>2024.11.30
+                                </div>
+                            </td>
+                            <td>
+                                <div class="il_block align_left">
+                                    상품등록승인<br/>(24.07.29)
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>
-                                <label class="checkbox single"><input type="radio" name="list_radio"><span class="ck_icon"></span></label>
+                                <div class="thum_single" style="background-image: url('../../assets/images/dummy/goods_thum1.jpg');"></div>
                             </td>
-                            <td>2024년</td>
-                            <td>홍길동(honghong)</td>
-                            <td>90.02.02</td>
-                            <td>010-1234-4567</td>
-                            <td class="align_left pdl20 pdr20">서울특별시 강남구 논현로 706 5층 아이캐슬빌딩 트라이언소프트서울특별시 강남구 논현로 706 5층 아이캐슬빌딩 트라이언소프트</td>
+                            <td>202407290012</td>
+                            <td class="align_left pdl20 pdr20">산지직송 국산 참송이 버섯 가정용 500g산지직송 국산 참송이</td>
+                            <td>달콤한배</td>
+                            <td>
+                                <div class="il_block align_left">
+                                    54,000원<br/>(무료배송)
+                                </div>
+                            </td>
+                            <td>판매중</td>
+                            <td>
+                                <div class="il_block align_left">
+                                    2024.07.29~<br/>2024.11.30
+                                </div>
+                            </td>
+                            <td>
+                                <div class="il_block align_left">
+                                    상품등록승인<br/>(24.07.29)
+                                </div>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -276,10 +320,6 @@
                         <span style="user-select: auto !important;">맨끝으로</span>
                     </a>
                 </span>
-            </div>
-
-            <div class="form_btns3">
-                <a href="javascript:;" class="btn submit">상품주문</a>
             </div>
 
         </div>
