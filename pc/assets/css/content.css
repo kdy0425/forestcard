@@ -1268,7 +1268,7 @@ background-repeat:no-repeat;background-position:center center;background-size:8p
 .gl_wrap .gl_top .gl_total{margin-bottom:25px;color:#444;font-size:18px;font-weight:500;}
 .gl_wrap .gl_top .gl_total .count{color:#00AF71;}
 
-.gl_wrap .goods_list{display:grid;grid-template-columns: repeat(4,1fr);gap:40px 60px;}
+.gl_wrap .goods_list{display:grid;grid-template-columns: repeat(4,1fr);gap:60px 40px;}
 .gl_wrap .goods_list .item{}
 .gl_wrap .goods_list .item a{display:block;}
 .gl_wrap .goods_list .item .thum{display:block;padding-top:100%;background-position: center center;background-size: cover;background-repeat: no-repeat;border-radius:10px;background-color: #f1f1f1;border:1px solid #E9E9E9;}
