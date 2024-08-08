@@ -1971,7 +1971,8 @@ html .simplebar-horizontal .simplebar-scrollbar:before{background-color: #AAAAAA
 .file_photo_view.active{margin-top:25px;}
 .file_photo_view{display:grid;grid-template-columns: repeat(10, 1fr);gap: 10px;}
 .file_photo_view .item{position: relative;}
-.file_photo_view .item .thum{display:block;padding-top:100%;background-position: center center;background-size:cover;background-repeat: no-repeat;border-radius:4px;}
+.file_photo_view .item .thum{display:block;padding-top:100%;border-radius:4px;position: relative;overflow: hidden;background-color: #f1f1f1;}
+.file_photo_view .item .thum img{position: absolute;left:0;top:50%;transform:translate(0,-50%);width: 100%;}
 .file_photo_view .item .remove_btn{position: absolute;right:0;top:0;width:18px;height:18px;background-color: rgba(0,0,0,.5);text-indent:-999em;overflow:hidden;border:0;background-position: center center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.6172 1L1.00007 10.6171' stroke='white' stroke-width='1.5'/%3E%3Cpath d='M1.09668 1L10.7138 10.6171' stroke='white' stroke-width='1.5'/%3E%3C/svg%3E%0A");}
 #ui-datepicker-div {margin-top:5px;border-radius:4px;}
 #ui-datepicker-div .ui-datepicker-title{padding:0 40px;display:flex;align-items: center;justify-content: center;}

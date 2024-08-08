@@ -211,7 +211,7 @@
                                         <strong>최대 총 10MB, 6장까지 가능, 권장사이즈 1000x1000, jpg/png/gif 파일 가능</strong></p>
                                         <div class="file_photo_view" id="thumbnailPreview">
                                             <!-- <div class="item">
-                                                <div class="thum" style="background-image: url('../../assets/images/card_kb.jpg');"></div>
+                                                <div class="thum"><img src="../../assets/images/card_kb.jpg"/></div>
                                                 <button type="button" class="remove_btn">파일삭제</button>
                                             </div> -->
                                         </div>
@@ -228,7 +228,7 @@
                                         <strong>최대 총 30MB, 20장까지 가능, jpg/png/gif 파일 가능</strong></p>
                                         <div class="file_photo_view" id="contentPreview">
                                             <!-- <div class="item">
-                                                <div class="thum" style="background-image: url('../../assets/images/card_kb.jpg');"></div>
+                                                <div class="thum"><img src="../../assets/images/card_kb.jpg"/></div>
                                                 <button type="button" class="remove_btn">파일삭제</button>
                                             </div> -->
                                         </div>
@@ -241,8 +241,8 @@
                                                 handleFileUpload(event, 30, 20, 'contentPreview', 'contentCount', 'contentSize');
                                             });
 
-                                            let thumbnailFiles = [];
-                                            let contentFiles = [];
+                                            let thumbnailFiles = [];   //썸네일 이미지파일 배열로 담김
+                                            let contentFiles = [];     //본문 이미지파일 배열로 담김
 
                                             function handleFileUpload(event, maxSizeMB, maxCount, previewId, countId, sizeId) {
                                                 const files = Array.from(event.target.files);
@@ -265,7 +265,10 @@
 
                                                             const thumDiv = document.createElement('div');
                                                             thumDiv.className = 'thum';
-                                                            thumDiv.style.backgroundImage = `url(${e.target.result})`;
+                                                            const img = document.createElement('img');
+                                                            img.src = e.target.result;
+                                                            img.alt = 'preview image';
+                                                            thumDiv.appendChild(img);
 
                                                             const removeBtn = document.createElement('button');
                                                             removeBtn.className = 'remove_btn';
