@@ -1267,8 +1267,9 @@ background-repeat:no-repeat;background-position:center center;background-size:8p
 .gl_wrap{margin-top:50px;}
 .gl_wrap .gl_top{display:flex;align-items: center;}
 .gl_wrap .gl_top div + div{margin-left:auto;}
-.gl_wrap .gl_top .gl_total{margin-bottom:25px;color:#444;font-size:18px;font-weight:500;}
-.gl_wrap .gl_top .gl_total .count{color:#00AF71;}
+.gl_wrap .gl_top .gl_total{margin-bottom:25px;}
+.gl_total{color:#444;font-size:18px;font-weight:500;display: flex;align-items: center;}
+.gl_total .count{color:#00AF71;}
 
 .gl_wrap .goods_list{display:grid;grid-template-columns: repeat(4,1fr);gap:60px 40px;}
 .gl_wrap .goods_list .item{}
@@ -2016,8 +2017,10 @@ html .simplebar-horizontal .simplebar-scrollbar:before{background-color: #AAAAAA
 .btn_list{display: flex;flex-wrap: wrap;}
 .btn_list > div{display:flex;}
 .btn_list > div + div{margin-left:auto;}
+.btn_list > div + div select,
 .btn_list > div + div .btn{margin-right:0;margin-left:6px;}
 .btn_list .btn{display:inline-block;text-align: center;padding:8px 20px;border-radius:4px;color:#fff;font-weight:600;font-size:13px;border:0;margin-right:6px;height:35px;}
+.btn_list select{margin-right:6px;}
 .btn_list .btn.green{background-color: #0DBA78;}
 .btn_list .btn.blue{background-color: #177BB2;}
 .btn_list .btn.green:hover{background-color: #04B270;}
