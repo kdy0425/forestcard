@@ -484,7 +484,8 @@ if ($('input').hasClass('monthpicker')) {
 			showOn: "focus",
 			buttonImageOnly: true,                     
 			changeYear: true,
-			yearRange: 'c-10:c+0', // 현재연도 -10 +0                  
+			//yearRange: `c-10:${currentYear}`, //선택년도 -10 ~ 현재년도
+			yearRange: `2015:${currentYear}`, //2015 ~ 현재년도
 			dateFormat: 'yy-mm'
 		});
 		
