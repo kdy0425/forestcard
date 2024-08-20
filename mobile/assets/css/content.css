@@ -5833,6 +5833,9 @@ html .simplebar-vertical .simplebar-scrollbar:before{background-color: #AAAAAA;l
 .ob_prd_form .obf_item .prc strong{font-weight: 900;}
 
 
+.datepicker:focus,
+.datepicker2:focus,
+.monthpicker:focus{outline:none;}
 .monthpicker{padding-right:40px;background-position: right 20px center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.8 3.59998H3.6C2.71634 3.59998 2 4.31632 2 5.19998V15.4C2 16.2836 2.71634 17 3.6 17H14.8C15.6837 17 16.4 16.2836 16.4 15.4V5.19998C16.4 4.31632 15.6837 3.59998 14.8 3.59998Z' stroke='%23AAAAAA' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12.3984 2V5.2' stroke='%23AAAAAA' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6 2V5.2' stroke='%23AAAAAA' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M2 7.40002H16.4' stroke='%23AAAAAA' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");}
 .monthpicker:read-only{background-color: #fff !important;opacity: 1 !important;color:#444 !important}
 #ui-monthpicker-div{margin-top:2px;border:0;border-radius:10px;box-shadow:10px 10px 20px rgba(0,0,0,.08);width:calc(100% - 58px);height: 260px;overflow:hidden;left:50% !important;transform: translate(-50%, 0);}
