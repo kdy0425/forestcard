@@ -25,6 +25,7 @@
 <script src="../../assets/js/jquery-3.6.4.min.js"></script>
 <link rel="stylesheet" type="text/css" href="../../assets/css/simplebar.css" />
 <script src="../../assets/js/simplebar.min.js"></script>
+<script src="../../assets/js/jquery.ui.monthpicker.min.js"></script>
 </head>
 <body>
 
@@ -124,6 +125,42 @@
                         <label><input type="radio" checked name="sort_date"><span>최근 3개월</span></label>
                         <label><input type="radio" name="sort_date"><span>최근 1년</span></label>
                         <label><input type="radio" name="sort_date"><span>전체</span></label>
+                    </div>
+                    <input type="text" class="monthpicker" style="width:150px;">
+                    <div class="dash">~</div>
+                    <input type="text" class="monthpicker" style="width:150px;">
+                    <div class="design_select" style="width:230px;">
+                        <input type="hidden" value="all">
+                        <button type="button" class="btn_select" onclick="selectOpen(this);">전체</button>
+                        <div class="select_options design_scroll" style="display: none;" data-simplebar>
+                            <div class="items">
+                                <div class="item"><a href="javascript:;" data-id="all" class="active" onclick="selectSelect(this);">전체</a></div>
+                                <div class="item"><a href="javascript:;" data-id="셀렉트옵션값1" onclick="selectSelect(this);">셀렉트옵션값1</a></div>
+                                <div class="item"><a href="javascript:;" data-id="셀렉트옵션값2" onclick="selectSelect(this);">셀렉트옵션값2</a></div>
+                                <div class="item"><a href="javascript:;" data-id="셀렉트옵션값3" onclick="selectSelect(this);">셀렉트옵션값3</a></div>
+                                <div class="item"><a href="javascript:;" data-id="셀렉트옵션값4" onclick="selectSelect(this);">셀렉트옵션값4</a></div>
+                                <div class="item"><a href="javascript:;" data-id="셀렉트옵션값5" onclick="selectSelect(this);">셀렉트옵션값5</a></div>
+                                <div class="item"><a href="javascript:;" data-id="셀렉트옵션값6" onclick="selectSelect(this);">셀렉트옵션값6</a></div>
+                                <div class="item"><a href="javascript:;" data-id="셀렉트옵션값7" onclick="selectSelect(this);">셀렉트옵션값7</a></div>
+                                <div class="item"><a href="javascript:;" data-id="셀렉트옵션값8" onclick="selectSelect(this);">셀렉트옵션값8</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="search_word">
+                        <input type="text" placeholder="상품명 또는 주문상태 검색">
+                        <button type="button" class="search_submit">검색하기</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list_sform">
+                <div>
+                    <div class="tap_radios">
+                        <label><input type="radio" checked name="sort_date2"><span>최근 3개월</span></label>
+                        <label><input type="radio" name="sort_date2"><span>최근 1년</span></label>
+                        <label><input type="radio" name="sort_date2"><span>전체</span></label>
                     </div>
                     <div class="design_select" style="width:150px;">
                         <input type="hidden" value="2024-05">

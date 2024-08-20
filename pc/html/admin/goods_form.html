@@ -235,10 +235,12 @@
                                         <script>
                                             document.getElementById('thumbnailUpload').addEventListener('change', function(event) {
                                                 handleFileUpload(event, 10, 6, 'thumbnailPreview', 'thumbnailCount', 'thumbnailSize');
+                                                console.log(thumbnailFiles)
                                             });
 
                                             document.getElementById('contentUpload').addEventListener('change', function(event) {
                                                 handleFileUpload(event, 30, 20, 'contentPreview', 'contentCount', 'contentSize');
+                                                console.log(contentFiles)
                                             });
 
                                             let thumbnailFiles = [];   //썸네일 이미지파일 배열로 담김
