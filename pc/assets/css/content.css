@@ -1677,7 +1677,7 @@ background-repeat:no-repeat;background-position:center center;background-size:8p
 .tap_radios{display:inline-flex;border:1px solid #DDDDDD;border-radius:5px;overflow:hidden;}
 .tap_radios label{display:block;position: relative;width:100px;}
 .tap_radios label input{position: absolute;left:-999999em;}
-.tap_radios label span{display:block;padding:16.5px 10px;text-align:center;color:#888;font-size:14px;font-weight: 500;}
+.tap_radios label span{display:block;padding:15.5px 10px;text-align:center;color:#888;font-size:14px;font-weight: 500;height: 51px;}
 .tap_radios label input:checked + span{color:#fff;background-color: #444;margin:0 -1px;}
 .tap_radios label:first-child span{border-radius:5px 0 0 5px;}
 .tap_radios label:last-child span{border-radius:0 5px 5px 0;}
