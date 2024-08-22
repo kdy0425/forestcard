@@ -1990,9 +1990,7 @@ html .simplebar-horizontal .simplebar-scrollbar:before{background-color: #AAAAAA
 #ui-monthpicker-div{margin-top:2px;border:0;border-radius:10px;box-shadow:10px 10px 20px rgba(0,0,0,.08);width:260px;height: 260px;overflow:hidden;}
 #ui-monthpicker-div .ui-datepicker-title{background-color:#00B071;text-align:left;padding:9px 5px;line-height:23px;}
 #ui-monthpicker-div .ui-datepicker-title select{background-color:#00B071;text-align:left;color:#fff;width:94px;height: 23px;border:0;border-radius: 0;font-size:16px;font-weight:500;background-position: right 10px center;background-image: url("data:image/svg+xml,%3Csvg width='16' height='17' viewBox='0 0 16 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 6.5L8 10.5L12 6.5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");}
-#ui-monthpicker-div .ui-datepicker-title select:focus{outline: none;}
 #ui-monthpicker-div .ui-datepicker-title select option{background-color: #fff;color:#000;}
-#ui-monthpicker-div .ui-datepicker-title select option:hover{background-color: red;}
 
 #ui-monthpicker-div .ui-datepicker-prev,
 #ui-monthpicker-div .ui-datepicker-next{top:6px;}
@@ -2007,8 +2005,8 @@ html .simplebar-horizontal .simplebar-scrollbar:before{background-color: #AAAAAA
 #ui-monthpicker-div .ui-datepicker-calendar tbody tr:first-child td,
 #ui-monthpicker-div .ui-datepicker-calendar tbody tr td{width:68px;height:45px;padding:2.5px 10px;}
 #ui-monthpicker-div .ui-datepicker-calendar tbody tr td a{width:100%;height:100%;line-height: 40px;display: block;font-size:15px;color:#444;font-weight: 500;border-radius:8px;}
-#ui-monthpicker-div .ui-state-highlight,#ui-monthpicker-div  .ui-widget-content .ui-state-highlight,#ui-monthpicker-div  .ui-widget-header .ui-state-highlight{background-color: #f5f5f5 !important;color:#444 !important;border:1px solid #f5f5f5;}
-#ui-monthpicker-div .ui-state-active,#ui-monthpicker-div .ui-widget-content .ui-state-active,#ui-monthpicker-div .ui-widget-header .ui-state-active,#ui-monthpicker-div a.ui-button:active, .ui-button:active,#ui-monthpicker-div .ui-button.ui-state-active:hover{background-color: #00B071 !important;color:#fff !important;border:1px solid #00B071;}
+#ui-monthpicker-div .ui-state-highlight,#ui-monthpicker-div  .ui-widget-content .ui-state-highlight,#ui-monthpicker-div  .ui-widget-header .ui-state-highlight{background-color: #f5f5f5 !important;color:#444 !important;border:0;}
+#ui-monthpicker-div .ui-state-active,#ui-monthpicker-div .ui-widget-content .ui-state-active,#ui-monthpicker-div .ui-widget-header .ui-state-active,#ui-monthpicker-div a.ui-button:active, .ui-button:active,#ui-monthpicker-div .ui-button.ui-state-active:hover{background-color: #00B071 !important;color:#fff !important;border:0;}
 .list_search_form{}
 .list_search_form .title{color:#222;font-size:20px;font-weight:600;margin-bottom:15px;}
 .list_search_form .sform{display:flex;flex-wrap: wrap;border:1px solid #ddd;background-color: #F9F9FB;border-radius: 10px;padding:18px 32px;}
