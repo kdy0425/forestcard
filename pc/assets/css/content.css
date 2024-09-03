@@ -2104,3 +2104,26 @@ html .simplebar-horizontal .simplebar-scrollbar:before{background-color: #AAAAAA
 
 .row_form .td_dot{margin-top:4px;}
 .row_form .td_dot li + li{margin-top:4px;}
+
+.ob_rows{}
+.ob_rows .row{displaY:flex;}
+.ob_rows .row + .row{margin-top:25px;}
+.ob_rows .row > .item{flex:1 1;}
+.ob_rows .row > .item + .item{margin-left:20px;}
+.ob_rows .row > .item .tit{color:#222;font-size:14px;font-weight:500;margin-bottom:10px;}
+.ob_rows .row > .item .cnt{display:flex;}
+.ob_rows .row > .item .ip_group{flex:1 1 auto;width: 1%;display:flex;align-items: center;}
+.ob_rows .row > .item .card_input_group{display:flex;align-items: center;border:1px solid #E9E9E9;border-radius:0.4rem;padding:10.5px 20px;}
+.ob_rows .row > .item .card_input_group .card{width:97px;text-indent: -999em;overflow:hidden;background-repeat: no-repeat;background-position: center center;background-size:97px auto;}
+.ob_rows .row > .item .card_input_group > * + *{margin-left:20px;}
+.ob_rows .row > .item .card_input_group input{border:0;height:32px;background-color: #F9F9FB;text-align: center;padding:0;}
+.ob_rows .row > .item .card_input_group .dash{text-indent:-999em;overflow: hidden;width:8px;position: relative;}
+.ob_rows .row > .item .card_input_group .dash:before{content:"";position:absolute;left:0;top:50%;width:8px;height:1px;background-color: #888;}
+.ob_rows .row > .item input[type="text"],
+.ob_rows .row > .item input[type="password"],
+.ob_rows .row > .item input[type="tel"],
+.ob_rows .row > .item select,
+.ob_rows .row > .item .design_select{flex:1 1 auto;width:1%;}
+.ob_rows .row > .item input::placeholder{opacity: 1;color:#888;}
+.ob_rows .row > .item .ip_group + .ip_group{margin-left:10px;}
+
