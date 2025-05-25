@@ -23,6 +23,8 @@
 <link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
 <link href="https://cdn.jsdelivr.net/npm/typeface-poppins@1.1.13/index.min.css" rel="stylesheet"><!-- poppins font -->
 <script src="../../assets/js/jquery-3.6.4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../assets/css/simplebar.css" />
+<script src="../../assets/js/simplebar.min.js"></script>
 </head>
 <body>
 
@@ -157,6 +159,10 @@
                         </script>
                     </div>
                     <div class="goods_info">
+                        <div class="badge">
+                            <span class="option orange">임산물프로그램</span>
+                            <span class="option blue">산림체험프로그램</span>
+                        </div>
                         <h3>I`mperfect 향이 가득한 국내산 무농약 자연산 표고버섯 500g</h3>
                         <div class="price"><strong>18,280</strong><span>원</span></div>
                         <div class="info">
@@ -188,6 +194,44 @@
                                                     <button type="button" class="btn plus">증가</button>
                                                 </div>
                                                 <div class="prc"><strong>18,280</strong><span>원</span></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>패키지상품 선택</th>
+                                        <td>
+                                            <div class="design_select">
+                                                <input type="hidden" value="">
+                                                <button type="button" class="btn_select" onclick="selectOpen(this);">패키지상품을 선택해주세요.</button>
+                                                <div class="select_options design_scroll" style="display: none;" data-simplebar>
+                                                    <div class="items">
+                                                        <div class="item"><a href="javascript:;" data-id="" class="active" onclick="selectSelect(this);">패키지상품을 선택해주세요.</a></div>
+                                                        <div class="item"><a href="javascript:;" data-id="" onclick="selectSelect(this);">패키지상품을 선택해주세요.2</a></div>
+                                                        <div class="item"><a href="javascript:;" data-id="" onclick="selectSelect(this);">패키지상품을 선택해주세요.3</a></div>
+                                                        <div class="item"><a href="javascript:;" data-id="" onclick="selectSelect(this);">패키지상품을 선택해주세요.4</a></div>
+                                                        <div class="item"><a href="javascript:;" data-id="" onclick="selectSelect(this);">패키지상품을 선택해주세요.5</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>패키지상품 선택</th>
+                                        <td>
+                                            <div class="selected_option">
+                                                <span class="name">소백산 사과 선물세트 A급 5kg</span>
+                                                <div class="badge">
+                                                    <span class="option blue">산림체험프로그램</span>
+                                                </div>
+                                            </div>
+                                            <div class="lot_box">
+                                                <div class="lot_control">
+                                                    <button type="button" class="btn minus">증감</button>
+                                                    <input type="text" value="1">
+                                                    <button type="button" class="btn plus">증가</button>
+                                                </div>
+                                                <div class="prc"><strong>18,280</strong><span>원</span></div>
+                                                <button type="button" class="remove">삭제</button>
                                             </div>
                                         </td>
                                     </tr>
@@ -318,14 +362,35 @@
                     <div class="detail_aside">
                         <div class="aside">
                             <div class="prd_options">
-                                <div class="subject">I`mperfect 향이 가득한 국내산 무농약 자연산표고버섯 500g</div>
-                                <div class="lot_box">
-                                    <div class="lot_control">
-                                        <button type="button" class="btn minus">증감</button>
-                                        <input type="text" value="1">
-                                        <button type="button" class="btn plus">증가</button>
+                                <div class="item">
+                                    <div class="badge">
+                                        <span class="option orange">임산물프로그램</span>
                                     </div>
-                                    <div class="prc"><strong>18,280</strong><span>원</span></div>
+                                    <div class="subject">I`mperfect 향이 가득한 국내산 무농약 자연산표고버섯 500g</div>
+                                    <div class="lot_box">
+                                        <div class="lot_control">
+                                            <button type="button" class="btn minus">증감</button>
+                                            <input type="text" value="1">
+                                            <button type="button" class="btn plus">증가</button>
+                                        </div>
+                                        <div class="prc"><strong>18,280</strong><span>원</span></div>
+                                        <button type="button" class="remove">삭제</button>
+                                    </div>
+                                </div>
+                                 <div class="item">
+                                    <div class="badge">
+                                        <span class="option blue">산림체험프로그램</span>
+                                    </div>
+                                    <div class="subject">I`mperfect 향이 가득한 국내산 무농약 자연산표고버섯 500g</div>
+                                    <div class="lot_box">
+                                        <div class="lot_control">
+                                            <button type="button" class="btn minus">증감</button>
+                                            <input type="text" value="1">
+                                            <button type="button" class="btn plus">증가</button>
+                                        </div>
+                                        <div class="prc"><strong>18,280</strong><span>원</span></div>
+                                        <button type="button" class="remove">삭제</button>
+                                    </div>
                                 </div>
                             </div>
 
