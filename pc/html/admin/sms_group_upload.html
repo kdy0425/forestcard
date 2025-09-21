@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=1280"/>
+<link rel="canonical" href="">
+<link rel="shortcut icon" type="image/x-icon" href="">
+<link rel="icon" type="image/svg+xml" href="../../assets/images/favicon.svg">
+<meta name="title"  content="산림복지서비스이용권" />
+<meta name="author" content="" />
+<meta name="keywords"    content="산림복지, 산림복지서비스이용권, 산림복지서비스, 산림바우처, 산림복지바우처">
+<meta name="description" content="산림복지서비스이용권 소개, 기초생활수급자 및 장애(아동)수당수급자 발급, 사용시설 안내, 사용방법 안내">
+<meta property="og:url"         content="https://www.forestcard.or.kr/main/main.do" />
+<meta property="og:type"        content="website" />
+<meta property="og:site_name"   content="산림복지서비스이용권" />
+<meta property="og:title"       content="산림복지서비스이용권" />
+<meta property="og:description" content="산림복지서비스이용권 소개, 기초생활수급자 및 장애(아동)수당수급자 발급, 사용시설 안내, 사용방법 안내" />
+<title>산림복지서비스이용권</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
+<link href="https://cdn.jsdelivr.net/npm/typeface-poppins@1.1.13/index.min.css" rel="stylesheet"><!-- poppins font -->
+<script src="../../assets/js/jquery-3.6.4.min.js"></script>
+<script src="../../assets/js/jquery-ui.min.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	<h1 id="header_h1">산림복지서비스이용권</h1>
+	<div id="skip_to_container">
+		<!-- skip navigation -->
+		<a href="#content">내용 바로가기</a>
+		<a href="#nav">서비스메뉴 바로가기</a>
+	</div>
+	<hr class="hide" />	
+
+	<!-- header -->
+	<div id="header" class="hd_full">
+		<div id="hd_wrap">
+            <div id="logo"><a href="javascript:;"><img src="../../assets/images/logo.png" alt="숲이 주는 즐거움 산림복지서비스이용권"></a></div>
+            <div class="nav_wrap">
+                <ul id="nav">
+                    <li><a href="javascript:;" class="active">기본정보</a>
+                        <ul>
+                            <li><a href="javascript:;">회원정보</a></li>
+                            <li><a href="javascript:;">관리자정보</a></li>
+                            <li><a href="javascript:;">사업관리</a></li>
+                            <li><a href="javascript:;">복지시설정보</a></li>
+                            <li><a href="javascript:;">사용가능시설관리</a></li>
+                            <li><a href="javascript:;">선정자추첨</a></li>
+                            <li><a href="javascript:;">변경신청 배치현황</a></li>
+                            <li><a href="javascript:;">발급요청 배치현황</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">이용권 신청</a>
+                        <ul>
+                            <li><a href="javascript:;">개인이용권신청</a></li>
+                            <li><a href="javascript:;">복지시설 이용권 신청</a></li>
+                            <li><a href="javascript:;">개인이용권 신청</a></li>
+                            <li><a href="javascript:;">복지시설 이용권 신청</a></li>
+                            <li><a href="javascript:;">이용자 변경 신청</a></li>
+                            <li><a href="javascript:;">합산대표변경</a></li>
+                            <li><a href="javascript:;">선정 후 추가 합산</a></li>
+                            <li><a href="javascript:;">개인이용권 선정(1차)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">이용권 사용정보</a>
+                        <ul>
+                            <li><a href="javascript:;">이용권 잔액현황</a></li>
+                            <li><a href="javascript:;">이용권 사용내역</a></li>
+                            <li><a href="javascript:;">복지시설 사용현황</a></li>
+                            <li><a href="javascript:;">이용권 사용현황</a></li>
+                            <li><a href="javascript:;">점자스티커 신청현황</a></li>
+                            <li><a href="javascript:;">사전알림서비스</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">제공자 등록</a>
+                        <ul>
+                            <li><a href="javascript:;">등록신청 조회</a></li>
+                            <li><a href="javascript:;">제공자 관리</a></li>
+                            <li><a href="javascript:;">등록신청</a></li>
+                            <li><a href="javascript:;">판매자관리</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">상품관리</a>
+                        <ul>
+                            <li><a href="javascript:;">상품목록</a></li>
+                            <li><a href="javascript:;">상품등록</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">주문관리</a>
+                        <ul>
+                            <li><a href="javascript:;">주문관리1</a></li>
+                            <li><a href="javascript:;">주문관리2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">통계관리</a>
+                        <ul>
+                            <li><a href="javascript:;">총괄-사용현황</a></li>
+                            <li><a href="javascript:;">제공자별현황</a></li>
+                            <li><a href="javascript:;">개인이용자현황</a></li>
+                            <li><a href="javascript:;">복지시설현황</a></li>
+                            <li><a href="javascript:;">이용자전체현항</a></li>
+                            <li><a href="javascript:;">접속자현황</a></li>
+                            <li><a href="javascript:;">방문자통계</a></li>
+                            <li><a href="javascript:;">신청접수현황</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">게시판관리</a>
+                        <ul>
+                            <li><a href="javascript:;">공지사항</a></li>
+                            <li><a href="javascript:;">자료실</a></li>
+                            <li><a href="javascript:;">자주하는질문</a></li>
+                            <li><a href="javascript:;">팝업관리</a></li>
+                            <li><a href="javascript:;">정보마당</a></li>
+                            <li><a href="javascript:;">부정사용 신고</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <span class="nav_bg"></span>
+            </div>
+            <div class="hd_mb">
+                <div class="item">
+                    <a href="javascript:;" class="logout">로그아웃</a>
+                </div>
+                <div class="item">
+                    <a href="javascript:;" class="system">관리</a>
+                </div>
+            </div>
+        </div>
+	</div>
+	<!-- //header -->	
+
+	<!-- content -->
+	<div id="content" class="sub_content">
+        <div class="container">
+            <h2 class="page_title">단체문자 발송</h2>
+            <div class="history">
+                <div class="item home"><a href="javascript:;">홈으로</a></div>
+                <div class="item has_child">
+                    <a href="javascript:;">1depth</a>
+                    <ul>
+                        <li><a href="javascript:;">1depth</a></li>
+                        <li><a href="javascript:;">1depth1</a></li>
+                        <li><a href="javascript:;">1depth2</a></li>
+                    </ul>
+                </div>
+                <div class="item has_child">
+                    <a href="javascript:;">2depth</a>
+                    <ul>
+                        <li><a href="javascript:;">2depth</a></li>
+                        <li><a href="javascript:;">2depth1</a></li>
+                        <li><a href="javascript:;">2depth2</a></li>
+                    </ul>
+                </div>
+                <div class="share_box">
+                    <button type="button" class="share_open">공유하기</button>
+                    <div class="share_list">
+                        <div class="share_item"><a href="javascript:;" class="kakao">카카오<br/>공유하기</a></div>
+                        <div class="share_item"><a href="javascript:;" class="facebook">페이스북<br/>공유하기</a></div>
+                        <div class="share_item"><a href="javascript:;" class="twitter">트위터<br/>공유하기</a></div>
+                        <div class="share_item"><a href="javascript:;" class="telegram">텔레그램<br/>공유하기</a></div>
+                        <div class="share_item"><a href="javascript:;" class="url" data-url="https://naver.com/123">url<br/>복사하기</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page_tab mgt80">
+                <a href="javascript:;">검색발송</a>
+                <a href="javascript:;" class="active">업로드발송</a>
+            </div>
+            <div class="new_form">
+                <div class="new_form_box">
+                    <div class="new_form_table">
+                        <table>
+                            <colgroup>
+                                <col style="width:180px;">
+                                <col style="">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>발송인원 업로드</th>
+                                    <td>
+                                        <div class="ip_group">
+                                            <input type="text" style="width: 150px;" value="0">
+                                            <button type="button" class="form_btn1">파일선택</button>
+                                            <button type="button" class="form_btn2">양식다운로드</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>발송예정인원</th>
+                                    <td>
+                                        <div class="ip_group">
+                                            <div class="status_count">
+                                                <strong>15,231</strong> 명
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>메시지 내용</th>
+                                    <td>
+                                        <table class="in_table">
+                                            <colgroup>
+                                                <col style="width: 36px;">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th><b>제목</b></th>
+                                                    <td>
+                                                        <div class="ip_group">
+                                                            <input type="text" id="message_subject" style="width: 100%;" value="">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="top"><b>내용</b></th>
+                                                    <td>
+                                                        <div class="ip_group">
+                                                            <textarea name="" id="message_content" style="height: 120px;overflow-y: auto;"></textarea>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="in_table_btns">
+                                            <button type="button" class="form_btn1" onclick="$('#message_box').show();">메시지함</button>
+                                            <button type="button" class="form_btn3">메시지 저장</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>발송일자</th>
+                                    <td>
+                                        <table class="in_table">
+                                            <colgroup>
+                                                <col style="width: 36px;">
+                                                <col style="width: 230px;">
+                                                <col style="width: 36px;">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>연도</th>
+                                                    <td>
+                                                        <div class="ip_group">
+                                                            <input type="text" class="datepicker2" style="width: 200px;">
+                                                        </div>
+                                                    </td>
+                                                    <th>시간</th>
+                                                    <td>
+                                                        <div class="ip_group">
+                                                            <select name="" id="" style="width: 80px;">
+                                                                <option value="12">12시</option>
+                                                            </select>
+                                                            <select name="" id="" style="width: 80px;">
+                                                                <option value="30">30분</option>
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="form_btns3">
+                    <button type="button" class="btn submit">단체문자발송</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- //content -->
+
+	<div id="footer">
+        <div class="container">
+            <div class="ft_top">
+                <ul class="ft_links">
+                    <li><a href="javascript:;"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="javascript:;"><strong>영상정보처리기기 운영·관리 방침</strong></a></li>
+                    <li><a href="javascript:;">이용약관</a></li>
+                    <li><a href="javascript:;">이메일무단수집거부</a></li>
+                </ul>
+                <div class="family_sites">
+                    <button type="button" class="family_sites_open">관련사이트 바로가기</button>
+                    <ul class="sites">
+                        <li><a href="javascript:;">관련사이트명1</a></li>
+                        <li><a href="javascript:;">관련사이트명2</a></li>
+                        <li><a href="javascript:;">관련사이트명3</a></li>
+                        <li><a href="javascript:;">관련사이트명4</a></li>
+                        <li><a href="javascript:;">관련사이트명5</a></li>
+                        <li><a href="javascript:;">관련사이트명6</a></li>
+                        <li><a href="javascript:;">관련사이트명7</a></li>
+                        <li><a href="javascript:;">관련사이트명8</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ft_bottom">
+                <div class="ft_logo">한국산림복지진흥원</div>
+                <div class="ft_cnt">
+                    <div class="ft_info clearfix">
+                        <div>대전광역시 서구 둔산북로 121, 2층 209호(둔산동)</div>
+                        <div class="poppins">TEL : 1544-3228</div>
+                        <div class="poppins">FAX : 042-719-4049</div>
+                    </div>
+                    <div class="ft_copy">Copyright © 2016한국산림복지진흥원. All Rights Reserved.</div>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+
+
+
+<!-- 메시지함 -->
+<div id="message_box" class="layer_new" style="display: none;">
+    <div class="ln_box" style="width:1000px;">
+        <div class="ln_title"><strong>메시지함</strong></div>
+        <button class="ln_close" onclick="$('#message_box').hide();">닫기</button>
+        <div class="ln_content">
+            <div class="new_l_search_form">
+                <table>
+                    <colgroup>
+                        <col style="width:55px;">
+                        <col style="">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>조회</th>
+                            <td>
+                                <form action="">
+                                    <div class="ip_group">
+                                        <input type="text" placeholder="연락처 -없이 입력" style="width: 300px;">
+                                        <button type="button" class="form_btn1"><span class="icon_search"></span>검색</button>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="caution">메시지를 선택하면 입력창에 입력됩니다.</p>
+            <div class="message_box">
+                <button class="item" type="button" onclick="selectMessage(this)">
+                    <div class="tit">산림복지 서비스이용권 접수</div>
+                    <div class="cnt">한국산림복지진흥원 공고 제2018-66호<br/><br/>「2019년 산림복지서비스이용권 신청접수 공고」<br/><br/>한국산림복지진흥원에서는 「산림복지 진흥에 관한 법률」제24조에 따라 산림복지소외자(기초생활수급자, 차상위계층, 장애(아동)수당 수급자, 장애인연금 수급자)를 대상으로 산림복지서비스 이용을 지원하기 위하여 2019년 산림복지서비스이용권 신청접수를 아래와 같이 공고합니다.<br/>2018년 12월 19일산림복지 진흥에 관한 법률」제24조에 따라 산림복지소외자(기초생활수급자, 차상위계층, 장애(아동)수당 수급자, 장애인연금 수급자)를 대상으로 산림복지서비스 이용을 지원하기 위하여 2019년 산림복지서비스이용권 신청접수를 아래와 같이 공고합니다.<br/>2018년 12월 19일산림복지 진흥에 관한 법률」제24조에 따라 산림복지소외자(기초생활수급자, 차상위계층, 장애(아동)수당 수급자, 장애인연금 수급자)를 대상으로 산림복지서비스 이용을 지원하기 위하여 2019년 산림복지서비스이용권 신청접수를 아래와 같이 공고합니다.<br/>2018년 12월 19일</div>
+                </button>
+                <button class="item" type="button" onclick="selectMessage(this)">
+                    <div class="tit">산림복지 서비스이용권 접수22</div>
+                    <div class="cnt">한국산림복지진흥원 공고123123 제2018-66호<br/><br/>「2019년 산림복지서비스이용권 신청접수 공고」<br/><br/>한국산림복지진흥원에서는 「산림복지 진흥에 관한 법률」제24조에 따라 산림복지소외자(기초생활수급자, 차상위계층, 장애(아동)수당 수급자, 장애인연금 수급자)를 대상으로 산림복지서비스 이용을 지원하기 위하여 2019년 산림복지서비스이용권 신청접수를 아래와 같이 공고합니다.<br/>2018년 12월 19일산림복지 진흥에 관한 법률」제24조에 따라 산림복지소외자(기초생활수급자, 차상위계층, 장애(아동)수당 수급자, 장애인연금 수급자)를 대상으로 산림복지서비스 이용을 지원하기 위하여 2019년 산림복지서비스이용권 신청접수를 아래와 같이 공고합니다.<br/>2018년 12월 19일산림복지 진흥에 관한 법률」제24조에 따라 산림복지소외자(기초생활수급자, 차상위계층, 장애(아동)수당 수급자, 장애인연금 수급자)를 대상으로 산림복지서비스 이용을 지원하기 위하여 2019년 산림복지서비스이용권 신청접수를 아래와 같이 공고합니다.<br/>2018년 12월 19일</div>
+                </button>
+                <button class="item" type="button" onclick="selectMessage(this)">
+                    <div class="tit">산림복지 서비스이용권 접수22</div>
+                    <div class="cnt">한국산림복지진흥원 공고 123123제2018-66호<br/><br/>「2019년 산림복지서비스이용권 신청접수 공고」<br/><br/>한국산림복지진흥원에서는 「산림복지 진흥에 관한 법률」제24조에 따라 산림복지소외자(기초생활수급자, 차상위계층, 장애(아동)수당 수급자, 장애인연금 수급자)를 대상으로 산림복지서비스 이용을 지원하기 위하여 2019년 산림복지서비스이용권 신청접수를 아래와 같이 공고합니다.<br/>2018년 12월 19일산림복지 진흥에 관한 법률」제24조에 따라 산림복지소외자(기초생활수급자, 차상위계층, 장애(아동)수당 수급자, 장애인연금 수급자)를 대상으로 산림복지서비스 이용을 지원하기 위하여 2019년 산림복지서비스이용권 신청접수를 아래와 같이 공고합니다.<br/>2018년 12월 19일산림복지 진흥에 관한 법률」제24조에 따라 산림복지소외자(기초생활수급자, 차상위계층, 장애(아동)수당 수급자, 장애인연금 수급자)를 대상으로 산림복지서비스 이용을 지원하기 위하여 2019년 산림복지서비스이용권 신청접수를 아래와 같이 공고합니다.<br/>2018년 12월 19일</div>
+                </button>
+                <script>
+                function selectMessage(btn) {
+                    var title = btn.querySelector('.tit').innerText;
+                    var content = btn.querySelector('.cnt').innerHTML.replace(/<br\s*\/?>/gi, "\n");
+                    $('#message_subject').val(title);
+                    $('#message_content').val(content);
+                    $('#message_box').hide();
+                }
+                </script>
+            </div>
+            <div class="paging mgt25">
+                <span class="pg">
+                    <a class="first" href="javascript:;">
+                        <span>맨처음으로</span>
+                    </a>
+                    <a class="prev" href="javascript:;">
+                        <span>이전으로</span>
+                    </a>
+                </span>
+                <span class="num">
+                    <strong>1</strong>
+                </span>
+                <span class="pg">
+                    <a class="next" href="javascript:;">
+                        <span>다음으로</span>
+                    </a>
+                    <a class="last" href="javascript:;">
+                        <span>맨끝으로</span>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="blank"></div>
+    <div class="ln_bg" onclick="$('#message_box').hide();"></div>
+</div>
+
+
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>	
