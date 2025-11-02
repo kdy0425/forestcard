@@ -2253,7 +2253,7 @@ html .simplebar-horizontal .simplebar-scrollbar:before{background-color: #AAAAAA
 .caution + div{margin-top:10px;}
 .message_box{display: flex;gap:15px;}
 .message_box .item{height: 395px;width:calc((100% - 30px)/ 3);position: relative;}
-.message_box .item .message{padding:30px 20px 20px;border:1px solid #ddd;border-radius:10px;background-color: #F9F9F9;text-align: left;}
+.message_box .item .message{padding:30px 20px 20px;border:1px solid #ddd;border-radius:10px;background-color: #F9F9F9;text-align: left;width: 100%;}
 .message_box .item .tit{color:#444;font-weight:500;font-size:14px;margin-bottom:15px;}
 .message_box .item .cnt{padding:15px;background-color: #fff;color:#444;font-size:14px;height: 320px;overflow-y: auto;border-radius:4px;}
 .message_box .item:hover .message{border:2px solid #177BB2;padding:29px 19px 19px;}
